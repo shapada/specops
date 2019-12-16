@@ -1,0 +1,108 @@
+.ss-facebook:before,.ss-googleplus:before,.ss-linkedin:before,.ss-mail:before,.ss-twitter:before{
+    content: '';
+    font-size:0;
+    color:transparent;
+    display:block;
+    width:24px
+}
+.ss-facebook:before{
+    background:url(/wp-content/themes/specops/images/ss-social-sprite-2x.png) 0 -58px no-repeat;
+    background-size:174px 82px;
+    height:24px
+}
+.ss-facebook:hover:before{
+    background-position:0 0
+}
+.ss-twitter:before{
+    background:url(/wp-content/themes/specops/images/ss-social-sprite-2x.png) -24px -60px no-repeat;
+    background-size:174px 82px;
+    margin-bottom:2px;
+    height:20px
+}
+.ss-twitter:hover:before{
+    background-position:-24px -2px
+}
+.ss-linkedin:before{
+    background:url(/wp-content/themes/specops/images/ss-social-sprite-2x.png) -76px -58px no-repeat;
+    background-size:174px 82px;
+    height:25px
+}
+.ss-linkedin:hover:before{
+    background-position:-76px 0px
+}
+.ss-googleplus:before{
+    background:url(/wp-content/themes/specops/images/ss-social-sprite-2x.png) -98px -60px no-repeat;
+    background-size:174px 82px;
+    height:22px
+}
+.ss-googleplus:hover:before{
+    background-position:-98px -2px
+}
+.ss-mail:before{
+    background:url(/wp-content/themes/specops/images/ss-social-sprite-2x.png) -129px -61px no-repeat;
+    background-size:174px 82px;
+    margin-bottom:4px;
+    height:18px
+}
+.ss-mail:hover:before{
+    background-position:-129px -3px
+}
+
+.ti-search-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+    background: url('../../images/spec-search-icon.png');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 0 3px 3px 0;
+}
+.ti-search-expand.ti-search-active .ti-search-icon {
+    background-color: #d1db2d;
+    border: 1px solid #848d06;
+    right: 50px;
+}
+.ti-search-expand.ti-search-active .ti-search-icon:hover {
+    background-color: #adb61f;
+}
+.ti-search-close-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    cursor: pointer;
+    background: url('../../images/search-close.png');
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.2s, right 0.2s;
+    -o-transition: opacity 0.2s, right 0.2s;
+    transition: opacity 0.2s, right 0.2s;
+    -webkit-transition-delay: 0;
+         -o-transition-delay: 0;
+            transition-delay: 0;
+}
+.ti-search-expand.ti-search-active .ti-search-close-icon {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-animation: pop 0.2s linear 1;
+            animation: pop 0.2s linear 1;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    -webkit-transition: opacity 0;
+    -o-transition: opacity 0;
+    transition: opacity 0;
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}

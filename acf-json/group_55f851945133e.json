@@ -1,0 +1,353 @@
+{
+    "key": "group_55f851945133e",
+    "title": "Single: Support",
+    "fields": [
+        {
+            "key": "field_54fe1f55d8fc9",
+            "label": "PDF",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_54d3e8d92eca6",
+            "label": "Has PDF",
+            "name": "has_pdf",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_54d3e8e92eca7",
+            "label": "PDF File",
+            "name": "pdf_file",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "library": "all",
+            "return_format": "url",
+            "min_size": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_54fe1f61d8fca",
+            "label": "FAQs",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_54f751d7fc772",
+            "label": "FAQs\/Highlights Title",
+            "name": "faq_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54d4fb5dd5e6a",
+            "label": "FAQs\/Highlights",
+            "name": "faqs_highlights",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "row_min": "",
+            "row_limit": "",
+            "layout": "table",
+            "button_label": "Add FAQ Group",
+            "min": 0,
+            "max": 0,
+            "sub_fields": [
+                {
+                    "key": "field_54d4fc0ad5e6b",
+                    "label": "Question Group Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_54f8a503b0db6",
+                    "label": "Questions",
+                    "name": "faq\/highlight",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "row_min": "",
+                    "row_limit": "",
+                    "layout": "table",
+                    "button_label": "Add Question",
+                    "min": 0,
+                    "max": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_54f8a527b0db7",
+                            "label": "Question",
+                            "name": "faq\/highlight_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "formatting": "html",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_54f8a53eb0db8",
+                            "label": "Answer",
+                            "name": "faq\/highlight_content",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ],
+                    "collapsed": ""
+                }
+            ],
+            "collapsed": ""
+        },
+        {
+            "key": "field_54fe1f70d8fcb",
+            "label": "Google Docs",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_54fe1f7ed8fcc",
+            "label": "Google Doc ID",
+            "name": "google_doc_id",
+            "type": "text",
+            "instructions": "Paste the ID of your Google Document here. The document ID is the bolded text in this example: https:\/\/docs.google.com\/document\/d\/<strong>1fdGEVqM08Ym2ZaO1X_DD-vvjGJlmloHM3NnxwmZ6ANA<\/strong>\/",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54fe1fe8d8fcd",
+            "label": "Google Doc Type",
+            "name": "google_doc_type",
+            "type": "radio",
+            "instructions": "Choose Document or Spreadsheet",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "document": "Document",
+                "spreadsheets": "Spreadsheet"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "document",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54fe2037d8fce",
+            "label": "Google Document Formats",
+            "name": "google_document_formats",
+            "type": "radio",
+            "instructions": "Select the downloaded file format",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54fe1fe8d8fcd",
+                        "operator": "==",
+                        "value": "document"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "docx": "Word (.docx)",
+                "pdf": "PDF"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "docx",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54fe218bd8fcf",
+            "label": "Google Spreadsheet Formats",
+            "name": "google_spreadsheet_formats",
+            "type": "radio",
+            "instructions": "Select the downloaded file format",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54fe1fe8d8fcd",
+                        "operator": "==",
+                        "value": "spreadsheets"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "xlsx": "Excel (.xlsx)",
+                "pdf": "PDF"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "xlsx",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "support"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524170726
+}

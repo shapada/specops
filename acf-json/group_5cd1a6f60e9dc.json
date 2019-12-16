@@ -1,0 +1,43 @@
+{
+    "key": "group_5cd1a6f60e9dc",
+    "title": "Product: Features Block",
+    "fields": [
+        {
+            "key": "field_5cd1a710121f2",
+            "label": "Product Features",
+            "name": "product_features",
+            "type": "textarea",
+            "instructions": "One per line",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/product-features"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1561999453
+}

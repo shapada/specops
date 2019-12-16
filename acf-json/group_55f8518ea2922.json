@@ -1,0 +1,323 @@
+{
+    "key": "group_55f8518ea2922",
+    "title": "Single: Docs",
+    "fields": [
+        {
+            "key": "field_55d4e60f63a9e",
+            "label": "Content Blocks",
+            "name": "content_blocks",
+            "type": "flexible_content",
+            "instructions": "Accordions and Callout Boxes can be added here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Content Block",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "55f8518f01189",
+                    "name": "callout",
+                    "label": "Callout",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_55d4e66563a9f",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "formatting": "html",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_55d4e67163aa0",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "tabs": "all",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_55d4e67b63aa1",
+                            "label": "Link List",
+                            "name": "link_list",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "row_min": "",
+                            "row_limit": "",
+                            "layout": "row",
+                            "button_label": "Add Link",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_55d4e69a63aa2",
+                                    "label": "Link Text",
+                                    "name": "link_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "formatting": "html",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_55d4e6a663aa3",
+                                    "label": "Link URL",
+                                    "name": "link_url",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "docs"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "taxonomy": [],
+                                    "allow_archives": 1
+                                }
+                            ],
+                            "collapsed": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "55f8518fadd95",
+                    "name": "accordion",
+                    "label": "Accordion",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_55d4e72b63aa8",
+                            "label": "Accordion Item",
+                            "name": "accordion_item",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "row_min": "",
+                            "row_limit": "",
+                            "layout": "row",
+                            "button_label": "Add Accordion Item",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_55d4e74363aa9",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "formatting": "html",
+                                    "maxlength": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                },
+                                {
+                                    "key": "field_55d4e74b63aaa",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "tabs": "all",
+                                    "delay": 0
+                                }
+                            ],
+                            "collapsed": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "55f8519020743",
+                    "name": "content_editor",
+                    "label": "Content Editor",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_55d4e829d4ed0",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "tabs": "all",
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "55f8519046cfb",
+                    "name": "related_content",
+                    "label": "Related Content",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_55d50939f0f2c",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "formatting": "html",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_55d50946f0f2d",
+                            "label": "Related Articles",
+                            "name": "related_articles",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post",
+                                "resources",
+                                "docs"
+                            ],
+                            "taxonomy": [],
+                            "filters": [
+                                "search",
+                                "post_type"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": 8,
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "docs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524170681
+}

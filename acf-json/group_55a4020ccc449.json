@@ -1,0 +1,103 @@
+{
+    "key": "group_55a4020ccc449",
+    "title": "Options: Socials",
+    "fields": [
+        {
+            "key": "field_55f1ceea76197",
+            "label": "Social Shares",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55f1cefb76198",
+            "label": "Default Twitter Tweets Content",
+            "name": "default_twitter_tweets_content",
+            "type": "textarea",
+            "instructions": "Merge Tags: \r\n<b>__SITE_NAME__<\/b>: <i>the site's name<\/i>, \r\n<b>__URL__<\/b>: <i>the current url (full)<\/i>, \r\n<b>__SURL__<\/b>: <i>the current url (short)<\/i>, \r\n<b>__TITLE__<\/b>: <i>the current title<\/i>, \r\n<b>__DESCRIPTION__<\/b>: <i>the current excerpt<\/i>, \r\n<b>__FEATURED_IMAGE__<\/b>: <i>the current featured image (might be empty)<\/i>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "__SITE_NAME__ - __TITLE__:  __SURL__",
+            "placeholder": "__SITE_NAME__ - __TITLE__:  __SURL__",
+            "maxlength": 150,
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55f1d02876199",
+            "label": "Default Mailto Subject",
+            "name": "default_mailto_subject",
+            "type": "text",
+            "instructions": "Merge Tags: \r\n<b>__SITE_NAME__<\/b>: <i>the site's name<\/i>, \r\n<b>__URL__<\/b>: <i>the current url (full)<\/i>, \r\n<b>__SURL__<\/b>: <i>the current url (short)<\/i>, \r\n<b>__TITLE__<\/b>: <i>the current title<\/i>, \r\n<b>__DESCRIPTION__<\/b>: <i>the current excerpt<\/i>, \r\n<b>__FEATURED_IMAGE__<\/b>: <i>the current featured image (might be empty)<\/i>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "__SITE_NAME__ - __TITLE__",
+            "placeholder": "__SITE_NAME__ - __TITLE__",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55f1d06e7619a",
+            "label": "Default Mailto Body",
+            "name": "default_mailto_body",
+            "type": "textarea",
+            "instructions": "Merge Tags: \r\n<b>__SITE_NAME__<\/b>: <i>the site's name<\/i>, \r\n<b>__URL__<\/b>: <i>the current url (full)<\/i>, \r\n<b>__SURL__<\/b>: <i>the current url (short)<\/i>, \r\n<b>__TITLE__<\/b>: <i>the current title<\/i>, \r\n<b>__DESCRIPTION__<\/b>: <i>the current excerpt<\/i>, \r\n<b>__FEATURED_IMAGE__<\/b>: <i>the current featured image (might be empty)<\/i>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Visite __TITLE__ at __URL__.",
+            "placeholder": "Visite __TITLE__ at __URL__.",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-social-sharing"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1524170622
+}

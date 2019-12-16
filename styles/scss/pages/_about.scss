@@ -1,0 +1,95 @@
+
+.page-template-pages_about-php .people h2{
+    text-align:center;
+    padding-bottom:45px
+}
+.page-template-pages_about-php .people .person{
+    text-align:center;
+    padding-bottom:25px;
+    position: relative;
+}
+.page-template-pages_about-php .people .person img{
+    margin-bottom:30px
+}
+@media screen and (max-width: 767px) {
+    .page-template-pages_about-php .people h2 {
+        padding-bottom: 20px;
+    }
+    .page-template-pages_about-php .people .person img{
+        max-width: 100%;
+        border-width: 15px;
+        margin-bottom: 15px;
+    }
+}
+.page-template-pages_about-php .partners-callout{
+    text-align:center;
+    padding:80px 0px;
+    border-top:1px solid #f4f4f4
+}
+.page-template-pages_about-php .partners-callout h4{
+    font-family:$font-family-sans-serif;
+    font-style:normal;
+    font-weight:700;
+    font-size:28px;
+    font-size:1.75rem
+}
+.page-template-pages_about-php .location-highlights{
+    background:#f4f4f4;
+    padding:40px 0px
+}
+.page-template-pages_about-php .location-highlights .highlight-year{
+    text-align:center;
+    padding-bottom:30px
+}
+.page-template-pages_about-php .location-highlights .year-icon{
+    width:130px;
+    height:130px;
+    line-height:130px;
+    text-align:center;
+    background:#252525;
+    color:#d1db2d;
+    font-weight:bold;
+    letter-spacing:.05em;
+    font-size:26px;
+    font-size:1.625rem;
+    border-radius:50%;
+    background-clip:padding-box;
+    display:inline-block
+}
+.page-template-pages_about-php .location-highlights .highlight-title{
+    text-align:center
+}
+.page-template-pages_about-php .location-highlights .highlight-description{
+    padding-bottom:50px
+}
+.page-template-pages_about-php .location-highlights h5{
+    font-family:$font-family-sans-serif;
+    font-style:normal;
+    font-weight:700;
+    font-size:22px;
+    font-size:1.375rem;
+    padding-bottom:15px
+}
+.page-template-pages_about-php .location-highlights .address{
+    font-family:$font-family-sans-serif;
+    font-style:normal;
+    font-weight:700;
+    font-size:16px;
+    font-size:1rem;
+    padding-bottom:40px
+}
+.page-template-pages_about-php .location-highlights .contact-title{
+    font-family:$font-family-sans-serif;
+    font-style:normal;
+    font-weight:700;
+    display:inline-block;
+    line-height:1em
+}
+.page-template-pages_about-php .location-highlights .contact-content{
+    display:inline-block;
+    line-height:1em
+}
+
+@media screen and (max-width:600px){
+    
+}
