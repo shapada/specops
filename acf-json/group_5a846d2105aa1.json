@@ -530,7 +530,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#303232"
+            "default_value": "$color-charcoal"
         },
         {
             "key": "field_5acd19ef74cf3",

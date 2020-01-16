@@ -1,37 +1,56 @@
 // Fonts
 @mixin Roboto {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 // Breakpoints
-$breakpoints: (
-  'xsmall': 600px,
-  'small':  768px,
-  'medium': 992px,
-  'large':  1024px
-) !default;
-
+$breakpoints: ( 'xsmall': 600px, 'small' : 768px, 'medium': 992px, 'large' : 1024px) !default;
 @mixin breakpoint($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
     }
-  }
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
 
-  @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+// Aspect ratio padding
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+}
+
+@keyframes "button-arrow" {
+  0% {
+      transform: translate(0, -5px);
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(0, 5px);
+      opacity: 0;
   }
 }
 
-// Aspecct ratio padding
-@mixin aspect-ratio($width, $height) {
-  position: relative;
+@-webkit-keyframes "pop" {
+  50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+}
 
-  &::before {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
+@keyframes "pop" {
+  50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
   }
 }

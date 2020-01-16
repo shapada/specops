@@ -1,0 +1,37 @@
+#masthead {
+    .ti-search {
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        border-radius: 3px;
+        padding: 5px 60px 5px 15px;
+        position: relative;
+        &:focus {
+            outline: none;
+        }
+    }
+    position: absolute;
+    max-height: 100px;
+}
+.ti-search-expand.ti-search-closed {
+    .ti-search {
+        width: 50px;
+        opacity: 0;
+        right: 0;
+        border-color: transparent;
+    }
+}
+.ti-search {
+    &::-webkit-input-placeholder {
+        font-style: italic;
+        letter-spacing: 0.01em;
+    }
+    &::-moz-placeholder {
+        font-style: italic;
+        letter-spacing: 0.01em;
+    }
+    &:-ms-input-placeholder {
+        font-style: italic;
+        letter-spacing: 0.01em;
+    }
+}

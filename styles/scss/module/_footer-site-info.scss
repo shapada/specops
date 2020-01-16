@@ -1,0 +1,24 @@
+.site-info {
+    background: #252525 !important;
+    padding-top: 35px;
+    text-align: center;
+    small {
+        font-family: $font-family-primary-sans;
+        font-style: normal;
+        font-weight: 300;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: $color-white;
+        line-height: 1.4;
+        a {
+            color: $color-white;
+            text-decoration: none;
+            &:hover {
+                color: #d1db2d;
+            }
+        }
+    }
+}

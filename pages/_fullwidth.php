@@ -4,15 +4,15 @@
  */
 get_header(); ?>
 
-<?php get_template_part( 'templates/page', 'banner' ); ?>
+<?php get_template_part('templates/page', 'banner'); ?>
 
 		<div id="content" class="site-content" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
 				<?php the_content(); ?>
 
-			<?php endwhile; // end of the loop. ?>
+			<?php endwhile; // end of the loop.?>
 
 		</div><!-- #content -->
 		

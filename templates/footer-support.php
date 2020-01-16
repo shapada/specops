@@ -1,4 +1,4 @@
-<?php  $image = wp_get_attachment_image_src(get_field('support_contact_background','options'), 'full' ); ?>
+<?php  $image = wp_get_attachment_image_src(get_field('support_contact_background', 'options'), 'full'); ?>
 <div class="get-in-touch" style="background:url(<?php echo $image[0]; ?>); background-size:cover;">
 
 	<div class="row">

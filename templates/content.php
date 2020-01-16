@@ -2,7 +2,7 @@
 
 	<div class="row">
 
-		<?php if(has_post_thumbnail() && is_category( 'news' )): ?>
+		<?php if (has_post_thumbnail() && is_category('news')): ?>
 			<div class="columns-1"><p class="post-meta"><?php echo forge_saas_posted_on();  ?></p></div>
 			<div class="columns-2">
 
@@ -28,13 +28,13 @@
 
 
 
-					<!-- <p class="post-meta"><?php //echo forge_saas_posted_on();  ?></p> -->
+					<!-- <p class="post-meta"><?php //echo forge_saas_posted_on();?></p> -->
 
 				</header> <!-- end article header -->
 
 				<section class="post_content clearfix">
 
-					<?php if(is_single()): ?>
+					<?php if (is_single()): ?>
 
 						<?php the_content(); ?>
 

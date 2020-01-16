@@ -9,21 +9,23 @@
  * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if (! defined('ABSPATH')) {
+    exit;
+} // Exit if accessed directly
 ?>
 
 <?php
-	/**
-	 * woocommerce_before_single_product hook
-	 *
-	 * @hooked wc_print_notices - 10
-	 */
-	 do_action( 'woocommerce_before_single_product' );
+    /**
+     * woocommerce_before_single_product hook
+     *
+     * @hooked wc_print_notices - 10
+     */
+     do_action('woocommerce_before_single_product');
 
-	 if ( post_password_required() ) {
-	 	echo get_the_password_form();
-	 	return;
-	 }
+     if (post_password_required()) {
+         echo get_the_password_form();
+         return;
+     }
 ?>
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -38,9 +40,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     //		//----------This is the video--------------
     //		do_action( 'woocommerce_before_single_product_summary' );
 
-            $sale_callout = get_field( 'sale_callout_image' );
+            $sale_callout = get_field('sale_callout_image');
 
-            if ( !empty( $sale_callout ) ):
+            if (!empty($sale_callout)):
         ?>
         <style>
             .single-product .summary-height > .row > .columns-6::after
@@ -65,7 +67,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
                  * @hooked woocommerce_template_single_sharing - 50
                  */
                 //---------Product Summary---------------
-                do_action( 'woocommerce_single_product_summary' );
+                do_action('woocommerce_single_product_summary');
 //                do_action( 'woocommerce_single_product_forms');
             ?>
             <div id="theForm" class="ti-columns-6 ti-pull-right">
@@ -92,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
              * @hooked woocommerce_output_related_products - 20
              */
             //------------Tabs and their content------------
-            do_action( 'woocommerce_after_single_product_summary' );
+            do_action('woocommerce_after_single_product_summary');
         ?>
 
         <meta itemprop="url" content="<?php the_permalink(); ?>" />
@@ -100,4 +102,4 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     </div>
 </div><!-- #product-<?php the_ID(); ?> -->
 
-<?php do_action( 'woocommerce_after_single_product' ); ?>
+<?php do_action('woocommerce_after_single_product'); ?>

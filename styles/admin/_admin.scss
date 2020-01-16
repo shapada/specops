@@ -408,12 +408,12 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 .details.attachment {
-	box-shadow: 0 0 0 1px #fff, 0 0 0 5px $highlight-color;
+	box-shadow: 0 0 0 1px $color-white, 0 0 0 5px $highlight-color;
 }
 
 .attachment.details .check {
 	background-color: $highlight-color;
-	box-shadow: 0 0 0 1px #fff, 0 0 0 2px $highlight-color;
+	box-shadow: 0 0 0 1px $color-white, 0 0 0 2px $highlight-color;
 }
 
 

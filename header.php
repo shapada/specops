@@ -4,11 +4,11 @@
 <!--[if IE 9]> 				 <html class="no-js lt-ie10" <?php language_attributes(); ?> > <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title><?php wp_title('|', true, 'right'); ?></title>
 <link rel="profile" href="//gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/Phone_icon.png" rel="apple-touch-icon" />
@@ -25,30 +25,6 @@
 
 <?php wp_head(); ?>
 
-<!-- Google Analytics -->
-<script type='text/javascript'>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	function AdBlockEnabled() {
-		var ad = document.createElement('ins');
-		ad.className = 'AdSense';
-		ad.style.display = 'block';
-		ad.style.position = 'absolute';
-		ad.style.top = '-1px';
-		ad.style.height = '1px';
-		document.body.appendChild(ad);
-		var isAdBlockEnabled = !ad.clientHeight;
-		document.body.removeChild(ad);
-		return isAdBlockEnabled.toString();
-	}
-
-	ga('create', 'UA-182745-6', 'auto');
-</script>
-<!-- End Google Analytics -->
-
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -60,14 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body <?php body_class(); ?>>
-<!-- GA pageview and AdBlock detection -->
-<script>
-ga('set', 'dimension1', AdBlockEnabled());
-ga('send', 'pageview');
 
-
-</script>
-<!-- End GA pageview and AdBlock detection -->
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVK69XW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -77,24 +46,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		<div class="row">
 
-			<div class="columns-12 flex-content-between">
+			<div class="columns-12">
 
-				<?php if(get_field('top_bar_text', 'options')): ?>
+				<?php if (get_field('top_bar_text', 'options')): ?>
 
 					<span class="top-bar-tagline"><?php the_field('top_bar_text', 'options'); ?></span>
 
 				<?php endif; ?>
-
-				<?php
-					ob_start();
-					echo '<li>';
-					do_action('wpml_add_language_selector');
-					echo '</li>';
-
-					$lang_switcher = ob_get_clean();
-					wp_nav_menu( array( 'theme_location' => 'utility', 'items_wrap' => '<ul id="utility-nav" class="nav menu">'.$lang_switcher.'%3$s</ul>' ) );
-				?>
-
+				
 			</div>
 
 		</div>
@@ -106,14 +65,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="row">
 
 			<div class="columns-4 site-branding">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
 					<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="site logo" />
 				</a>
 			</div>
 
 			<div id="site-navigation" class="columns-8 navigation-main" role="navigation">
 
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'items_wrap' => '<ul id="main-nav" class="nav menu dropmenu">%3$s</ul>' ) ); ?>
+				<?php wp_nav_menu(array( 'theme_location' => 'primary', 'items_wrap' => '<ul id="main-nav" class="nav menu dropmenu">%3$s</ul>' )); ?>
 
 				<a href="#" class="fs-mobile-trigger burger-trigger">
 					<span></span>

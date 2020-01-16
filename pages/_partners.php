@@ -11,8 +11,8 @@ get_header(); ?>
 			
 			
 
-					<?php if( have_rows('partners') ): ?>
-						<?php while ( have_rows('partners') ) : the_row(); ?>
+					<?php if (have_rows('partners')): ?>
+						<?php while (have_rows('partners')) : the_row(); ?>
 							<div class="partners">
 								<div class="row">
 								

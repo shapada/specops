@@ -11,7 +11,7 @@ get_header(); ?>
     }
     .page-template-_thank-you .ti-content a {
         text-decoration: none;
-        color: #303232;
+        color: $color-charcoal;
     }
     .ti-content .ti-single:last-child {
         margin-right: 0;
@@ -36,17 +36,17 @@ get_header(); ?>
         background: url(https://s3.amazonaws.com/clientinstalls/Specops/SPEC-404Page-Jan2017/question-background.png), -webkit-linear-gradient(#134D6D, #153A47);
         background: url(https://s3.amazonaws.com/clientinstalls/Specops/SPEC-404Page-Jan2017/question-background.png), linear-gradient(#134D6D, #153A47);
         padding: 50px 0;
-        color: #fff;
+        color: $color-white;
 		text-align: center;
     }
     .page-template-_thank-you .ti-page-hero h2 {
-        color: #fff;
+        color: $color-white;
         font-size: 42px;
         line-height: 1.25em;
         padding: 0 10px;
     }
     .page-template-_thank-you .ti-page-hero p {
-        color: #fff;
+        color: $color-white;
 		line-height: 1.4;
     }
 	.page-template-_thank-you .ti-page-hero a {
@@ -212,8 +212,8 @@ get_header(); ?>
 								<h2 class="ti-green-large"><?php the_title(); ?></h2>
 								<?php the_content(); ?>
 
-                                <form method="get" id="searchform" class="searchform s404" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-                                    <input type="search" class="field" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" id="s" placeholder="<?php echo esc_attr_x( 'What are you looking for?', 'placeholder', 'forge_saas' ); ?>" />
+                                <form method="get" id="searchform" class="searchform s404" action="<?php echo esc_url(home_url('/')); ?>" role="search">
+                                    <input type="search" class="field" name="s" value="<?php echo esc_attr(get_search_query()); ?>" id="s" placeholder="<?php echo esc_attr_x('What are you looking for?', 'placeholder', 'forge_saas'); ?>" />
                                     <input type="submit" class="submit" id="searchsubmit" value="<?php _e('SEARCH', 'anvil')?>" />
                                 </form>
                             </div>
@@ -248,7 +248,7 @@ get_header(); ?>
 
                         </div>
                         <div class="latest-blogs">
-	                        <?php get_template_part( 'templates/home', 'blog' ); ?>
+	                        <?php get_template_part('templates/home', 'blog'); ?>
                         </div>
 
 					</div><!-- .entry-content -->

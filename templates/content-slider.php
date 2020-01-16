@@ -1,20 +1,20 @@
 
 <?php
 
-	$args = array(
-		'post_type' => 'case-studies',
-		'posts_per_page' => -1,
-		'order' => 'DESC',
-		'hide_empty' => false,
+    $args = array(
+        'post_type' => 'case-studies',
+        'posts_per_page' => -1,
+        'order' => 'DESC',
+        'hide_empty' => false,
 
-		);
+        );
 
-	$second_query = new WP_Query($args);?>
+    $second_query = new WP_Query($args);?>
 	<div class="case-studies">
 		<div class="row">
 
 
-			<?php if($second_query->have_posts()): while($second_query->have_posts()): $second_query->the_post();?>
+			<?php if ($second_query->have_posts()): while ($second_query->have_posts()): $second_query->the_post();?>
 
 
 				<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large'); ?>

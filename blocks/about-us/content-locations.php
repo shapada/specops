@@ -9,19 +9,19 @@
 <section id="locations">
   <div class="row">
     <div class="columns-12">
-      <h2><?php the_field( 'title' ); ?></h2>
+      <h2><?php the_field('title'); ?></h2>
 
-        <?php if ( have_rows( 'locations' ) ): ?>
+        <?php if (have_rows('locations')): ?>
           <div class="locations-wrap">
-            <?php while ( have_rows( 'locations' ) ) : the_row(); ?>
-              <div class="location" style="background-image: url( '<?php the_sub_field( 'location_image' ) ?>' );">
+            <?php while (have_rows('locations')) : the_row(); ?>
+              <div class="location" style="background-image: url( '<?php the_sub_field('location_image') ?>' );">
                 <div class="location-title">
-                  <h3><?php the_sub_field( 'location_title' ); ?></h3>
+                  <h3><?php the_sub_field('location_title'); ?></h3>
                 </div>
                 <div class="location-contact">
-                  <p class="address"><?php the_sub_field( 'location_address' ); ?></p>
-                  <?php while ( have_rows( 'location_contact' ) ) : the_row(); ?>
-                    <p class="contact"><strong><?php the_sub_field( 'contact_title' ); ?>:</strong> <?php the_sub_field( 'contact_content' ); ?></p>
+                  <p class="address"><?php the_sub_field('location_address'); ?></p>
+                  <?php while (have_rows('location_contact')) : the_row(); ?>
+                    <p class="contact"><strong><?php the_sub_field('contact_title'); ?>:</strong> <?php the_sub_field('contact_content'); ?></p>
                   <?php endwhile; ?>
                 </div>
               </div>

@@ -2,30 +2,29 @@
 
 module.exports = function(grunt) {
 
-  grunt.loadNpmTasks('grunt-css-purge');
   grunt.loadNpmTasks('grunt-contrib-sass');
- 
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+
     grunt.initConfig({
-        purge: {
-            site: {
-                options: {},
-                src: 'site.css',
-                dest: 'site.min.css',
-            },
-        },
-		sass: {
-			dist: {
-				files: [{
-					expand: true,
-					cwd: 'styles/scss',
-					src: ['**/*.scss'],
-					dest: 'styles/css',
-					ext: '.css'
-				}]
-			}
-  		}
+      sass: {
+        dist: {
+          options: {
+            style: 'expanded'
+          },
+          files: {
+            'styles/css/main-style.css': 'styles/scss/main.scss'
+          }
+        }
+      },
+      watch: {
+        files:  [ 'styles/scss/**/*.scss', '**/*.php' ],
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
+      }
     });
  
-    grunt.registerTask('default', ['purge']);
-    grunt.registerTask('sass', ['sass']);
+  grunt.registerTask( 'default', ['watch' ] );
 };

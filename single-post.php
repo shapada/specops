@@ -10,40 +10,40 @@ get_header(); ?>
 
 
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php if ( has_post_thumbnail() ) : ?>
-					<?php if(!get_field('hide_featured_image')): ?>
+			<?php while (have_posts()) : the_post(); ?>
+				<?php if (has_post_thumbnail()) : ?>
+					<?php if (!get_field('hide_featured_image')): ?>
 						<?php the_post_thumbnail('blog-single-thumb', 'class=featured-image+alignright'); ?>
 					<?php endif; ?>
 				<?php endif; ?>
 				<h1><?php the_title(); ?></h1>
 				<p><?php
                     echo forge_saas_full_date();
-                    if($post->post_date_gmt < $post->post_modified_gmt) {
+                    if ($post->post_date_gmt < $post->post_modified_gmt) {
                         echo '<span class="ti-last-updated">(Last updated on <strong>' . date("F j, Y", strtotime($post->post_modified)) . '</strong>)</span>';
                     }
                     ?></p>
 				<?php the_content(); ?>
 
-				<?php if($terms = get_the_tags()): ?>
+				<?php if ($terms = get_the_tags()): ?>
 				<p class="tags">
 					<span class="tags-title"><?php _e('Tags', 'anvil'); ?>:</span>
 					<?php
-						usort($terms, function($a, $b) {
-							return strcasecmp($a->name, $b->name);
-						});
+                        usort($terms, function ($a, $b) {
+                            return strcasecmp($a->name, $b->name);
+                        });
 
-						$output = array();
-						foreach( $terms as $term ) {
-							$output[] = sprintf('<a rel="tag" href="%s">%s</a>', get_term_link($term), $term->name);
-						}
+                        $output = array();
+                        foreach ($terms as $term) {
+                            $output[] = sprintf('<a rel="tag" href="%s">%s</a>', get_term_link($term), $term->name);
+                        }
 
-						echo implode(', ', $output);
-					?>
+                        echo implode(', ', $output);
+                    ?>
 				</p>
 				<?php endif; ?>
 
-				<?php if( !get_field('disable_author_block') ): ?>
+				<?php if (!get_field('disable_author_block')): ?>
 					<div class="author-block row">
 						<div class="columns-3">
 							<?php $headshot_id = get_field('author_headshot', 'user_'.get_the_author_ID())? : get_field('default_author_headshot', 'options'); ?>
@@ -51,8 +51,8 @@ get_header(); ?>
 						</div>
 						<div class="columns-8">
 							<p class="author-meta"><?php _e('Written by', 'anvil'); ?></p>
-							<h4 class="author-name"><?php the_author_meta( 'display_name' ); ?></h4>
-							<p class="author-bio"><?php the_author_meta( 'description' ); ?> </p>
+							<h4 class="author-name"><?php the_author_meta('display_name'); ?></h4>
+							<p class="author-bio"><?php the_author_meta('description'); ?> </p>
 							<a href="<?php echo get_author_posts_url(get_the_author_ID()); ?>" class="read-more"><?php _e('More Articles', 'anvil'); ?></a>
 						</div>
 					</div>
@@ -62,7 +62,7 @@ get_header(); ?>
 
 			<div class="back-nav-wrapper">
 				<a href="<?php the_field('blog_parent', 'options'); ?>" class="back-to"><?php _e('Back to Blog', 'anvil'); ?></a>
-				<?php get_template_part( 'templates/social-sharing' ); ?>
+				<?php get_template_part('templates/social-sharing'); ?>
 			</div>
 
 			<?php forge_saas_content_nav(); ?>
@@ -70,14 +70,14 @@ get_header(); ?>
 
 	</div>
 
-	<?php if( get_field('related_posts') ): ?>
+	<?php if (get_field('related_posts')): ?>
 		<div class="realted-article">
 
 			<div class="row">
 				<div class="columns-12">
 					<h2><?php _e('Related Articles', 'anvil'); ?></h2>
 					<ul class="block-grid-3">
-						<?php foreach( get_field('related_posts') as $post ): setup_postdata($post); ?>
+						<?php foreach (get_field('related_posts') as $post): setup_postdata($post); ?>
 							<li>
 								<div class="blog-wrap">
 									<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -96,16 +96,16 @@ get_header(); ?>
 
 
 		<?php
-			$these_cats = wp_get_post_terms($post->ID,'category');
-			shuffle($these_cats);
-			// print_r($these_cats);
-			$this_cat = $these_cats[0];
-			//print_r($this_cat);
-			$posts = get_field('related_content_offer', $this_cat);
+            $these_cats = wp_get_post_terms($post->ID, 'category');
+            shuffle($these_cats);
+            // print_r($these_cats);
+            $this_cat = $these_cats[0];
+            //print_r($this_cat);
+            $posts = get_field('related_content_offer', $this_cat);
 
-			if($posts):
-			foreach($posts as $post): setup_postdata( $post );
-		?>
+            if ($posts):
+            foreach ($posts as $post): setup_postdata($post);
+        ?>
 
 			<div class="content-offer-modal-container">
 

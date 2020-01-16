@@ -1,0 +1,31 @@
+.error404 {
+    .entry-title {
+        font-size: 132px;
+        font-size: 8.25rem;
+        text-align: center;
+    }
+    .entry-content {
+        text-align: center;
+        padding: 40px 0;
+        p {
+            font-size: 36px;
+            font-size: 2.25rem;
+            font-style: italic;
+            line-height: 72px;
+        }
+    }
+    .s404 {
+        input[type=search] {
+            display: block;
+            width: 50%;
+            max-width: 100%;
+            padding: 10px 20px;
+            margin: 0 auto 30px;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            max-width: 100px;
+        }
+    }
+}

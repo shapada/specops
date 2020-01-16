@@ -1,0 +1,24 @@
+<?php
+/**
+ * Register Resources blocks
+ */
+
+add_action('acf/init', 'register_resources_blocks');
+
+function register_resources_blocks()
+{
+    if (function_exists('acf_register_block_type')) {
+        // Partners
+        acf_register_block_type(array(
+            'name'				=> 'resource-datasheet',
+            'title'				=> 'Resource Datasheet',
+            'description'		=> 'Datasheet used to represent a data sheet resource.',
+            'render_callback'	=> 'acf_block_render_callback',
+            'mode'				=> 'auto',
+            'category'			=> 'resources',
+            'post_types'		=> [ 'page' ],
+            'icon'				=> 'resources',
+            'keywords'			=> [ 'resources', 'specops resources', 'resource datasheet', 'datasheet' ],
+        ));
+    }
+}

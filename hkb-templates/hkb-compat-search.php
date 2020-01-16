@@ -11,8 +11,8 @@
 
 <?php hkb_get_template_part('hkb-breadcrumbs', 'search'); ?>
 
-        <?php if ( have_posts() ) : ?>
-          <?php while ( have_posts() ) : the_post(); ?>
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
 
             <?php hkb_get_template_part('hkb-content-article', 'search'); ?>
 
@@ -26,7 +26,7 @@
             <h2 class="hkb-search-noresults__title">
               <?php _e('No Results', 'ht-knowledge-base'); ?>
             </h2>
-            <p><?php printf( __('Your search for "%s" returned no results. Perhaps try something else?',  'ht-knowledge-base'), get_search_query() ); ?></p>
+            <p><?php printf(__('Your search for "%s" returned no results. Perhaps try something else?', 'ht-knowledge-base'), get_search_query()); ?></p>
           </div>
 
         <?php endif; ?>

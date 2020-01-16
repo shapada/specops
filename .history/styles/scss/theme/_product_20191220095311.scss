@@ -1,0 +1,336 @@
+.single-product {
+	.product-categories {
+		margin-bottom: 40px;
+		.product-category {
+			text-align: center;
+			img {
+				display: block;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+			a {
+				background: none;
+				padding: 0 1px;
+				color: $color-charcoal;
+				font-weight: 700;
+				font-size: 14px;
+				font-size: 0.875rem;
+				&:hover {
+					background: none;
+					color: $color-yellowgreen;
+				}
+			}
+		}
+	}
+	.summary-height {
+		>.row {
+			position: relative;
+			padding-bottom: 30px;
+			>.columns-6 {
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					width: 200px;
+					height: 200px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
+			}
+		}
+	}
+	.summary {
+		.product-summary {
+			.single_add_to_cart_button {
+				border-radius: 4px;
+				background-clip: padding-box;
+				font-weight: 700;
+				background: $color-yellowgreen;
+				padding: 15px 20px;
+				color: $color-charcoal;
+				border: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				&:hover {
+					background: #adb61f;
+				}
+			}
+			.price {
+				span {
+					font-weight: 700;
+					font-size: 25px;
+					font-size: 1.5625rem;
+				}
+			}
+			.cart {
+				input {
+					height: 50px;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+					border-radius: 0;
+					border: 1px solid #747474;
+					background: #f4f4f4;
+					width: 100% !important;
+					max-width: 200px;
+					margin-bottom: 25px;
+				}
+			}
+			.variations {
+				width: 80%;
+				select {
+					width: 100%;
+				}
+				.reset_variations {
+					display: block;
+					padding-top: 20px;
+				}
+			}
+			.sku_wrapper {
+				display: block;
+				padding-top: 20px;
+			}
+		}
+	}
+	.evaluation-button-wrap {
+		text-align: center;
+		padding: 0 0 60px;
+	}
+	.tabs {
+		.slider-thumbs {
+			li {
+				text-align: center;
+				background: white;
+				font-weight: 700;
+				font-size: 14px;
+				font-size: 0.875rem;
+				text-transform: uppercase;
+				color: $color-charcoal;
+				border: 1px solid #747474;
+				margin-bottom: 1px;
+				padding: 25px 0px;
+				clear: none;
+			}
+			.flex-active {
+				background: rgba(0, 0, 0, 0.4);
+				color: $color-yellowgreen;
+			}
+		}
+		.tab-slider {
+			border: none;
+			margin-bottom: 0;
+			.included-product {
+				padding: 25px 0px;
+				&:nth-child(2n) {
+					background: #f4f4f4;
+				}
+			}
+			.related-product {
+				h4 {
+					font-weight: 700;
+					font-size: 22px;
+					font-size: 1.375rem;
+					a {
+						color: #125071;
+					}
+				}
+				.read-more {
+					font-weight: 700;
+					font-size: 16px;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+.tax-product_cat {
+	.product-categories {
+		margin-bottom: 40px;
+		.product-category {
+			text-align: center;
+			img {
+				display: block;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+			a {
+				background: none;
+				padding: 0 1px;
+				color: $color-charcoal;
+				font-weight: 700;
+				font-size: 14px;
+				font-size: 0.875rem;
+				&:hover {
+					background: none;
+					color: $color-yellowgreen;
+				}
+			}
+		}
+	}
+	.product-featured {
+		background: #f4f4f4;
+		padding: 30px 0px;
+		position: relative;
+		min-height: 300px;
+	}
+}
+.products-wrapper {
+	padding: 45px 0px;
+	.products {
+		.product {
+			padding-bottom: 40px;
+			h3 {
+				font-weight: 700;
+				font-size: 24px;
+				font-size: 1.5rem;
+				color: $color-charcoal;
+			}
+			.button {
+				background: none;
+				color: $color-yellowgreen;
+				padding: 15px 0px;
+				text-decoration: underline;
+				&:hover {
+					background: none;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.single-product {
+		.ti-top-spacer {
+			padding: 0 !important;
+		}
+	}
+	.tax-product_cat {
+		.product-categories {
+			.product-category {
+				width: 100%;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.product-cat-image {
+					width: 110px;
+					height: 110px;
+				}
+			}
+		}
+	}
+	#Datasheets {
+		padding: 50px 20px;
+	}
+	#Videos {
+		.video-wrapper {
+			padding: 50px 20px;
+		}
+	}
+	#Whitepapers {
+		padding: 50px 20px;
+	}
+}
+@media screen and (max-width:1100px) {
+	.tax-product_cat {
+		.product-featured {
+			text-align: center;
+			text-align: center;
+			text-align: center;
+			[class*=columns-] {
+				position: static;
+				width: 100%;
+				position: static;
+				width: 100%;
+				position: static;
+				width: 100%;
+				.featured-content {
+					-webkit-transform: none !important;
+					-ms-transform: none !important;
+					transform: none !important;
+					-moz-transform: none !important;
+					-webkit-trasform: none !important;
+					position: static;
+					top: 0;
+					margin: auto;
+					width: 65%;
+					-webkit-transform: none !important;
+					-ms-transform: none !important;
+					transform: none !important;
+					-moz-transform: none !important;
+					-webkit-trasform: none !important;
+					position: static;
+					top: 0;
+					margin: auto;
+					width: 65%;
+					-webkit-transform: none !important;
+					-ms-transform: none !important;
+					transform: none !important;
+					-moz-transform: none !important;
+					-webkit-trasform: none !important;
+					position: static;
+					top: 0;
+					margin: auto;
+					width: 65%;
+				}
+				img {
+					max-width: 500px;
+					margin-bottom: 25px;
+					width: 100%;
+					max-width: 500px;
+					margin-bottom: 25px;
+					width: 100%;
+					max-width: 500px;
+					margin-bottom: 25px;
+					width: 100%;
+				}
+			}
+			.featured-content {
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+		}
+	}
+	.single-product {
+		.summary-height {
+			>.row {
+				[class*=columns-] {
+					position: static;
+					width: 100%;
+					position: relative;
+					position: static;
+					width: 100%;
+					position: relative;
+					position: static;
+					width: 100%;
+					position: relative;
+					.images {
+						text-align: center;
+						margin-bottom: 25px;
+						text-align: center;
+						margin-bottom: 25px;
+						text-align: center;
+						margin-bottom: 25px;
+						.flex-video {
+							text-align: left;
+							text-align: left;
+							text-align: left;
+						}
+					}
+				}
+			}
+			.summary {
+				text-align: center;
+				text-align: center;
+				text-align: center;
+			}
+		}
+	}
+}

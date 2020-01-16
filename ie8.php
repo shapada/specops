@@ -4,11 +4,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> >
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width" />
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title('|', true, 'right'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -19,7 +19,7 @@
 		<div class="row">
 	
 			<div class="columns-6 site-branding">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
 					<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="site logo" />
 				</a>
 			</div>
@@ -38,15 +38,15 @@
 
 					<div class="entry-header">
 						
-						<h1 class="entry-title"><?php _e( 'Not Supported', 'anvil' ); ?></h1>
+						<h1 class="entry-title"><?php _e('Not Supported', 'anvil'); ?></h1>
 					
 					</div><!-- .entry-header -->
 
 					<div class="entry-content">
 					
-						<p><?php _e( 'I\'m sorry but your browser doesn\'t support this site!', 'anvil' ); ?></p>
+						<p><?php _e('I\'m sorry but your browser doesn\'t support this site!', 'anvil'); ?></p>
 
-						<p><?php printf( __( 'Please <a href="%1$s" target="_blank" rel="nofollow">Upgrade</a> your browser.', 'anvil'), 'https://browser-update.org/update.html' ); ?></p>
+						<p><?php printf(__('Please <a href="%1$s" target="_blank" rel="nofollow">Upgrade</a> your browser.', 'anvil'), 'https://browser-update.org/update.html'); ?></p>
 
 					</div><!-- .entry-content -->
 

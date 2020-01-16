@@ -4,7 +4,7 @@
 .editor-block-list__layout,
 .editor-styles-wrapper {
   font-family: Helvetica, Arial, sans-serif;
-  color: #303232;
+  color: $color-charcoal;
 }
 
 .editor-block-list__layout {
@@ -19,7 +19,7 @@
 .editor-block-list__layout h6,
 .editor-post-title .editor-post-title__input {
   font-family: 'Roboto', sans-serif;
-  color: #303232;
+  color: $color-charcoal;
 }
 
 .wp-block {
@@ -45,7 +45,7 @@
   text-transform: uppercase;
   padding: 12px 26px;
   background: #d1db2d;
-  color: #303232;
+  color: $color-charcoal;
   display: inline-block;
   opacity: 1;
   height: auto;
@@ -54,7 +54,7 @@
 }
 .wp-block .acf-block-preview .button.button-blue {
   text-transform: none;
-  color: #fff;
+  color: $color-white;
   padding: 15px 20px;
   text-align: center;
   background-color: #134f71;
@@ -135,7 +135,7 @@ h2.section-title {
   text-align: center;
 }
 .homepage-featured-products .featured-product a {
-  color: #303232;
+  color: $color-charcoal;
   text-decoration: none;
 }
 .homepage-featured-products .featured-product img {
@@ -253,7 +253,7 @@ h2.section-title {
   font-size: 28px;
 }
 .homepage-testimonial .testimonial-wrapper a {
-  color: #303232;
+  color: $color-charcoal;
 }
 .homepage-testimonial .testimonial-wrapper .quote {
   font-style: italic;
@@ -377,7 +377,7 @@ h2.section-title {
 }
 #highlights > .row::after {
   content: '';
-  background: linear-gradient(to bottom, transparent 0%, #fff 100%);
+  background: linear-gradient(to bottom, transparent 0%, $color-white 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -392,7 +392,7 @@ h2.section-title {
   text-align: center;
   width: 80px;
   margin: 0 auto 24px;
-  background: #303232;
+  background: $color-charcoal;
   color: #d1db2d;
   border-radius: 3px;
   padding: 10px;
@@ -644,7 +644,7 @@ h2.section-title {
 }
 #tryfree .product-form-wrap::after {
   content: '';
-  background: linear-gradient(to bottom, transparent 0%, #fff 100%);
+  background: linear-gradient(to bottom, transparent 0%, $color-white 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -680,7 +680,7 @@ h2.section-title {
 }
 #product-sticky-footer .product-sticky-footer-wrapper::after {
   content: '';
-  background: linear-gradient(to bottom, transparent 0%, #fff 100%);
+  background: linear-gradient(to bottom, transparent 0%, $color-white 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -900,7 +900,7 @@ h2.section-title {
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid #fff;
+  border-top: 1px solid $color-white;
   z-index: 2;
 }
 #case-studies-reviews .review {
@@ -920,7 +920,7 @@ h2.section-title {
   line-height: 1.6;
 }
 #case-studies-reviews .review-product {
-  color: #fff;
+  color: $color-white;
   background: #125071;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -991,7 +991,7 @@ h2.section-title {
   padding-top: 48px;
 }
 .case-banner .case-banner-blurb {
-  color: #fff;
+  color: $color-white;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;

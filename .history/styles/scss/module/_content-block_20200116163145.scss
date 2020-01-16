@@ -1,0 +1,7 @@
+.content-block {
+  display: inline-flex;
+  align-items: center;
+  &.text-image-block {
+    display: flex;
+  }
+}

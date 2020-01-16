@@ -6,15 +6,15 @@
 ?>
 
 	</section><!-- #main -->
-	<?php if(is_page_template('pages/_about.php')): ?>
-		<?php get_template_part( 'templates/footer', 'blocks-career' ); ?>
-	<?php elseif(is_tax('support-types') || is_singular('support') || is_page_template('pages/_support-dev.php') ): ?>
-		<?php get_template_part( 'templates/footer', 'support' ); ?>
-	<?php elseif(is_page('products')||is_singular('product')|| is_front_page()|| is_page('case-studies')||is_singular('case-studies')): ?>
-		<?php get_template_part( 'templates/footer', 'blocks' ); ?>
+	<?php if (is_page_template('pages/_about.php')): ?>
+		<?php get_template_part('templates/footer', 'blocks-career'); ?>
+	<?php elseif (is_tax('support-types') || is_singular('support') || is_page_template('pages/_support-dev.php')): ?>
+		<?php get_template_part('templates/footer', 'support'); ?>
+	<?php elseif (is_page('products')||is_singular('product')|| is_front_page()|| is_page('case-studies')||is_singular('case-studies')): ?>
+		<?php get_template_part('templates/footer', 'blocks'); ?>
 	<?php endif; ?>
-	<?php if(!(is_tax('support-types') || !(is_singular('support')) || !(is_page_template('pages/_about.php')) )): ?>
-		<?php get_template_part( 'templates/footer', 'get-in' ); ?>
+	<?php if (!(is_tax('support-types') || !(is_singular('support')) || !(is_page_template('pages/_about.php')))): ?>
+		<?php get_template_part('templates/footer', 'get-in'); ?>
 	<?php endif; ?>
 
 	<div class="site-footer" role="contentinfo">
@@ -24,31 +24,16 @@
 
 			<div class="columns-12">
 
-				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'items_wrap' => '<ul id="footer-nav" class="nav menu">%3$s</ul>' ) ); ?>
+				<?php wp_nav_menu(array( 'theme_location' => 'footer', 'items_wrap' => '<ul id="footer-nav" class="nav menu">%3$s</ul>' )); ?>
 			</div>
-
-			<?php /*
-			<div class="columns-4 newsletter">
-				<h4><?php _e('Newsletter Sign Up', 'anvil'); ?></h4>
-				<p><?php the_field('footer_newsletter', 'options'); ?></p>
-			</div>
-			<div class="columns-6">
-
-				<?php gravity_form( 4, false, false, false, null, true ); ?>
-
-			</div>
-
-			*/ ?>
-
-
 
 			<div class="columns-12 social-wrapper">
 
-				<?php if(have_rows('social_media', 'options')): ?>
+				<?php if (have_rows('social_media', 'options')): ?>
 
 					<ul class="social-menu menu">
 
-						<?php while(have_rows('social_media', 'options')): the_row(); ?>
+						<?php while (have_rows('social_media', 'options')): the_row(); ?>
 
 							<li><a class="ss-icon ss-social-regular <?php the_sub_field('social_media'); ?>" target="_blank" href="<?php the_sub_field('social_media_link', 'options'); ?>"><?php the_sub_field('social_media'); ?></a></li>
 
@@ -61,19 +46,6 @@
 			</div>
 
 		</div>
-	<?php if (
-		is_front_page() ||
-		is_page( 'contact-us' ) ||
-		is_page( 'resources' ) ||
-		is_tax( 'resource-types' ) ||
-		is_singular('resources') ||
-		is_page( 'products' ) ||
-		is_singular( 'product' ) ||
-		is_page_template( 'pages/_landing.php' ) ||
-		is_page_template( 'pages/_case-studies.php' )
-	) : ?>
-
-	<?php endif; ?>
 	</div><!-- #colophon -->
 
 	<div class="columns-12 site-info text-center">
@@ -89,7 +61,7 @@
 	</div><!-- .site-info -->
 <?php wp_footer(); ?>
 
-	<?php if ( is_front_page() ) : ?>
+	<?php if (is_front_page()) : ?>
 		<script type="application/ld+json">
 			{
 			"@context": "https://schema.org",

@@ -1,0 +1,416 @@
+@mixin anchor-base {
+    color: $color-yellowgreen;
+    outline: none;
+    outline: 0;
+}
+
+@mixin header {
+    color: $color-charcoal;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 25px;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #125071;
+    &:active,
+    &:focus,
+    &:hover {
+        @include anchor-base;
+    }
+    * {
+        text-decoration: none;
+    }
+}
+
+html {
+    background: $color-white;
+    color: #000;
+    @include Roboto;
+    overflow-x: hidden;
+    font-size: 100%;
+    input[type=button] {
+        cursor: pointer;
+    }
+    input[disabled] {
+        cursor: default;
+    }
+}
+
+body {
+    margin: 0;
+    color: $color-charcoal;
+    font-size: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    * {
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+    }
+}
+
+ul {
+    list-style: disc;
+    margin: 0 0 0 15px;
+    padding: 0 0 15px;
+    li {
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75em;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+ol {
+    margin: 0 0 0 24px;
+    padding: 0 0 15px;
+    li {
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75em;
+    }
+    ol {
+        list-style: lower-alpha;
+        ol {
+            list-style: numeric;
+        }
+    }
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.75em;
+    padding-bottom: 15px;
+    &:empty {
+        display: none;
+    }
+}
+
+::selection {
+    background: $color-yellowgreen;
+    color: white;
+}
+
+blockquote {
+    border: none;
+    padding: 0;
+    p {
+        font-style: italic;
+        &:last-of-type {
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}
+
+pre {
+    background: #eee;
+    border: 1px solid #ccc;
+    margin: 0 0 15px;
+    padding: 20px;
+    font-family: monospace, serif;
+    font-size: 1em;
+    white-space: pre-wrap;
+}
+
+h1,
+h2 {
+    @include header;
+    font-weight: 700;
+}
+
+h3,
+h4,
+h5 {
+    @include header;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    color: $color-charcoal;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-top: 0;
+    border: 0;
+}
+
+a.read-more {
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    color: $color-yellowgreen;
+    text-decoration: underline;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b {
+    font-weight: bold;
+}
+
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+kbd {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    bottom: -0.25em;
+}
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+svg {
+    &:not(:root) {
+        overflow: hidden;
+    }
+}
+
+figure {
+    margin: 0;
+    display: block;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    line-height: normal;
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    text-transform: none;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    overflow: auto;
+    vertical-align: top;
+}
+
+input[type=reset] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: default;
+}
+
+input[type=checkbox] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+    &::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article {
+    display: block;
+}
+
+aside {
+    display: block;
+}
+
+details {
+    display: block;
+}
+
+figcaption {
+    display: block;
+}
+
+footer {
+    display: block;
+}
+
+header {
+    display: block;
+}
+
+hgroup {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+nav {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+summary {
+    display: block;
+}
+
+audio {
+    display: inline-block;
+    &:not([controls]) {
+        display: none;
+        height: 0;
+    }
+}
+
+canvas {
+    display: inline-block;
+}
+
+video {
+    display: inline-block;
+}

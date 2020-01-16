@@ -1,0 +1,41 @@
+.site-footer {
+    background: #383838 !important;
+    padding-top: 40px;
+    background: #f2f2f2;
+    [class*=columns-] {
+        position: static;
+        width: 100%;
+    }
+    form {
+        input[type=email] {
+            width: 100% !important;
+        }
+        input[type=password] {
+            width: 100% !important;
+        }
+        input[type=tel] {
+            width: 100% !important;
+        }
+        input[type=text] {
+            width: 100% !important;
+        }
+    }
+    .newsletter {
+        h4 {
+            font-family: $font-family-primary-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            font-size: 1.5rem;
+            color: white;
+        }
+        p {
+            font-family: $font-family-primary-sans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            font-size: 1rem;
+            color: white;
+        }
+    }
+}
