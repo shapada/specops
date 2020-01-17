@@ -17,22 +17,23 @@ $bg_color_style = ! empty( $background_color ) ? 'style=background-color:#' . $b
 
 ?>
 
-<div class="content-block" <?php echo esc_attr( $bg_color_style ); ?>>
-	<div class="image-text-block">
-		<?php if( ! empty( $heading ) ): ?>
-			<h2 class="content-block-heading" <?php echo esc_attr( $heading_style ); ?>>
-				<?php echo esc_html( $heading ); ?>
-			</h2>
-		<?php endif; ?>
+<div class="content-block image-text-block" <?php echo esc_attr( $bg_color_style ); ?>>
+	<?php if( ! empty( $heading ) ): ?>
 
-		<div class="content-block-body <?php echo esc_attr( $content_style ); ?>">
-			<div class="image-content">
-				<img src="<?php echo esc_url( wp_get_attachment_url( $image_id ) ); ?>">
-			</div>
+		<h2 class="content-block-heading" <?php echo esc_attr( $heading_style ); ?>>
+			<?php echo esc_html( $heading ); ?>
+		</h2>
 
-			<div class="text-content">
-				<?php echo wp_filter_post_kses( $text ); ?>
-			</div>
+	<?php endif; ?>
+
+	<div class="content-block-body <?php echo esc_attr( $content_style ); ?>">
+		<div class="image-content">
+			<img src="<?php echo esc_url( wp_get_attachment_url( $image_id ) ); ?>">
+		</div>
+
+		<div class="text-content">
+			<?php echo wp_filter_post_kses( $text ); ?>
 		</div>
 	</div>
+
 </div>

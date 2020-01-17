@@ -1392,15 +1392,37 @@ hr.sep {
   color: #ffffff;
 }
 
+.content-block {
+  padding: 2.5em 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-block:first-child {
+  margin-top: 4em;
+}
+
 .content-block .content-block-heading {
   color: #303232;
+}
+
+.content-block.images-block {
+  display: flex;
+  justify-content: center;
 }
 
 .content-block .content-block-body {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2em 0;
+}
+
+.content-block .content-block-body .image-content {
+  margin-right: 5em;
 }
 
 .content-block .content-block-body.reverse-block {
@@ -1582,7 +1604,7 @@ hr.sep {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4em 0;
+  background-color: #E8E8E8;
 }
 
 .datasheet-block h3 {

@@ -1,24 +1,7 @@
 .content-block {
-  padding: 2.5em 0;
-
-  position: relative;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &:first-child {
-    margin-top: 4em;
-  }
 
   .content-block-heading {
     color: $color-charcoal;
-  }
-
-  &.images-block {
-    display: flex;
-    justify-content: center;
   }
 
   .content-block-body {

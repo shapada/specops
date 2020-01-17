@@ -95,6 +95,30 @@
             "save_other_choice": 0
         },
         {
+            "key": "field_5e21ddf369dd1",
+            "label": "Background Color",
+            "name": "background-color",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fff": "White",
+                "e8e8e8": "Light Grey"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_5e2090444d026",
             "label": "Text",
             "name": "text",
@@ -131,5 +155,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579275172
+    "modified": 1579280964
 }
