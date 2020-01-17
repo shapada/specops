@@ -10,17 +10,17 @@ $image_id = get_field( 'image' );
 $image_position = get_field( 'image-position' );
 $text = get_field( 'text' );
 
-$heading_style = ( ! empty( $heading_position ) && 'right' === $image_position ) ? 'style=text-align:' . $heading_position . ';' : '';
+$heading_style = ( ! empty( $heading_position ) && 'right' === $image_position ) ? 'style=text-align:' . $heading_position . ';:' : '';
 $content_style = ( ! empty( $image_position ) && 'right' === $image_position ) ? 'reverse-block' : '';
 ?>
 
 <div class="content-block image-text-block">
 	<?php if( ! empty( $heading ) ): ?>
-
-		<h2 class="content-block-heading" <?php echo esc_attr( $heading_style ); ?>>
-			<?php echo esc_html( $heading ); ?>
-		</h2>
-
+		<div class="content-block-heading" <?php echo esc_attr( $heading_style ); ?>>
+			<h2>
+				<?php echo esc_html( $heading ); ?>
+			</h2>
+		</div>
 	<?php endif; ?>
 
 	<div class="content-block-body <?php echo esc_attr( $content_style ); ?>">

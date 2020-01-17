@@ -1,0 +1,24 @@
+.content-block-body {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
+
+  &.reverse-block {
+    flex-direction: row-reverse;
+
+    .image-content {
+      margin-left: 5em;
+    }
+  }
+
+  .content-block-heading {
+    color: $color-charcoal;
+  }
+
+  img {
+    margin-right: 5em;
+  }
+
+
+}

@@ -5,7 +5,7 @@
  * This is the template that displays the feature partners.
  */
  ?>
-<div class="content-block datasheet-block">
+<div class="datasheet">
 	<?php if (get_field('datasheet_heading')): ?>
 		<h3 class="heading">
 			<?php echo esc_html(get_field('datasheet_heading')); ?>
@@ -28,9 +28,13 @@
 						<thead>
 							<tr>
 								<?php
-									foreach ( $headers as $header ) { ?>
+									foreach ( $headers as $header ) {
+										if( empty( $header ) ) {
+											continue;
+										}
+										?>
 										<th>
-											<?php echo ! empty( $header ) ? esc_html( $header ) : ''; ?>
+											<?php echo esc_html( $header ); ?>
 										</th>
 									<?php
 								} ?>
@@ -40,22 +44,24 @@
 					}
 				}
 				?>
+
 				<?php
 					if (! empty($datatable['body'])):
 						$body_data = $datatable['body']; ?>
 						<tbody>
 							<?php
 							foreach ($body_data as $row):
-								$row_data = wp_list_pluck( $row, 'c' );
+								$row_data = wp_list_pluck($row, 'c');
 
 								if (empty($row_data)) {
 									continue;
-								} ?>
+								}
+								?>
 								<tr>
 									<?php
 										foreach ($row_data as $column): ?>
 											<td>
-												<?php echo ! empty( $column ) ? esc_html($column) : ''; ?>
+												<?php echo esc_html($column); ?>
 											</td>
 									<?php endforeach; ?>
 								</tr>

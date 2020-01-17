@@ -1224,10 +1224,6 @@ pre[class*="language-"] {
   display: flex;
 }
 
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1396,13 +1392,23 @@ hr.sep {
   color: #ffffff;
 }
 
-.content-block {
-  display: inline-flex;
-  align-items: center;
+.content-block .content-block-heading {
+  color: #303232;
 }
 
-.content-block.reverse-block {
+.content-block .content-block-body {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.content-block .content-block-body.reverse-block {
   flex-direction: row-reverse;
+}
+
+.content-block .content-block-body.reverse-block .image-content {
+  margin-left: 5em;
 }
 
 .content-offer-modal-container {
@@ -1571,7 +1577,7 @@ hr.sep {
   }
 }
 
-.datasheet {
+.datasheet-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1579,12 +1585,12 @@ hr.sep {
   margin: 4em 0;
 }
 
-.datasheet h3 {
+.datasheet-block h3 {
   margin-bottom: 12px;
   padding: 0;
 }
 
-.datasheet p {
+.datasheet-block p {
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
@@ -1592,32 +1598,32 @@ hr.sep {
   margin-bottom: 12px;
 }
 
-.datasheet .datatable {
+.datasheet-block .datatable {
   width: 100%;
   border-collapse: collapse;
   font-size: .875rem;
 }
 
-.datasheet .datatable thead {
+.datasheet-block .datatable thead {
   color: #ffffff;
   background-color: #103F59;
 }
 
-.datasheet .datatable thead th {
+.datasheet-block .datatable thead th {
   padding: 8px;
 }
 
-.datasheet .datatable tbody {
+.datasheet-block .datatable tbody {
   background-color: #ffffff;
 }
 
-.datasheet .datatable tbody td {
+.datasheet-block .datatable tbody td {
   padding: .3125em;
   border: 1px solid #CFCFCF;
   text-align: center;
 }
 
-.datasheet .datatable tbody td:first-child {
+.datasheet-block .datatable tbody td:first-child {
   font-weight: bold;
 }
 

@@ -1,0 +1,9 @@
+.content-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.reverse-block {
+    flex-direction: row-reverse;
+  }
+}

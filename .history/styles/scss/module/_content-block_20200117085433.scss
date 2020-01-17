@@ -1,0 +1,14 @@
+.content-block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+
+  img {
+    margin-right: 40px;
+  }
+
+  &.reverse-block {
+    flex-direction: row-reverse;
+  }
+}

@@ -5,7 +5,7 @@
  * This is the template that displays the feature partners.
  */
  ?>
-<div class="content-block datasheet-block">
+<div class="datasheet">
 	<?php if (get_field('datasheet_heading')): ?>
 		<h3 class="heading">
 			<?php echo esc_html(get_field('datasheet_heading')); ?>
