@@ -3,9 +3,33 @@
     "title": "Single Resource: Datasheet",
     "fields": [
         {
+            "key": "field_5e21de3f9b1d9",
+            "label": "Background Color",
+            "name": "datasheet-bgcolor",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ffffff": "White",
+                "e8e8e8": "Light Grey"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
             "key": "field_5e20945357b77",
             "label": "Heading",
-            "name": "datasheet_heading",
+            "name": "datasheet-heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,8 +48,8 @@
         {
             "key": "field_5e20949057b78",
             "label": "Description",
-            "name": "datasheet_description",
-            "type": "wysiwyg",
+            "name": "datasheet-description",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,35 +59,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "visual",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_5e21de3f9b1d9",
-            "label": "Background Color",
-            "name": "background-color",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "white": "White",
-                "light-grey": "Light Grey"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_5e2094c857b79",
@@ -87,7 +86,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/resource-datasheet"
+                "value": "acf\/datasheet"
             }
         ]
     ],
@@ -99,5 +98,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579277981
+    "modified": 1579540878
 }

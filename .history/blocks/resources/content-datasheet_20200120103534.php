@@ -4,25 +4,28 @@
  *
  * This is the template that displays the feature partners.
  */
+$heading = get_field('datasheet-heading');
+
+var_dump( false !== $heading = get_field('datasheet-headingg') ); die();
  ?>
 <div class="content-block datasheet-block">
-	<?php if (get_field('datasheet_heading')): ?>
+	<?php if ( true === ( $heading = get_field('datasheet-heading') ) ): ?>
 		<h3 class="heading">
-			<?php echo esc_html(get_field('datasheet_heading')); ?>
+			<?php echo esc_html(get_field('datasheet-heading')); ?>
 		</h3>
 	<?php endif; ?>
 
-	<?php if (get_field('datasheet_description')): ?>
+	<?php if ( true === ( $description = get_field('datasheet-description' ) ) ): ?>
 		<p class="description">
-			<?php esc_html(the_field('datasheet_description')) ?>
+			<?php esc_html(the_field('datasheet-description')) ?>
 		</p>
 	<?php endif;
 
-	if ($datatable = get_field('datasheet_table')) { ?>
+	if ( true === ( $datatable = get_field('datasheet-table') ) ) { ?>
 		<table class="datatable">
 			<?php
 				if ( ! empty( $datatable['header'] ) ) {
-					$headers = wp_list_pluck($datatable['header'], 'c');
+					$headers = wp_list_pluck( $datatable['header'], 'c' );
 
 					if ( ! empty( $headers ) ) { ?>
 						<thead>

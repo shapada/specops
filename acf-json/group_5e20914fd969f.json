@@ -3,10 +3,10 @@
     "title": "Single Resource: Images",
     "fields": [
         {
-            "key": "field_5e20915e61051",
-            "label": "Images",
-            "name": "images",
-            "type": "repeater",
+            "key": "field_5e21dd4713836",
+            "label": "Background Color",
+            "name": "block-bg-color",
+            "type": "radio",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,31 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "field_5e20917661052",
-            "min": 0,
-            "max": 2,
-            "layout": "row",
-            "button_label": "Add Image",
+            "choices": {
+                "ffffff": "White",
+                "e6e6e6": "Light Grey"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5e20915e61051",
+            "label": "Images",
+            "name": "images-block",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_5e20917661052",
@@ -46,6 +66,30 @@
                     "mime_types": "png, jpg, jpeg"
                 },
                 {
+                    "key": "field_5e260fdd2d107",
+                    "label": "Image One",
+                    "name": "image-one-content",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5e21e50da1e1a",
                     "label": "Description",
                     "name": "description",
@@ -63,32 +107,32 @@
                     "maxlength": 30,
                     "rows": "",
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5e2610212d108",
+                    "label": "Image Two",
+                    "name": "image-two-content",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "large",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
-        },
-        {
-            "key": "field_5e21dd4713836",
-            "label": "Background Color",
-            "name": "background-color",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "ffffff": "White",
-                "e6e6e6": "Light Grey"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value",
-            "save_other_choice": 0
         }
     ],
     "location": [
@@ -108,5 +152,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1579281459
+    "modified": 1579552930
 }
