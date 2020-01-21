@@ -28,6 +28,7 @@ a {
     text-decoration: none;
     text-decoration-line: none;
     color: #125071;
+    transition: .5s ease;
     &:active,
     &:focus,
     &:hover {
@@ -461,7 +462,7 @@ pre[class*="language-"] {
 }
 
 @media screen and (max-width: 767px) {
- 
+
     html.mobile-menu-active {
         overflow: hidden;
     }

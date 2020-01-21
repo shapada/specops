@@ -2,11 +2,11 @@
     #product-features {
         color: $color-white;
     }
- 
+
     #tryfree {
         padding: 80px 30px 18px;
     }
-    
+
     #product-benefits {
         background: #f2f2f3;
         padding: 110px 30px 15px;
@@ -26,7 +26,7 @@
         }
 
         .benefit-content {
-            
+
             float: left;
             width: 66.67%;
             padding-left: 30px;
@@ -75,7 +75,7 @@
         }
 
         .product-banner-text {
-            
+
             padding-right: 60px;
         }
 
@@ -133,9 +133,9 @@
                         left: 0;
                     }
                 }
-            } 
+            }
         }
-        
+
     }
 
     #product-cta {
@@ -144,6 +144,7 @@
         text-align: center;
 
         p {
+          display: inline-block;
             margin: 0;
             padding: 0;
             font-size: 20px;
@@ -362,7 +363,7 @@
                 justify-content: flex-start;
             }
         }
-        
+
         >#product-related {
             >ul {
                 li {
@@ -391,7 +392,7 @@
                 font-weight: normal;
             }
         }
-        
+
         >#product-case-studies {
             >ul {
                 li {
@@ -470,11 +471,11 @@
                 color: #d1db2d;
             }
         }
-        
+
         li.hidden {
             display: none;
         }
-        
+
         li.active {
             font-size: 24px;
         }
@@ -509,18 +510,18 @@
             overflow: hidden;
             padding-right: 60px;
         }
-        
+
         .resource-thumb-wrap {
             float: left;
             width: 80px;
             height: 80px;
             background: #eee;
         }
-        
+
         img {
             width: 80px;
         }
-        
+
         h3 {
             font-size: 17px;
             font-weight: normal;
@@ -598,7 +599,7 @@
                 }
             }
         }
-        
+
         .summary-height {
             >.row {
                 >.columns-6 {
@@ -651,7 +652,7 @@
     padding: 20px 30px 20px;
     background: #edeced;
 	text-align: center;
-	
+
 	p {
 		margin: 0;
 		padding: 0;
@@ -782,7 +783,7 @@ h2.product-section-title {
     .laptop-wrap {
         position: absolute;
         right: 82px;
-        top: 14px;
+        top: 20px;
         &::before {
             content: '';
             background: url('../../images/spec-laptop.png');
@@ -795,7 +796,7 @@ h2.product-section-title {
             height: 388px;
             z-index: 2;
         }
-        
+
         img {
             position: relative;
             top: 21px;
@@ -813,7 +814,7 @@ h2.product-section-title {
                 padding: 0;
             }
         }
-        
+
         .laptop-wrap {
             right: -20%;
             left: 50%;
@@ -858,13 +859,13 @@ h2.product-section-title {
                 margin-left: -30%;
             }
         }
-        
+
         a.button {
             margin-bottom: 20px;
             width: 100%;
             max-width: 420px;
         }
-        
+
         .laptop-wrap {
             position: relative;
             left: auto;
@@ -888,7 +889,7 @@ h2.product-section-title {
             bottom: auto;
             margin: 0 auto 15px;
         }
-        
+
         #product-reviews {
             li {
                 width: 100%;
@@ -896,7 +897,7 @@ h2.product-section-title {
                 padding-bottom: 30px;
             }
         }
-        
+
         .row {
             >#product-related {
                 >ul {
@@ -1010,7 +1011,7 @@ h2.product-section-title {
                 padding: 40px 15px 10px;
             }
         }
-        
+
         .benefit-title {
             float: none;
             width: 100%;
@@ -1018,7 +1019,7 @@ h2.product-section-title {
             border: none;
             padding: 0;
         }
-        
+
         .benefit-content {
             float: none;
             width: 100%;
@@ -1034,7 +1035,7 @@ h2.product-section-title {
             display: block;
             float: none;
         }
-        
+
         .button {
             width: 100%;
             max-width: 420px;
@@ -1063,11 +1064,11 @@ h2.product-section-title {
             padding: 0;
             min-height: auto;
         }
-        
+
         .tab-panel {
             width: 100%;
         }
-        
+
         .row {
             >div {
                 >ul {
@@ -1093,7 +1094,7 @@ h2.product-section-title {
                 }
             }
         }
-        
+
         .product-resource-list {
             a {
                 padding-right: 0;
@@ -1103,7 +1104,7 @@ h2.product-section-title {
                 min-height: 96.5px;
             }
         }
-        
+
         #product-reviews {
             li {
                 padding-bottom: 15px;
@@ -1133,7 +1134,7 @@ h2.product-section-title {
             }
         }
     }
-   
+
     .single-product {
         .ti-top-spacer {
             padding: 0 !important;

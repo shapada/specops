@@ -18,7 +18,7 @@
     .case-study-listing {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 10px;
+        margin-bottom: 3.75em;
     }
     .case-study {
         width: 100%;
@@ -38,7 +38,7 @@
             background: linear-gradient(180deg, #f4f4f4 0%, #e8e8e8 100%);
             pointer-events: none;
         }
-        
+
         a {
             color: inherit;
             text-decoration: none;
@@ -89,8 +89,6 @@
     }
     .case-study-featured {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 900px;
         max-width: 100%;
         margin: 0 auto;
@@ -111,12 +109,12 @@
 #case-studies-reviews {
     position: relative;
     background: #f4f4f4;
-    padding: 30px 0;
+    padding: 3.75em 0;
 
     .case-studies-reviews-heading {
         text-align: center;
         margin-bottom: 5px;
-        
+
         h2 {
             font-size: 32px;
             padding: 0;
@@ -129,7 +127,7 @@
         column-gap: 10%;
 
         &:after {
-            content: ''; 
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
@@ -146,6 +144,10 @@
         margin-bottom: 5px;
         padding-top: 30px;
         border-top: 1px solid $color-grey;
+
+        a {
+          text-decoration: underline;
+        }
 
         p {
             color: #454545;
@@ -197,7 +199,7 @@
                 margin-right: auto;
             }
         }
-        
+
         >.case-banner {
             width: calc(100% - 30px);
             max-width: 400px;
@@ -234,7 +236,7 @@
             background: #115071;
             padding: 0 15px 30px;
         }
-        
+
         .button {
             text-align: center;
             width: 270px;
@@ -244,11 +246,11 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .case-banner-img {
             width: 224px;
         }
-        
+
         .case-banner-blurb {
             color: $color-white;
             font-weight: bold;
@@ -298,7 +300,7 @@
         .case-study-listing {
             margin-bottom: 60px;
         }
-        
+
         .case-study {
             width: calc((100% - 20px) / 2);
             margin: 0 19.9px 30px 0;
@@ -310,25 +312,25 @@
                 padding: 20px 40px 40px;
             }
         }
-        
+
         .case-study-title {
             font-size: 22px;
             a {
                 font-size: 22px;
             }
         }
-        
+
         .case-study-featured-wrap {
             padding-bottom: 60px;
             border-bottom: 1px solid #d4d4d4;
             max-width: 1170px;
         }
-        
+
         .case-study-featured {
             flex-direction: row;
             align-items: flex-start;
         }
-        
+
         .case-study-featured-content {
             padding-left: 5.5%;
             text-align: left;
@@ -343,7 +345,7 @@
             -webkit-column-gap: 10%;
             column-gap: 10%;
         }
-        
+
         .review {
             &:first-child {
                 padding-top: 15px;
@@ -358,7 +360,7 @@
                 width: 100%;
             }
         }
-    } 
+    }
 }
 
 @media screen and (max-width: 429px) {
@@ -397,14 +399,14 @@
                 padding-left: 20px;
             }
         }
-        
+
         .case-study-content {
             >.case-banner {
                 max-width: 1185px;
                 margin: 75px auto auto;
             }
         }
-        
+
         .case-banner {
             >div {
                 flex-direction: row;
@@ -442,7 +444,7 @@
 }
 
 @media screen and (min-width: 767px) {
-   
+
     #case-studies-reviews {
 
         .case-studies-reviews-listing {
@@ -451,7 +453,7 @@
             -webkit-column-gap: 10%;
             column-gap: 10%;
         }
-    
+
         .review {
             padding-top: 40px;
             margin-bottom: 15px;
@@ -459,7 +461,7 @@
     }
 
     #case-studies {
-        
+
         .case-study-featured-img {
             width: 30%;
             max-width: 200px;
