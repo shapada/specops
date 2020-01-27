@@ -1,0 +1,57 @@
+
+.related-resources-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      flex: 1;
+    }
+    > li + li {
+      margin: 5em 0;
+    }
+    .related-resource {
+        width: 100%;
+        font-weight: normal;
+        min-width: 300px;
+        margin: .5em 0;
+
+        a {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            background-color: $color-white;
+            color: $color-charcoal;
+            &:hover {
+                h5 {
+                    color: #154865;
+                }
+            }
+            .card-header {
+                padding: 20px;
+                position: relative;
+                background-color: $color-lightgrey-alt;
+                background-image: url("http://specopssoft.com/wp-content/themes/specops/styles/css/../../images/graph-bg.png"), linear-gradient(180deg, #f4f4f4 0%, #e8e8e8 100%);
+                background-repeat: no-repeat;
+                background-position: 5% 50%;
+                min-height: 110px;
+                h5 {
+                    position: absolute;
+                    font-size: 1.125rem;
+                    bottom: 0;
+                    left: 5%;
+                    font-weight: bold;
+                }
+            }
+            .card-body {
+                color: #303232;
+                padding: 20px;
+                font-size: 1rem;
+                font-family: $font-family-secondary-sans;
+                font-weight: normal;
+            }
+        }
+    }
+}

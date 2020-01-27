@@ -1,0 +1,58 @@
+.datasheet-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+        margin-bottom: .75em;
+        padding: 0;
+    }
+    p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+        width: 80%;
+        margin-bottom: .75em;
+    }
+    .datatable {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: .875rem;
+        thead {
+            color: $color-white;
+            background-color: #103F59;
+            text-align: center;
+            th {
+                padding: .5em;
+            }
+        }
+        tbody {
+            background-color: $color-white;
+            td {
+                padding: .3125em;
+                border: 1px solid #CFCFCF;
+                text-align: center;
+                &:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &:last-child {
+          margin-bottom: 4em;
+        }
+    }
+}
+
+@media( max-width: 639px) {
+  tr td:first-child {
+      background-color: #103F59;
+      color: #fff;
+      padding: .75em;
+  }
+  .tablesaw-cell-label {
+      width: 50%;
+  }
+}

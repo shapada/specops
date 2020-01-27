@@ -1,0 +1,16 @@
+.content-block {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative; */
+  padding: 2em 0;
+
+}
+
+@media screen and (max-width:767px) {
+  .content-block .content-block-body .image-content {
+    text-align: center;
+    margin-right: auto;
+  }
+}
