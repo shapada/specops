@@ -59,9 +59,9 @@
                         "id": ""
                     },
                     "choices": {
-                        "text-half": "Half Text, Half Image",
-                        "text-one-third": "One-Third Text, Two-Thirds Image",
-                        "text-two-thirds": "Two-Thirds Text, One-Third Image"
+                        "half-width": "Half Text, Half Image",
+                        "one-third-width": "One-Third Text, Two-Thirds Image",
+                        "two-thirds-width": "Two-Thirds Text, One-Third Image"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -165,7 +165,7 @@
                 {
                     "key": "field_5e28d06bf2390",
                     "label": "Text",
-                    "name": "text-block",
+                    "name": "text-content",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -201,5 +201,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580164495
+    "modified": 1580167211
 }

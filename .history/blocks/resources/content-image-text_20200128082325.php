@@ -33,11 +33,11 @@ if ( have_rows( 'image-text' ) ):
 		</h2>
 	<?php endif; ?>
 
-	<div class="image-text-block d-flex align-items-center justify-content-between <?php echo esc_attr( $content_css ); ?> <?php echo esc_attr( $width_css ); ?>">
+	<div class="image-text-content d-flex align-items-center justify-content-between <?php echo esc_attr( $content_css ); ?>">
 		<div class="image-block">
 			<img src="<?php echo esc_url( wp_get_attachment_image_url( $image_id, 'large' ) ); ?>">
 		</div>
-		<div class="text-block">
+		<div class="text-block <?php echo esc_attr( $width_css ); ?>">
 			<?php echo wp_filter_post_kses( $text_content ); ?>
 		</div>
 	</div>

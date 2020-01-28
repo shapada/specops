@@ -9,7 +9,7 @@
 
     .image-block {
       width: 31%;
-      max-width: 300px;
+      min-width: 550px;
     }
   }
 
@@ -40,7 +40,7 @@
   img {
     width: 100%;
     max-height: 100%;
-    max-width: 550px;
+    max-width: 500px;
   }
 
   &::before {

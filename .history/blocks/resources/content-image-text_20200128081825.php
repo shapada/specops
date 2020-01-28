@@ -13,6 +13,9 @@ if ( have_rows( 'image-text' ) ):
 
 <?php
 	while( have_rows( 'image-text' ) ): the_row();
+
+		$text_width_style = get_sub_field( 'layout' );
+
 		$heading 		  = get_sub_field( 'heading' );
 		$heading_position = get_sub_field( 'heading-position' );
 
@@ -25,7 +28,6 @@ if ( have_rows( 'image-text' ) ):
 
 		$heading_css  = ! empty( $heading_position ) ? 'text-align-left' : '';
 		$content_css  = ! empty( $image_position ) && 'right' === $image_position ? 'reverse-block' : '';
-		$width_css 	  = get_sub_field( 'layout' );
 ?>
 	<?php if( ! empty( $heading ) ): ?>
 		<h2 class="content-block-heading <?php echo esc_attr( $heading_css ); ?>">
@@ -33,11 +35,11 @@ if ( have_rows( 'image-text' ) ):
 		</h2>
 	<?php endif; ?>
 
-	<div class="image-text-block d-flex align-items-center justify-content-between <?php echo esc_attr( $content_css ); ?> <?php echo esc_attr( $width_css ); ?>">
+	<div class="image-text-content d-flex align-items-center justify-content-between <?php echo esc_attr( $content_css ); ?>">
 		<div class="image-block">
 			<img src="<?php echo esc_url( wp_get_attachment_image_url( $image_id, 'large' ) ); ?>">
 		</div>
-		<div class="text-block">
+		<div class="text-block <?php echo esc_attr( $text_width_style ); ?>">
 			<?php echo wp_filter_post_kses( $text_content ); ?>
 		</div>
 	</div>

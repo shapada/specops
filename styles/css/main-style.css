@@ -1410,15 +1410,28 @@ hr.sep {
   padding: 4em 0;
 }
 
-.content-block .text-two-thirds {
-  width: 67%;
+.content-block .two-thirds-width .text-block {
+  width: 65%;
 }
 
-.content-block .text-one-third {
-  width: 33%;
+.content-block .two-thirds-width .image-block {
+  width: 31%;
+  max-width: 300px;
 }
 
-.content-block .text-half {
+.content-block .one-third-width .text-block {
+  width: 31%;
+}
+
+.content-block .one-third-width .image-block {
+  width: 65%;
+}
+
+.content-block .half-width .text-block {
+  width: 48%;
+}
+
+.content-block .half-width .image-block {
   width: 48%;
 }
 
@@ -1429,6 +1442,7 @@ hr.sep {
 .content-block img {
   width: 100%;
   max-height: 100%;
+  max-width: 550px;
 }
 
 .content-block::before {
@@ -1460,7 +1474,7 @@ hr.sep {
     width: 100%;
     text-align: center;
   }
-  .image-text-content {
+  .image-text-block {
     flex-wrap: wrap;
   }
   .content-block {

@@ -3,23 +3,24 @@
   padding: 4em 0;
 
   .two-thirds-width {
+    width: 65%;
+
     .text-block {
       width: 65%;
     }
 
     .image-block {
       width: 31%;
-      max-width: 300px;
     }
   }
 
   .one-third-width {
     .text-block {
-      width: 31%;
+      width: 31%%;
     }
 
     .image-block {
-      width: 65%;
+      width: 65%%;
     }
   }
 
@@ -40,7 +41,7 @@
   img {
     width: 100%;
     max-height: 100%;
-    max-width: 550px;
+    max-width: 500px;
   }
 
   &::before {
@@ -75,7 +76,7 @@
     text-align: center;
   }
 
-  .image-text-block {
+  .image-text-content {
     flex-wrap: wrap;
   }
 
