@@ -1,0 +1,36 @@
+// The font sizes for h1-h6.
+$base-font-size: 16px;
+$h1-font-size: 2 * $base-font-size !default;
+$h2-font-size: 1.75 * $base-font-size !default;
+$h3-font-size: 1.5 * $base-font-size !default;
+$h4-font-size: 1.375 * $base-font-size !default;
+$h5-font-size: 1.25 * $base-font-size !default;
+$h6-font-size: 1.125 * $base-font-size !default;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-lightgrey: #f2f2f2;
+$color-lightgrey-alt: #E8E8E8;
+$color-grey: #d4d4d4;
+$color-steelblue: #115071;
+$color-darkgrey: #666666;
+$color-charcoal: #303232;
+$color-yellowgreen: #CDEB00;
+$color-yellow: #D1DB2D;
+$color-bitterlemon: #d1db2d;
+
+$color-yellow: rgba( 205, 235, 0, 1 );
+$color-black: rgba( 37, 37, 37, 1 );
+$color-darkblue: rgba( 21, 72, 101, 1 );
+$color-lightbrown: rgba( 200, 175, 150, 1 );
+$color-bluegreen: rgba( 51, 191, 200, 1 );
+$color-orange: rgba( 251, 165, 0, 1 );
+$color-red: rgba( 196, 36, 37, 1 );
+$color-purple: rgba( 103, 46, 123, 1 );
+
+// Font families
+$font-family-primary-sans: 'Roboto', sans-serif;
+$font-family-secondary-sans: Arial, Helvetica, sans-serif;
+$font-family-secondary-alt-sans: Arial,'aktiv-grotesk-std', serif;
+

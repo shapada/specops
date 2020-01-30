@@ -1,0 +1,36 @@
+.case-banner {
+  background: $color-steelblue;
+  color: $color-white;
+  width: calc(120% - 30px);
+  max-width: 1185px;
+  margin: 75px auto auto;
+
+  .case-banner-img {
+    width: 270px;
+    padding-top: 48px;
+  }
+
+  .case-study-link {
+    width: 270px;
+  }
+
+  .case-banner-blurb {
+    width: calc(100% - (270px * 2));
+    font-weight: 700;
+    font-size: 1.875em;
+    text-align: center;
+    padding: 15px 30px;
+    line-height: 1.3;
+
+  }
+
+
+  > div {
+    height: 136px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 38px 0 8px;
+  }
+}

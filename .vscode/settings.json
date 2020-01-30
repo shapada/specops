@@ -2,6 +2,7 @@
 	"favorites.resources": [
 		"styles/scss",
 		"single-resources.php",
-		"blocks/resources"
+		"blocks/resources",
+		"styles/css/main-style.css"
 	]
 }

@@ -1,0 +1,22 @@
+.case-banner {
+  background: $color-steelblue;
+  color: $color-white;
+  width: calc(120% - 30px);
+  max-width: 1185px;
+  margin: 75px auto;
+
+  .case-banner-blurb {
+    font-weight: 700;
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 30px;
+    line-height: 1.2;
+  }
+
+  > .columns-12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

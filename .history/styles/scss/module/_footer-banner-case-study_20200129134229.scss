@@ -1,0 +1,8 @@
+.case-banner {
+  background: $color-steelblue;
+  color: $color-white;
+
+  > div {
+    display: flex;
+  }
+}

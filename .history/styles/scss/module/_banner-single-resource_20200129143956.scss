@@ -1,0 +1,17 @@
+.single-resource-banner {
+
+  .banner-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+      width: 65%;
+    }
+  }
+
+  .resource-topic {
+    text-decoration: none;
+  }
+}
