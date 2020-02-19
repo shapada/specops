@@ -1,0 +1,13 @@
+@import 'abstracts/typography';
+@import 'abstracts/colors';
+
+palette(brand, lightgrey): #f2f2f2;
+palette(brand, lightgrey)-alt: #e8e8e8;
+
+$color-steelblue: $color-primary-blue;
+$color-steelblue-dark: $color-primary-blue;
+
+$color-charcoal: $color-darkgrey;
+
+$color-yellow: $color-primary-yellow;
+

@@ -1,0 +1,51 @@
+{
+    "key": "group_5dc2deb4ae1d8",
+    "title": "Language",
+    "fields": [
+        {
+            "key": "field_5dc2debbe26a6",
+            "label": "Choose Language",
+            "name": "specops_language",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "en-US": "English",
+                "de": "German"
+            },
+            "default_value": [
+                "en-US"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1573055364
+}

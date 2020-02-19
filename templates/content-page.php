@@ -10,17 +10,17 @@
 		
 		<h1 class="entry-title">
 			<?php
-            
-                if (is_archive('ht_kb') || is_tax('ht_kb_category') || is_singular('ht_kb')) :
+			
+				if ( is_archive( 'ht_kb' ) || is_tax( 'ht_kb_category' ) || is_singular( 'ht_kb' ) ) :
 
-                    echo '<a href="' . get_post_type_archive_link('ht_kb') . '">Knowledge Base</a>';
+					echo '<a href="' . get_post_type_archive_link( 'ht_kb' ) . '">Knowledge Base</a>';
 
-                else :
-                    echo the_title();
+				else :
+					echo the_title();
 
-                endif;
-                
-            ?>
+				endif;
+				
+			?>
 		</h1>
 	
 	</header><!-- .entry-header -->

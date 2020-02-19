@@ -10,42 +10,42 @@ get_header(); ?>
 			<div class="columns-12">
 
 				<?php
-                    // WP_Query arguments
-                    $args = array(
-                        'post_type'              => array( 'product' ),
-                        'post_status'            => array( 'publish' ),
-                        'nopaging'               => true,
-                        'order'                  => 'ASC',
-                        'orderby'                => 'menu_order',
-                    );
+					// WP_Query arguments
+					$args = array (
+						'post_type'              => array( 'product' ),
+						'post_status'            => array( 'publish' ),
+						'nopaging'               => true,
+						'order'                  => 'ASC',
+						'orderby'                => 'menu_order',
+					);
 
-                    // The Query
-                    $products = new WP_Query($args);
-                ?>
+					// The Query
+					$products = new WP_Query( $args );
+				?>
 				
-				<?php if ($products->have_posts()) : ?>
+				<?php if ( $products->have_posts() ) : ?>
 
 					<ul class="products block-grid-3">
 
-						<?php while ($products->have_posts()) : $products->the_post(); ?>
+						<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
-							<li <?php post_class($classes); ?>>
+							<li <?php post_class( $classes ); ?>>
 								<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 								<?php
-                                    $excerpt = get_field('single_product_overview_excerpt');
-                                    if ($excerpt) :
-                                ?>
+									$excerpt = get_field( 'single_product_overview_excerpt' );
+									if ( $excerpt ) :
+								?>
 									<p><?php echo $excerpt; ?></p>
 								<?php else : ?>
 									<?php
-                                        $overview = get_field('single_product_overview');
-                                    ?>
-									<p><?php echo wp_trim_words($overview, 20); ?></p>
+										$overview = get_field( 'single_product_overview' );
+									?>
+									<p><?php echo wp_trim_words( $overview, 20 ); ?></p>
 								<?php endif; ?>
 								<a href="<?php the_permalink(); ?>" class="button read-more">Read More</a>
 							</li>
 
-						<?php endwhile; // end of the loop.?>
+						<?php endwhile; // end of the loop. ?>
 
 					</ul>
 

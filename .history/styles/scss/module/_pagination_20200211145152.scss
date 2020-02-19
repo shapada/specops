@@ -1,0 +1,53 @@
+.pagination {
+  list-style: none;
+  margin: 15px 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    &:empty {
+      display: none;
+    }
+    a {
+      font-family: $font-family-primary-sans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      font-size: 1rem;
+      color: $color-charcoal;
+      padding: 5px 10px;
+    }
+  }
+  .current {
+    a {
+      background: $color-charcoal;
+      border-radius: 4px;
+      background-clip: padding-box;
+      color: palette( brand, yellow);
+    }
+  }
+  .prev {
+    vertical-align: middle;
+    a {
+      font-size: 0;
+      background: url(../../images/prev.png) no-repeat;
+      width: 15px;
+      height: 15px;
+      background-position: center;
+      display: block;
+      padding: 0;
+    }
+  }
+  .next {
+    vertical-align: middle;
+    a {
+      font-size: 0;
+      background: url(../../images/next.png) no-repeat;
+      width: 15px;
+      height: 15px;
+      background-position: center;
+      display: block;
+      padding: 0;
+    }
+  }
+}

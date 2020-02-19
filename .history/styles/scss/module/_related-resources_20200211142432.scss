@@ -1,0 +1,73 @@
+.related-article {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+.related-resources-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+    .related-resource {
+        flex: 1;
+        font-weight: normal;
+        box-sizing: content-box;
+        width: 30%;
+        min-width: 300px;
+
+        & + .related-resource {
+          margin-left: 1em;
+        }
+
+        a {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            background-color: $color-white;
+            color: $color-charcoal;
+            .card-header {
+                padding: 20px;
+                position: relative;
+                background-color: $color-lightgrey-alt;
+                background-image: url("http://specopssoft.com/wp-content/themes/specops/styles/css/../../images/graph-bg.png"), linear-gradient(180deg, #f4f4f4 0%, #e8e8e8 100%);
+                background-repeat: no-repeat;
+                background-position: 5% 50%;
+                min-height: 110px;
+                h5 {
+                    position: absolute;
+                    font-size: 1.125rem;
+                    bottom: 0;
+                    left: 5%;
+                    font-weight: bold;
+                }
+            }
+            .card-body {
+                color: #303232;
+                padding: 20px;
+                font-size: 1rem;
+                font-family: $font-family-primary-sans;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 945px ) {
+  .related-resource:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and ( max-width: 639px ) {
+  .related-resources-list {
+    .related-resource + .related-resource {
+      margin: 1em 0 0 1em;
+    }
+  }
+}

@@ -11,7 +11,7 @@
 
 <?php hkb_get_template_part('hkb-breadcrumbs', 'single'); ?>
 
-	<?php while (have_posts()) : the_post(); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="hkb-entry-content">
 
@@ -23,7 +23,7 @@
 
 					<?php hkb_get_template_part('hkb-single-attachments'); ?>
 
-					<?php //hkb_get_template_part('hkb-single-tags');?> 
+					<?php //hkb_get_template_part('hkb-single-tags'); ?> 
 
 					<?php do_action('ht_kb_end_article'); ?>
 					
@@ -33,6 +33,6 @@
 
 			</div>	
 
-	<?php endwhile; // end of the loop.?>
+	<?php endwhile; // end of the loop. ?>
 
 </div><!-- /#ht-kb -->

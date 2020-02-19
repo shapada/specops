@@ -1,0 +1,89 @@
+// ----- block grid fixes
+
+.lt-ie9 .block-grid-2 > li:first-child+li {
+	float: right
+}
+.lt-ie9 .block-grid-2 > li:first-child+li+li {
+	clear: both
+}
+ 
+
+.lt-ie9 .block-grid-3 > li:first-child+li+li {
+	float: right
+}
+ .lt-ie9 .block-grid-3 > li:first-child+li+li+li {
+	clear: both
+}
+ 
+ 
+.lt-ie9 .block-grid-4 > li:first-child+li+li+li {
+	float: right
+}
+ .lt-ie9 .block-grid-4 > li:first-child+li+li+li+li {
+	clear: both
+}
+ 
+
+.lt-ie9 .block-grid-5 > li:first-child+li+li+li+li {
+	float: right
+}
+ .lt-ie9 .block-grid-5 > li:first-child+li+li+li+li+li {
+	clear: both
+}
+ 
+
+.lt-ie9 .block-grid-6 > li:first-child+li+li+li+li+li {
+	float: right
+}
+ .lt-ie9 .block-grid-6 > li:first-child+li+li+li+li+li+li {
+	clear: both
+}
+
+
+.lt-ie9 .block-grid-7 > li:first-child+li+li+li+li+li+li {
+	float: right
+}
+ .lt-ie9 .block-grid-7 > li:first-child+li+li+li+li+li+li+li {
+	clear: both
+}
+ 
+
+.lt-ie9 .block-grid-8 > li:first-child+li+li+li+li+li+li+li {
+	float: right
+}
+.lt-ie9 .block-grid-8 > li:first-child+li+li+li+li+li+li+li+li {
+	clear: both
+}
+ 
+ 
+.lt-ie9 .block-grid-9 > li:first-child+li+li+li+li+li+li+li+li {
+	float: right
+}
+.lt-ie9 .block-grid-9 > li:first-child+li+li+li+li+li+li+li+li+li {
+	clear: both
+}
+
+
+.lt-ie9 .block-grid-10 > li:first-child+li+li+li+li+li+li+li+li+li {
+	float: right
+}
+ 
+.lt-ie9 .block-grid-10 > li:first-child+li+li+li+li+li+li+li+li+li+li {
+	clear: both
+}
+ 
+
+.lt-ie9 .block-grid-11 > li:first-child+li+li+li+li+li+li+li+li+li+li {
+	float: right
+}
+.lt-ie9 .block-grid-11 > li:first-child+li+li+li+li+li+li+li+li+li+li+li {
+	clear: both
+}
+ 
+ 
+.lt-ie9 .block-grid-12 > li:first-child+li+li+li+li+li+li+li+li+li+li+li {
+	float: right
+}
+.lt-ie9 .block-grid-12 > li:first-child+li+li+li+li+li+li+li+li+li+li+li+li {
+	clear: both
+}

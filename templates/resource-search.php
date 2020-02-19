@@ -1,13 +1,13 @@
 
-<?php
-    $bannerBackground = 'style="background: #d0cfd0;"';
-    $searchBackground = 'style="background: $color-white;"';
-    $labelText = '';
-    // if($_SERVER['REQUEST_URI'] != "/resources/") {
-        // $bannerBackground = 'style="background: #115071;"';
-        // $searchBackground = 'style="background: $color-white;"';
-        // $labelText = 'style="color: $color-white;"';
-    // }
+<?php 
+	$bannerBackground = 'style="background: #d0cfd0;"';
+	$searchBackground = 'style="background: #fff;"';
+	$labelText = '';
+	// if($_SERVER['REQUEST_URI'] != "/resources/") {
+		// $bannerBackground = 'style="background: #115071;"';
+		// $searchBackground = 'style="background: #fff;"';
+		// $labelText = 'style="color: #fff;"';
+	// }
 ?>
 <div class="blog-search-holder resources-search-holder" <?php echo $bannerBackground; ?> >
 
@@ -15,7 +15,7 @@
 
 		<div class="columns-10 column-center">
 
-			<!-- <form class="blog-search-form row" method="get" action="<?php the_field('resource_parent', 'options'); ?>"> -->
+			<!-- <form class="blog-search-form row" method="get" action="<?php the_field('resource_parent','options'); ?>"> -->
 
 			<form class="blog-search-form row" method="get" action="<?php echo get_permalink(8); ?>">
 
@@ -23,7 +23,7 @@
 
 					<label <?php echo $labelText; ?>>Keywords</label>
 
-					<?php if (isset($_GET['keyword']) && !empty($_GET['keyword'])): ?>
+					<?php if( isset( $_GET['keyword']) && !empty( $_GET['keyword'])): ?>
 
 						<input type="text" name="keyword" value="<?php echo $_GET['keyword']; ?>" />
 
@@ -44,16 +44,16 @@
 						<option value="">All</option>
 
 						<?php
-                            $resource_types = get_terms(
-    array(
-                                    'taxonomy' => 'resource-types',
-                                    'parent' => 0
-                                )
-);
-                            foreach ($resource_types as $resource_type):
-                        ?>
+							$resource_types = get_terms(
+								array(
+									'taxonomy' => 'resource-types',
+									'parent' => 0
+								)
+							);
+							foreach($resource_types as $resource_type):
+						?>
 
-							<?php if (isset($_GET['resource-type']) && $_GET['resource-type'] == $resource_type->slug): ?>
+							<?php if(isset($_GET['resource-type']) && $_GET['resource-type'] == $resource_type->slug): ?>
 
 								<option selected value="<?php echo $resource_type->slug; ?>"><?php echo $resource_type->name; ?></option>
 
@@ -70,7 +70,7 @@
 				</div>
 
 
-				<div class="columns-2 resource-topic-column">
+				<div class="columns-2 resource-topics-column">
 
 					<label <?php echo $labelText; ?>>Topic</label>
 
@@ -79,16 +79,16 @@
 						<option value="">All</option>
 
 						<?php
-                            $resource_topics = get_terms(
-                            array(
-                                    'taxonomy' => 'resource-topic',
-                                    'parent' => 0
-                                )
-                        );
-                            foreach ($resource_topics as $resource_topic):
-                        ?>
+							$resource_topics = get_terms(
+								array(
+									'taxonomy' => 'resource-topics',
+									'parent' => 0
+								)
+							);
+							foreach($resource_topics as $resource_topic):
+						?>
 
-							<?php if (isset($_GET['resource-topic']) && $_GET['resource-topic'] == $resource_topic->slug): ?>
+							<?php if(isset($_GET['resource-topic']) && $_GET['resource-topic'] == $resource_topic->slug): ?>
 
 								<option selected value="<?php echo $resource_topic->slug; ?>"><?php echo $resource_topic->name; ?></option>
 

@@ -1,0 +1,60 @@
+////////////////////////////////////
+//////         FONTS         ///////
+////////////////////////////////////
+
+@mixin aktiv($weight:300, $style:normal){
+	font-family: $font-family-primary;
+	font-style: $style;
+	font-weight: $weight;
+}
+
+@mixin proxima($weight:700){
+	font-family: $font-family-primary;
+	font-weight: $weight;
+}
+
+
+
+
+
+///////////////////////////////////
+//////        MIXINS        ///////
+///////////////////////////////////
+
+// Button Style //
+@mixin button ( $color:$green) {
+	@include ease();
+	border: none;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	position: relative;
+	overflow: visible;
+
+	@if $color == $green {
+
+		// Font Settings //
+		@include aktiv(700);
+		@include font-size( 16 );
+
+		color: $maintext;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		// Corners, Borders, and Padding //
+		@include rounded(4px);
+		padding: 15px 30px;
+
+		// Background color and Gradient and Border //
+		background: $green;
+
+		&:hover {
+			// Background color and Gradient and Border //
+			background: darken($green,10%);
+
+		}
+	}
+
+
+}

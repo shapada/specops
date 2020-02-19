@@ -1,0 +1,19 @@
+.support-contact {
+  #content form {
+    width: 500px;
+    max-width: 100%;
+    margin: 30px auto 60px;
+
+    label {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    textarea {
+      display: block;
+      min-height: 200px;
+      width: 100%
+    }
+  }
+}

@@ -15,9 +15,9 @@
 
 	<?php hkb_get_template_part('hkb-subcategories', 'taxonomy'); ?>
 
-    <?php if (have_posts()) : ?>
+    <?php if ( have_posts() ) : ?>
     
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
     		<?php hkb_get_template_part('hkb-content-article', 'taxonomy'); ?>
         
@@ -28,7 +28,7 @@
     <?php else : ?>
 
         <?php $subcategories = hkb_get_subcategories(hkb_get_term_id()); ?>
-        <?php if (!$subcategories): ?>
+        <?php if ( !$subcategories ): ?>
             <h2><?php _e('No articles in this category.', 'ht-knowledge-base'); ?></h2>
         <?php endif; ?>
         

@@ -1,0 +1,31 @@
+$base-font-size: 16px;
+$h1-font-size: 2 * $base-font-size !default;
+$h2-font-size: 1.75 * $base-font-size !default;
+$h3-font-size: 1.5 * $base-font-size !default;
+$h4-font-size: 1.375 * $base-font-size !default;
+$h5-font-size: 1.25 * $base-font-size !default;
+$h6-font-size: 1.125 * $base-font-size !default;
+
+$color-primary-darkgrey: #222; // charcoal?
+$color-primary-yellow: #cedc00;
+$color-primary-blue: #154865;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-grey: #d4d4d4;
+$color-darkgrey: #666666;
+$color-lightgrey: #f2f2f2;
+$color-lightgrey-alt: #e8e8e8;
+
+$color-steelblue: $color-primary-blue;
+$color-steelblue-dark: $color-primary-blue;
+
+$color-charcoal: $color-darkgrey;
+
+$color-yellow: $color-primary-yellow;
+
+$font-family-primary-sans: 'Roboto', sans-serif;
+$font-family-secondary-sans: Arial, Helvetica, sans-serif;
+$font-family-secondary-alt-sans: Arial,'aktiv-grotesk-std', serif;
+

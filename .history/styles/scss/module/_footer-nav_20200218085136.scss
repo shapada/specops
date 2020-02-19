@@ -1,0 +1,40 @@
+#footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    li {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 5px 10px;
+        width: 100%;
+        a {
+            font-family: $font-family-primary-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            font-size: 1rem;
+            color: palettes(mono, white);
+            padding: 10px;
+            &:hover {
+                color: #d1db2d;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #footer-nav {
+        li {
+            width: auto;
+            margin: 0 10px;
+       }
+   }
+}

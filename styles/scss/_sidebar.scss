@@ -1,0 +1,31 @@
+///////////////////////////////
+//////     SIDE BARS     //////
+///////////////////////////////
+
+aside[role=complementary] {
+
+}
+
+// Sidebar Widget Menu
+#secondary {
+	.widget_nav_menu {
+		li {
+		    display: none;
+		}
+	
+		li.current_page_item , 
+		.current-page-ancestor, 
+		.current_page_parent {
+	    	display: block;	
+    		ul, li, a{
+	    		display: block;
+    		}
+    	}
+	}
+
+	.widget {
+		+ .widget {
+			margin-top: 25px;
+		}
+	}
+}

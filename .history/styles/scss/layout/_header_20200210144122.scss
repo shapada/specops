@@ -1,0 +1,56 @@
+
+
+#masthead {
+    background: $color-lightgrey;
+    max-height: 100px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    padding: 20px 0px;
+    z-index: 100;
+
+    .site-branding {
+        float: left;
+    }
+
+    .admin-bar & {
+        top: 80px;
+    }
+
+    &.fixed-header {
+        top: 0;
+        position: fixed;
+        transition: top 0.4s;
+
+        &.hidden {
+            top: -100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .top-banner {
+        display: none;
+        position: static;
+    }
+
+
+    .site-header {
+        min-height: 100px;
+        height: auto;
+        top: 0px;
+    }
+
+
+ .site-branding {
+        position: static;
+        width: 83.33333%;
+        img {
+            padding-bottom: 0;
+            max-width: 200px;
+            padding-top: 5px;
+        }
+    }
+}

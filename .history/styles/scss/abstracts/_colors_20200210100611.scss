@@ -1,0 +1,24 @@
+@function palette($palette, $tone: 'base') {
+  @return map-get( map-get($palettes, $palette), $tone );
+}
+
+$palettes: (
+    mono: (
+        black: #000,
+        dark: #222,
+        base: #555,
+        light: #999,
+        white: #fff,
+    ),
+    brand: (
+        yellow: #cedc00,
+        blue: #154865,
+        dark-gray: palette( mono, dark ),
+        medium-gray: #9baeb2,
+        light-gray: #919598,
+    )
+);
+/*
+button {
+  background-color: palette(brand, teal);
+} */

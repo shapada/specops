@@ -1,0 +1,37 @@
+/*
+Theme Name: Anvil
+Author: Forge and Smith
+Author URI: http://forgeandsmith.com/
+Description: Theme for Forge and Smith
+Version: 2.0.0
+License: GNU General Public License
+License URI: license.txt
+*/
+.page-banner .banner-col h2 {
+    color: $color-white;
+}
+.ao-title {
+    background: palette( brand, yellow );
+    padding: 10px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+.ti-last-updated {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .site-header {
+        width: 90%;
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "key": "group_5e28c3430582a",
+    "title": "Single Resource: Datasheets",
+    "fields": [
+        {
+            "key": "field_5e28c34c268bb",
+            "label": "Background Color",
+            "name": "background-color",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ffffff": "White",
+                "e6e6e6": "Light Grey"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "ffffff : White",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5e28c409268bd",
+            "label": "Datasheets",
+            "name": "datasheets",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5e28c48a268c0",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Datasheet",
+            "sub_fields": [
+                {
+                    "key": "field_5e28c44e268be",
+                    "label": "Heading",
+                    "name": "datasheet-heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e28c478268bf",
+                    "label": "Description",
+                    "name": "datasheet-description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5e28c48a268c0",
+                    "label": "Table",
+                    "name": "datasheet-table",
+                    "type": "table",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "use_header": 1,
+                    "use_caption": 2
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/datasheets"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1580488710
+}

@@ -1,0 +1,109 @@
+.top-banner {
+    background: $color-charcoal;
+    color: palette(mono, white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 200;
+
+    .columns-12 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-bar-tagline {
+        float: left;
+        color: palette(mono, white);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.75rem;
+        letter-spacing: 0.025em;
+        padding-left: 2px;
+    }
+
+    #utility-nav {
+        display: inline-block;
+        font-size: .875rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        >li {
+            display: inline-block;
+            vertical-align: top;
+
+            + li {
+                margin-left: 20px;
+            }
+        }
+
+        a {
+            color: palette(mono, white);
+            font-size: .875rem;
+
+            &:hover {
+                color: #d1db2d;
+            }
+        }
+    }
+}
+
+#masthead {
+    background: palette(brand, lightgrey);
+    max-height: 100px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    padding: 20px 0px;
+    z-index: 100;
+    .site-branding {
+        float: left;
+    }
+    .admin-bar & {
+        top: 80px;
+    }
+
+    &.fixed-header {
+        top: 0;
+        position: fixed;
+        -webkit-transition: top 0.4s;
+        -o-transition: top 0.4s;
+        transition: top 0.4s;
+
+        &.hidden {
+            top: -100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .top-banner {
+        display: none;
+        position: static;
+    }
+
+
+    .site-header {
+        min-height: 100px;
+        height: auto;
+        top: 0px;
+    }
+
+
+ .site-branding {
+        position: static;
+        width: 83.33333%;
+        img {
+            padding-bottom: 0;
+            max-width: 200px;
+            padding-top: 5px;
+        }
+    }
+}

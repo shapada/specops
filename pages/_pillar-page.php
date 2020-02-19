@@ -11,31 +11,31 @@
 <?php
 
 // Vars
-$show_menu    = get_field('pillar_show_submenu');
-$show_modal   = get_field('pillar_show_modal');
+$show_menu    = get_field( 'pillar_show_submenu' );
+$show_modal   = get_field( 'pillar_show_modal' );
 
-$cta = get_field('pillar_cta_group');
+$cta = get_field( 'pillar_cta_group' );
 $button_label = $cta['pillar_button_label'];
 $button_url = $cta['pillar_button_link']['url'];
 $modal_title = $cta['pillar_modal_title'];
 
 $menu_items = [];
-$blocks = parse_blocks(get_the_content());
+$blocks = parse_blocks( get_the_content() );
 $content = '';
 $i = 0;
 $j = 0;
 
-foreach ($blocks as $block) {
-    if (($i !== 0) && ($block['blockName'] === 'acf/pillar-page-section')) {
-        $menu_label = $block['attrs']['data']['pillar_menu_label'];
-        $menu_link = sanitize_title_with_dashes($menu_label);
+foreach ( $blocks as $block ) {
+  if ( ( $i !== 0 ) && ( $block['blockName'] === 'acf/pillar-page-section' ) ) {
+    $menu_label = $block['attrs']['data']['pillar_menu_label'];
+		$menu_link = sanitize_title_with_dashes( $menu_label );
 
-        if ($menu_label) {
-            array_push($menu_items, array( 'label' => $menu_label, 'link' => $menu_link ));
-        }
+    if ( $menu_label ) {
+      array_push( $menu_items, array( 'label' => $menu_label, 'link' => $menu_link ) );
     }
-    
-    $i++;
+	}
+	
+	$i++;
 }
 
 ob_start(); ?>
@@ -56,7 +56,7 @@ ob_start(); ?>
 
 		<div class="pillar-menu-list-wrap">
 			<ul>
-				<?php foreach ($menu_items as $menu_item) : ?>
+				<?php foreach ( $menu_items as $menu_item ) : ?>
 					<li><a href="#<?php echo $menu_item['link']; ?>"><?php echo $menu_item['label']; ?></a></li>
 				<?php endforeach; ?>
 			</ul>
@@ -70,15 +70,15 @@ ob_start(); ?>
 
 $menu = ob_get_clean();
 
-foreach ($blocks as $block) {
-    if (($j === 0) && ($blocks[0]['blockName'] === 'acf/pillar-page-section') && $show_menu) {
-        $content .= str_replace(array( '<h2>', '</h2>', 'id=""' ), array( '<h1>', '</h1>', 'id="first-section"' ), render_block($block));
-        $content .= $menu;
-    } else {
-        $content .= render_block($block);
-    }
+foreach ( $blocks as $block ) {
+  if ( ( $j === 0 ) && ( $blocks[0]['blockName'] === 'acf/pillar-page-section' ) && $show_menu ) {
+    $content .= str_replace( array( '<h2>', '</h2>', 'id=""' ), array( '<h1>', '</h1>', 'id="first-section"' ), render_block( $block ) );
+    $content .= $menu;
+  } else {
+    $content .= render_block( $block );
+  }
 
-    $j++;
+  $j++;
 }
 
 echo $content;
@@ -87,7 +87,7 @@ echo $content;
 
 </div>
 
-<?php if ($show_modal) : ?>
+<?php if ( $show_modal ) : ?>
 	<div class="pillar-modal">
 		<div class="row">
 		<div class="columns-12">

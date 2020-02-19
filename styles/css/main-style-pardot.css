@@ -15,7 +15,7 @@ audio:not([controls]){
     display:none
 }
 html{
-    background:$color-white;
+    background:#fff;
     color:#000;
     font-family:sans-serif;
     -ms-text-size-adjust:100%;
@@ -203,7 +203,7 @@ html{
     font-size:100%
 }
 body{
-    color:$color-charcoal;
+    color:#303232;
     font-size:100%;
     overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
@@ -253,56 +253,56 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
     text-decoration:none
 }
 h1{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
     font-size:2rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 h2{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
     font-size:1.75rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:24px;
     font-size:1.5rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:22px;
     font-size:1.375rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:20px;
     font-size:1.25rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
@@ -311,10 +311,10 @@ h5 a{
     text-decoration:none
 }
 h6{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
-    color:$color-charcoal;
+    color:#303232;
     font-size:18px;
     font-size:1.125rem;
     line-height:1;
@@ -368,12 +368,12 @@ a:active,a:focus,a:hover{
     line-height:1;
     position:relative;
     overflow:visible;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
     font-size:1rem;
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:none;
     text-transform:uppercase;
     border-radius:4px;
@@ -385,11 +385,11 @@ a:active,a:focus,a:hover{
 .button:focus,
 .button:active{
     background:#adb61f;
-    color: $color-charcoal;
+    color: #303232;
     text-decoration:none
 }
 a.read-more{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -551,12 +551,12 @@ form input[type=button],form input[type=submit]{
     line-height:1;
     position:relative;
     overflow:visible;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
     font-size:1rem;
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:none;
     text-transform:uppercase;
     border-radius:4px;
@@ -872,7 +872,7 @@ li.gf_fourth_quarter{
     font-size:6pt;
     padding:5px 0;
     text-align:center;
-    text-shadow:1px 0 0 $color-white;
+    text-shadow:1px 0 0 #fff;
     text-transform:uppercase
 }
 .ui-datepicker tbody td{
@@ -896,7 +896,7 @@ li.gf_fourth_quarter{
     height:30px;
     line-height:30px;
     text-align:center;
-    text-shadow:1px 1px 0 $color-white;
+    text-shadow:1px 1px 0 #fff;
     width:30px
 }
 .ui-datepicker-calendar .ui-state-default{
@@ -911,14 +911,14 @@ li.gf_fourth_quarter{
     background:none repeat scroll 0 0 #f7f7f7
 }
 .ui-datepicker-calendar .ui-state-active{
-    background:none repeat scroll 0 0 $color-white2aa;
+    background:none repeat scroll 0 0 #fff2aa;
     border:1px solid #c19163;
     -webkit-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.1) inset;
     color:#666;
     margin:-1px;
     position:relative;
-    text-shadow:0 1px 0 $color-white
+    text-shadow:0 1px 0 #fff
 }
 .ui-datepicker-unselectable .ui-state-default{
     background:none repeat scroll 0 0 #f4f4f4;
@@ -952,7 +952,7 @@ body div#ui-datepicker-div[style]{
     width:100%
 }
 #ao_alignment_container .formField .formFieldLabel{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -970,7 +970,7 @@ body div#ui-datepicker-div[style]{
 }
 
 .top-banner{
-    background:$color-charcoal!important;
+    background:#303232!important;
     padding-top:10px;
     padding-bottom:10px;
     text-align:right;
@@ -995,7 +995,7 @@ body div#ui-datepicker-div[style]{
     vertical-align:top
 }
 .top-banner #utility-nav>li>a{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     color:white;
@@ -1025,7 +1025,7 @@ body div#ui-datepicker-div[style]{
     text-decoration:none
 }
 .site-header{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:1rem;
@@ -1041,13 +1041,13 @@ body div#ui-datepicker-div[style]{
     top:80px
 }
 .site-header .row{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:1rem
 }
 .menu-main-menu-container,.menu-main-menu-swedish-container{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:1rem;
@@ -1057,7 +1057,7 @@ body div#ui-datepicker-div[style]{
     padding-top:4px
 }
 #site-navigation{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:1rem;
@@ -1138,7 +1138,7 @@ body div#ui-datepicker-div[style]{
     height:39px
 }
 #ubermenu-nav-main-2-primary>li:hover>a {
-    background:$color-charcoal;
+    background:#303232;
     color:#d1db2d
 }
 #ubermenu-nav-main-2-primary>li:hover>a:hover{
@@ -1152,7 +1152,7 @@ body div#ui-datepicker-div[style]{
 }*/
 #ubermenu-nav-main-2-primary a:not(.ss-icon),
 #ubermenu-nav-main-2-primary span.ubermenu-target {
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -1160,7 +1160,7 @@ body div#ui-datepicker-div[style]{
     display:-moz-inline-stack;
     display:inline-block;
     zoom:1;
-    color:$color-charcoal;
+    color:#303232;
     padding:14px 20px;
     margin:0 5px;
     background:none;
@@ -1170,7 +1170,7 @@ body div#ui-datepicker-div[style]{
 @media screen and (max-width: 767px) {
     #ubermenu-nav-main-2-primary > li > a:not(.ss-icon) {
         width: 100%;
-        color: $color-white;
+        color: #fff;
     }
     #ubermenu-nav-main-2-primary > li > a:not(.ss-icon):hover {
         width: 100%;
@@ -1256,7 +1256,7 @@ body div#ui-datepicker-div[style]{
     opacity: 0.7;
 }
 #ubermenu-nav-main-2-primary .ubermenu-tabs-group > .ubermenu-active {
-    background: $color-charcoal;
+    background: #303232;
 }
 #ubermenu-nav-main-2-primary .ubermenu-tabs-group > .ubermenu-active > a,
 #ubermenu-nav-main-2-primary .ubermenu-tabs-group > .ubermenu-active > span.ubermenu-target {
@@ -1267,7 +1267,7 @@ body div#ui-datepicker-div[style]{
         position: relative;
         right: auto !important;
         display: inline-block;
-        margin-left: 7px;
+        margin-left: 7px;   
     }
 }
 @media screen and (max-width: 767px) {
@@ -1275,13 +1275,13 @@ body div#ui-datepicker-div[style]{
         position: static;
     }
     #ubermenu-nav-main-2-primary {
-        background: $color-charcoal;
+        background: #303232;
         position: absolute !important;
         top: 100px;
         left: 0;
         right: 0;
         padding: 0;
-        max-height: calc(100vh - 100px);
+        max-height: calc(100vh - 100px); 
         overflow: auto !important;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1299,7 +1299,7 @@ body div#ui-datepicker-div[style]{
         border-bottom: 2px solid #2b2d2d;
     }
     #ubermenu-nav-main-2-primary > li > a {
-        color: $color-white;
+        color: #fff;
         text-transform: uppercase;
         font-size: 20px !important;
         font-size: 1.25rem !important;
@@ -1329,7 +1329,7 @@ body div#ui-datepicker-div[style]{
     .ubermenu-responsive .ubermenu-nav .ubermenu-item .ubermenu-submenu.ubermenu-submenu-drop {
         border: none;
     }
-
+   
     #site-navigation {
         width: 40px;
         height: 40px;
@@ -1346,7 +1346,7 @@ body div#ui-datepicker-div[style]{
     }
     #ubermenu-nav-main-2-primary .ubermenu-tabs-group > .ubermenu-active > a,
     #ubermenu-nav-main-2-primary .ubermenu-tabs-group > .ubermenu-active > span.ubermenu-target {
-        color: $color-charcoal !important;
+        color: #303232 !important;
         border-radius: 0;
     }
     #ubermenu-nav-main-2-primary .ubermenu-tabs-group > li > a,
@@ -1426,7 +1426,7 @@ body div#ui-datepicker-div[style]{
                 justify-content: center;
     }
     #ubermenu-nav-main-2-primary .social-menu a {
-        color: $color-white;
+        color: #fff;
         width: 35px;
         font-size: 2.125em;
         position: relative;
@@ -1436,7 +1436,7 @@ body div#ui-datepicker-div[style]{
         text-align: center;
     }
     #ubermenu-nav-main-2-primary .social-menu a:hover {
-        color: $color-white;
+        color: #fff;
     }
 }
 .mobile-nav-container{
@@ -1470,7 +1470,7 @@ body div#ui-datepicker-div[style]{
     -webkit-transition:all 0.1s ease-out;
     -o-transition:all 0.1s ease-out;
     transition:all 0.1s ease-out;
-    background:$color-charcoal;
+    background:#303232;
     display:block;
     height:3px;
     margin:12px auto 0;
@@ -1512,7 +1512,7 @@ body div#ui-datepicker-div[style]{
 .full-width-trigger a{
     font-size:20px;
     font-size:1.25rem;
-    background:$color-charcoal;
+    background:#303232;
     color:white;
     display:block;
     font-weight:bold;
@@ -1559,7 +1559,7 @@ body div#ui-datepicker-div[style]{
     -webkit-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
     transition:all 0.2s ease-out;
-    background:$color-charcoal;
+    background:#303232;
     list-style-type:none;
     margin:0;
     padding:0;
@@ -1668,7 +1668,7 @@ body div#ui-datepicker-div[style]{
     background:url(../../images/icon-email.png) no-repeat 5% center #222323
 }
 .mobile-nav-container .social-menu{
-    background:$color-charcoal
+    background:#303232
 }
 .mobile-nav-container .social-menu li{
     -webkit-transition:0.5s ease;
@@ -1715,7 +1715,7 @@ body div#ui-datepicker-div[style]{
     vertical-align:bottom
 }
 .homepage-hero .hero-content h2{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
@@ -1723,7 +1723,7 @@ body div#ui-datepicker-div[style]{
     color:white
 }
 .homepage-hero .hero-content p{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:18px;
@@ -1732,7 +1732,7 @@ body div#ui-datepicker-div[style]{
     line-height:32px
 }
 .homepage-hero .hero-content .button{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -1740,7 +1740,7 @@ body div#ui-datepicker-div[style]{
     background:#d1db2d;
     text-transform:uppercase;
     padding:20px 30px;
-    color:$color-charcoal
+    color:#303232
 }
 .homepage-hero .hero-content .button:hover{
     background:#adb61f
@@ -1761,22 +1761,22 @@ body div#ui-datepicker-div[style]{
 }
 .homepage-intro h1,
 .homepage-intro h3 {
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
     font-size:2rem;
-    color:$color-charcoal
+    color:#303232
 }
 .homepage-intro p{
     font-family:Arial, Helvetica, sans-serif;;
     font-size:18px;
     font-size:1.125rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:32px
 }
 .homepage-intro .button {
-    border: 1px solid $color-charcoal;
+    border: 1px solid #303232;
     background: none;
     margin:10px 7px;
 }
@@ -1790,13 +1790,13 @@ body div#ui-datepicker-div[style]{
 
 
 .homepage-highlighted-topic {
-    background: $color-charcoal;
-    color: $color-white;
+    background: #303232;
+    color: #fff;
     padding: 70px 15px 80px;
     text-align: center;
 }
 .homepage-highlighted-topic * {
-    color: $color-white;
+    color: #fff;
 }
 .home .bottom-line {
     position: relative;
@@ -1870,7 +1870,7 @@ body div#ui-datepicker-div[style]{
     }
 }
 .homepage-blog h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
@@ -1908,7 +1908,7 @@ body div#ui-datepicker-div[style]{
     padding:25px
 }
 .homepage-blog li .blog-wrapper h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:20px;
@@ -1918,7 +1918,7 @@ body div#ui-datepicker-div[style]{
     margin-bottom:10px
 }
 .homepage-blog li .blog-wrapper h5 a{
-    color:$color-charcoal
+    color:#303232
 }
 .homepage-blog li .blog-wrapper h5 a:hover{
     color:#d1db2d
@@ -1927,7 +1927,7 @@ body div#ui-datepicker-div[style]{
     border-radius:4px;
     background-clip:padding-box;
     position:absolute;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -1965,7 +1965,7 @@ body div#ui-datepicker-div[style]{
     padding:70px 0px;
 }
 .homepage-case-study h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
@@ -1994,7 +1994,7 @@ body div#ui-datepicker-div[style]{
 .homepage-case-study .case-frame img{
     border-radius:50%;
     background-clip:padding-box;
-    border:15px solid $color-charcoal
+    border:15px solid #303232
 }
 @media screen and (max-width: 1050px) {
     .home .homepage-case-study .case-image-col .case-frame {
@@ -2054,7 +2054,7 @@ body div#ui-datepicker-div[style]{
     width:75%
 }
 .homepage-case-study .case-content h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2077,7 +2077,7 @@ body div#ui-datepicker-div[style]{
     }
 }
 .homepage-testimonial .testimonial-wrapper h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2085,12 +2085,12 @@ body div#ui-datepicker-div[style]{
 }
 .homepage-testimonial .testimonial-wrapper .quote{
     position:relative;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:italic;
     font-weight:400;
     font-size:18px;
     font-size:1.125rem;
-    color:$color-charcoal
+    color:#303232
 }
 .homepage-testimonial .testimonial-wrapper .quote:before{
     content:"";
@@ -2111,7 +2111,7 @@ body div#ui-datepicker-div[style]{
     top:0px
 }
 .homepage-testimonial .testimonial-wrapper .citation{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2158,7 +2158,7 @@ body div#ui-datepicker-div[style]{
     border-top:1px solid #f4f4f4
 }
 .page-template-pages_about-php .partners-callout h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2194,7 +2194,7 @@ body div#ui-datepicker-div[style]{
     padding-bottom:50px
 }
 .page-template-pages_about-php .location-highlights h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -2202,7 +2202,7 @@ body div#ui-datepicker-div[style]{
     padding-bottom:15px
 }
 .page-template-pages_about-php .location-highlights .address{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -2210,7 +2210,7 @@ body div#ui-datepicker-div[style]{
     padding-bottom:40px
 }
 .page-template-pages_about-php .location-highlights .contact-title{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     display:inline-block;
@@ -2227,7 +2227,7 @@ body div#ui-datepicker-div[style]{
     padding-bottom:35px
 }
 .page-template-pages_partners-php .partners h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -2270,7 +2270,7 @@ body div#ui-datepicker-div[style]{
     margin-top: 30px;
 }
 .page-template-pages_case-studies-php .case-studies .case-content-wrapper h2 a{
-    color:$color-charcoal
+    color:#303232
 }
 .page-template-pages_case-studies-php .case-studies .case-content-wrapper h2 a:hover{
     color:#d1db2d
@@ -2280,7 +2280,7 @@ body div#ui-datepicker-div[style]{
     padding-bottom:30px
 }
 .single-case-studies .content-area .single-case-content-wrapper h2 a{
-    color:$color-charcoal
+    color:#303232
 }
 .single-case-studies .content-area .single-case-content-wrapper h2 a:hover{
     color:#d1db2d
@@ -2295,7 +2295,7 @@ body div#ui-datepicker-div[style]{
     margin-bottom:40px
 }
 .single-case-studies .case-info-wrapper h1,.single-case-studies .case-info-wrapper h2,.single-case-studies .case-info-wrapper h3,.single-case-studies .case-info-wrapper h4,.single-case-studies .case-info-wrapper h5,.single-case-studies .case-info-wrapper h6{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700
 }
@@ -2340,7 +2340,7 @@ body div#ui-datepicker-div[style]{
     top:0
 }
 .sidebar-inner h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:20px;
@@ -2368,12 +2368,12 @@ body div#ui-datepicker-div[style]{
     padding-bottom:5px
 }
 .sidebar-inner ul li a{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:20px;
     font-size:1.25rem;
-    color:$color-charcoal
+    color:#303232
 }
 .sidebar-inner ul li a:hover{
     color:#d1db2d
@@ -2394,7 +2394,7 @@ body div#ui-datepicker-div[style]{
     padding-top:30px
 }
 .page-template-pages_resources-php #content .subtitle h4,.tax-resource-types #content .subtitle h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2408,7 +2408,7 @@ body div#ui-datepicker-div[style]{
     border:none
 }
 .page-template-pages_resources-php #content .resources .resource h2,.tax-resource-types #content .resources .resource h2{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -2459,7 +2459,7 @@ body div#ui-datepicker-div[style]{
     color:#125071
 }
 .single-resources h6{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2532,8 +2532,8 @@ body div#ui-datepicker-div[style]{
     padding-top:15px;
     text-decoration:none
 }
-.single-resources .resource-topic{
-    font-family:$font-family-primary-sans;
+.single-resources .resource-topics{
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2541,7 +2541,7 @@ body div#ui-datepicker-div[style]{
     text-transform:uppercase
 }
 .single-resources .entry-date{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2555,7 +2555,7 @@ body div#ui-datepicker-div[style]{
     padding-top:30px
 }
 .tax-resource-types #content h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -2584,7 +2584,7 @@ body div#ui-datepicker-div[style]{
 .page-template-pages_support-php #content .sub-title h4,.tax-support-types #content .sub-title h4{
     font-size:28px;
     font-size:1.75rem;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     padding-bottom:15px
@@ -2597,7 +2597,7 @@ body div#ui-datepicker-div[style]{
     border:none
 }
 .page-template-pages_support-php #content .support h5,.tax-support-types #content .support h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -2639,7 +2639,7 @@ body div#ui-datepicker-div[style]{
     font-size:1.25rem
 }
 .single-support h6{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2648,7 +2648,7 @@ body div#ui-datepicker-div[style]{
     text-transform:uppercase
 }
 .single-support .support-topics{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2656,7 +2656,7 @@ body div#ui-datepicker-div[style]{
     text-transform:uppercase
 }
 .single-support .entry-date{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2679,7 +2679,7 @@ form li.gf_left_half{
     clear:left
 }
 form label{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -2718,7 +2718,7 @@ form .styled-select{
     background-color:white
 }
 form .styled-select select{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:16px;
@@ -2748,7 +2748,7 @@ form .button{
     margin-bottom:60px
 }
 .support-redirect h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -2766,7 +2766,7 @@ form .button{
     padding-bottom:50px
 }
 .page-template-pages_careers-php .careers .row h2 a{
-    color:$color-charcoal
+    color:#303232
 }
 .page-template-pages_careers-php .careers .row h2 a:hover{
     color:#d1db2d
@@ -2800,27 +2800,27 @@ form .button{
     text-align:center
 }
 .search #content .post-meta time{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
     font-size:0.875rem;
-    color:$color-charcoal
+    color:#303232
 }
 .search #content .post-meta time span{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
     font-size:1.375rem;
-    color:$color-charcoal;
+    color:#303232;
     display:block
 }
 .search #content article{
     padding-bottom:50px
 }
 .search #content article h2 a{
-    color:$color-charcoal
+    color:#303232
 }
 .search #content article h2 a:hover{
     color:#d1db2d
@@ -2842,8 +2842,8 @@ form .button{
 .tax-product_cat .product-categories .product-category a{
     background:none;
     padding:0 1px;
-    color:$color-charcoal;
-    font-family:$font-family-primary-sans;
+    color:#303232;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2879,12 +2879,12 @@ form .button{
     padding-bottom:40px
 }
 .products-wrapper .products .product h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:24px;
     font-size:1.5rem;
-    color:$color-charcoal
+    color:#303232
 }
 .products-wrapper .products .product .button{
     background:none;
@@ -2915,8 +2915,8 @@ form .button{
 .single-product .product-categories .product-category a{
     background:none;
     padding:0 1px;
-    color:$color-charcoal;
-    font-family:$font-family-primary-sans;
+    color:#303232;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -2945,12 +2945,12 @@ form .button{
 .single-product .summary .product-summary .single_add_to_cart_button{
     border-radius:4px;
     background-clip:padding-box;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     background:#d1db2d;
     padding:15px 20px;
-    color:$color-charcoal;
+    color:#303232;
     border:none;
     -webkit-box-shadow:none;
             box-shadow:none
@@ -2959,7 +2959,7 @@ form .button{
     background:#adb61f
 }
 .single-product .summary .product-summary .price span{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:25px;
@@ -2997,13 +2997,13 @@ form .button{
 .single-product .tabs .slider-thumbs li{
     text-align:center;
     background:white;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
     font-size:0.875rem;
     text-transform:uppercase;
-    color:$color-charcoal;
+    color:#303232;
     border:1px solid #747474;
     margin-bottom:1px;
     padding:25px 0px;
@@ -3024,7 +3024,7 @@ form .button{
     background:#f4f4f4
 }
 .single-product .tabs .tab-slider .related-product h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -3034,7 +3034,7 @@ form .button{
     color:#125071
 }
 .single-product .tabs .tab-slider .related-product .read-more{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -3058,14 +3058,14 @@ form .button{
 }
 .woocommerce-pagination .page-numbers li{
     display:inline-block;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
     font-size:1rem
 }
 .woocommerce-pagination .page-numbers li a{
-    color:$color-charcoal;
+    color:#303232;
     padding:10px
 }
 .woocommerce-pagination .page-numbers li a:hover{
@@ -3073,7 +3073,7 @@ form .button{
 }
 .woocommerce-pagination .page-numbers li .current{
     color:#d1db2d;
-    background:$color-charcoal;
+    background:#303232;
     padding:10px;
     border-radius:4px;
     background-clip:padding-box
@@ -3105,7 +3105,7 @@ form .button{
     display:none
 }
 .woocommerce-account .login-wrapper{
-    background:$color-charcoal;
+    background:#303232;
     padding:45px 80px;
     margin-bottom:60px
 }
@@ -3115,7 +3115,7 @@ form .button{
     padding-bottom:35px
 }
 .woocommerce-account .login-wrapper form label{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     color:white
@@ -3129,7 +3129,7 @@ form .button{
 .woocommerce-account .login-wrapper form .inline{
     display:inline-block;
     float:right;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:18px;
@@ -3162,7 +3162,7 @@ form .button{
     border:none
 }
 .woocommerce-cart .shop_table tr th{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:18px;
@@ -3188,12 +3188,12 @@ form .button{
     display:inline-block
 }
 .woocommerce-cart .shop_table tr .actions>.button{
-    background:$color-charcoal;
+    background:#303232;
     color:#d1db2d
 }
 .woocommerce-cart .shop_table tr .actions .checkout-button{
     background:#d1db2d;
-    color:$color-charcoal
+    color:#303232
 }
 .woocommerce-cart .cart-collaterals{
     padding-bottom:35px
@@ -3203,12 +3203,12 @@ form .button{
 }
 .woocommerce-cart .cart-collaterals table th{
     width:50%;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300
 }
 .woocommerce-cart .cart-collaterals table td{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300
 }
@@ -3216,7 +3216,7 @@ form .button{
     border-top:1px solid #747474
 }
 .woocommerce-cart .cart-collaterals table .order-total th{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:18px;
@@ -3227,7 +3227,7 @@ form .button{
     padding-top:15px
 }
 .woocommerce-cart .cart-collaterals table .order-total td{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:18px;
@@ -3271,16 +3271,16 @@ form .button{
     text-align:center
 }
 .pagination li a{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
     font-size:1rem;
-    color:$color-charcoal;
+    color:#303232;
     padding:5px 10px
 }
 .pagination .current a{
-    background:$color-charcoal;
+    background:#303232;
     border-radius:4px;
     background-clip:padding-box;
     color:#d1db2d
@@ -3319,7 +3319,7 @@ form .button{
     width:100%;
     border-radius:0;
     text-align:center;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -3366,7 +3366,7 @@ form .button{
     min-width:70px
 }
 .archive article .post-meta time,.blog article .post-meta time,.search article .post-meta time{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -3374,7 +3374,7 @@ form .button{
     color:#d1db2d
 }
 .archive article .post-meta time span,.blog article .post-meta time span,.search article .post-meta time span{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -3383,7 +3383,7 @@ form .button{
     display:block
 }
 .archive article h2,.blog article h2,.search article h2{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:22px;
@@ -3431,7 +3431,7 @@ form .button{
     padding-bottom:30px
 }
 .single-post h1{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:28px;
@@ -3442,51 +3442,51 @@ form .button{
     padding-bottom:25px
 }
 .single-post h2{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:24px;
     font-size:1.5rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 .single-post h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:22px;
     font-size:1.25rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 .single-post h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:20px;
     font-size:1.15rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 .single-post h5{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:18px;
     font-size:1.0rem;
-    color:$color-charcoal;
+    color:#303232;
     line-height:1;
     margin:0;
     padding-bottom:25px
 }
 .single-post .entry-date{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -3609,7 +3609,7 @@ form .button{
     line-height:1.5
 }
 .page-template-pages_landing-php .banner-content h3,.single-content-offers .banner-content h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700
 }
@@ -3720,7 +3720,7 @@ form .button{
 }
 .page-template-pages_landing-php .content-area .button,.single-content-offers .content-area .button{
     padding:20px 55px;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700
 }
@@ -3740,7 +3740,7 @@ form .button{
 }
 .page-template-pages_landing-php .requirements-list .checklist-title,.single-content-offers .requirements-list .checklist-title{
     display:block;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
@@ -3798,10 +3798,10 @@ form .button{
     line-height:1.25
 }
 .page-template-pages_landing-php .resource-list .content-holder h4 a,.single-content-offers .resource-list .content-holder h4 a{
-    color:$color-charcoal
+    color:#303232
 }
 .page-template-pages_landing-php .resource-list .content-holder h4 a:hover,.single-content-offers .resource-list .content-holder h4 a:hover{
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:underline
 }
 .page-template-pages_landing-php .resource-list .content-holder p,.single-content-offers .resource-list .content-holder p{
@@ -3851,7 +3851,7 @@ form .button{
     text-align:center
 }
 .page-template-pages_landing-php .callout-section .callout-content h3,.single-content-offers .callout-section .callout-content h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
@@ -3929,7 +3929,7 @@ form .button{
 }
 .page-template-_support-dev .product-row .top-button{
     border-radius:0;
-    background:$color-charcoal;
+    background:#303232;
     color:white;
     font-family:"proxima-nova", sans-serif;
     font-weight:700;
@@ -4030,7 +4030,7 @@ form .button{
 .single-docs .select-wrap div.cs-select>span{
     background:#d1db2d;
     border-radius:5px;
-    color:$color-charcoal;
+    color:#303232;
     font-size:19px;
     font-size:1.1875rem;
     font-family:"proxima-nova", sans-serif;
@@ -4175,7 +4175,7 @@ form .button{
     font-size:20px;
     font-size:1.25rem;
     background:#f1f1f1;
-    color:$color-charcoal;
+    color:#303232;
     display:block;
     line-height:1;
     padding:10px 0px 10px 25px;
@@ -4254,11 +4254,11 @@ form .button{
     padding-bottom:15px
 }
 .single-docs .related-articles a{
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:underline
 }
 .single-docs .related-articles a:hover{
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:none
 }
 .single-docs .site-footer{
@@ -4382,7 +4382,7 @@ form .button{
     background:#f1f1f1;
     margin-bottom:60px
 }
-.blog-search-holder .keyword-column,.blog-search-holder .keyword-column,.blog-search-holder .postdate-column,.blog-search-holder .resource-languages-column,.blog-search-holder .resource-topic-column,.blog-search-holder .resource-types-column,.blog-search-holder .tags-column{
+.blog-search-holder .keyword-column,.blog-search-holder .keyword-column,.blog-search-holder .postdate-column,.blog-search-holder .resource-languages-column,.blog-search-holder .resource-topics-column,.blog-search-holder .resource-types-column,.blog-search-holder .tags-column{
     padding-left:5px;
     padding-right:5px
 }
@@ -4410,12 +4410,12 @@ form .button{
     line-height:1;
     position:relative;
     overflow:visible;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
     font-size:1rem;
-    color:$color-charcoal;
+    color:#303232;
     text-decoration:none;
     text-transform:uppercase;
     border-radius:4px;
@@ -4466,7 +4466,7 @@ form .button{
     border:2px solid #f4f4f4;
     text-transform:uppercase;
     font-weight:bold;
-    color:$color-charcoal;
+    color:#303232;
     font-size:14px;
     font-size:0.875rem
 }
@@ -4483,7 +4483,7 @@ form .button{
 }
 .blog-category-lists .all a.active,.blog-category-lists .all a:hover{
     background:none;
-    color:$color-charcoal
+    color:#303232
 }
 .tags{
     font-size:14px;
@@ -4538,26 +4538,26 @@ form .button{
 .author-bio{
     min-height:15px
 }
-.related-article{
+.realted-article{
     background:#f4f4f4;
     padding:50px 0
 }
-.related-article h2{
+.realted-article h2{
     text-align:center;
-    color:$color-charcoal
+    color:#303232
 }
-.related-article .blog-wrap{
+.realted-article .blog-wrap{
     background:white;
     padding:20px
 }
-.related-article h5{
+.realted-article h5{
     line-height:1.5;
     font-weight:bold
 }
-.related-article h5 a{
-    color:$color-charcoal
+.realted-article h5 a{
+    color:#303232
 }
-.related-article h5 a:hover{
+.realted-article h5 a:hover{
     color:#d1db2d
 }
 .content-offer-modal-container{
@@ -5076,7 +5076,7 @@ ul.order_details strong{
     max-height: none;
 }
 .footer-blocks-career .footer-block h3,.footer-blocks .footer-block h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:20px;
@@ -5085,7 +5085,7 @@ ul.order_details strong{
     padding-top:12px
 }
 .footer-blocks-career .footer-block p,.footer-blocks .footer-block p{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:18px;
@@ -5119,7 +5119,7 @@ ul.order_details strong{
     z-index:10
 }
 .get-in-touch .get-in-wrapper h3{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:32px;
@@ -5148,7 +5148,7 @@ ul.order_details strong{
     text-align:center
 }
 .site-info small{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     -webkit-box-sizing:border-box;
@@ -5175,7 +5175,7 @@ ul.order_details strong{
     padding-bottom:15px
 }
 #footer-nav li a{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -5193,7 +5193,7 @@ ul.order_details strong{
     padding-top:80px
 }
 .site-footer .newsletter h4{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:24px;
@@ -5201,7 +5201,7 @@ ul.order_details strong{
     color:white
 }
 .site-footer .newsletter p{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:300;
     font-size:16px;
@@ -5246,7 +5246,7 @@ ul.order_details strong{
     display:block
 }
 .site-footer #gform_4 .gform_body .gfield_label{
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:16px;
@@ -5272,14 +5272,14 @@ ul.order_details strong{
 .site-footer #gform_4 .gform_body input[type=submit]{
     margin-top:30px;
     display:block;
-    font-family:$font-family-primary-sans;
+    font-family:"Roboto", sans-serif;
     font-style:normal;
     font-weight:700;
     font-size:14px;
     font-size:0.875rem;
     padding:20px 60px;
     background:#d1db2d;
-    color:$color-charcoal
+    color:#303232
 }
 .site-footer #gform_4 .gform_body input[type=submit]:hover{
     background:#adb61f
@@ -5537,7 +5537,7 @@ ul.order_details strong{
     .blog-search-form .columns-2{
         width:25%
     }
-    .blog-search-form .keyword-column,.blog-search-form .resource-languages-column,.blog-search-form .resource-topic-column,.blog-search-form .resource-types-column{
+    .blog-search-form .keyword-column,.blog-search-form .resource-languages-column,.blog-search-form .resource-topics-column,.blog-search-form .resource-types-column{
         width:25%
     }
     .blog-search-form .submit-column{
@@ -5903,13 +5903,13 @@ ul.order_details strong{
         padding-bottom:15px;
         margin:0 auto
     }
-    .related-article .block-grid-3 li:nth-of-type(3n+1){
+    .realted-article .block-grid-3 li:nth-of-type(3n+1){
         clear:none
     }
-    .related-article .block-grid-3>li{
+    .realted-article .block-grid-3>li{
         width:100%
     }
-    .related-article .block-grid-3>li:nth-of-type(1n+1){
+    .realted-article .block-grid-3>li:nth-of-type(1n+1){
         clear:both
     }
     .blog-search{
@@ -6514,7 +6514,7 @@ ul.order_details strong{
     padding: 50px 0;
 }
 .blog-search-form label {
-    color: $color-charcoal !important;
+    color: #303232 !important;
 }
 html {
     overflow-x: hidden;
@@ -6614,7 +6614,7 @@ html {
 .ti-search-expand.ti-search-active .ti-search {
     width: 600px;
     opacity: 1;
-    background-color: $color-white;
+    background-color: #fff;
     right: 50px;
     border-color: #747474;
 }
@@ -6655,7 +6655,7 @@ html {
         right: 0;
         overflow-y: auto;
         padding: 0;
-        background: $color-charcoal;
+        background: #303232;
     }
     .mobile-nav-container .social-menu {
         margin-bottom: 0;
@@ -6853,7 +6853,7 @@ input[type="search"].search-page {
         z-index: 2;
         top: 46px;
         left: 0;
-        background: $color-white;
+        background: #fff;
     }
     .blog-category-lists.ti-active {
         visibility: visible;
@@ -6907,7 +6907,7 @@ input[type="search"].search-page {
 
 .top-bar-tagline {
     float: left;
-    color: $color-white;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -7008,7 +7008,7 @@ h2.product-section-title {
 }
 
 #product-banner {
-    color: $color-white;
+    color: #fff;
     background: url('../../images/spec-blue-hero.jpg') center center/cover #154865;
     padding: 60px 30px 64px;
 }
@@ -7163,7 +7163,7 @@ h2.product-section-title {
     list-style: none;
 }
 #product-benefits .product-benefits-wrap > li {
-    background: $color-white;
+    background: #fff;
     padding: 32px;
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
@@ -7177,7 +7177,7 @@ h2.product-section-title {
         padding: 40px 15px 10px;
     }
 }
-#product-benefits .product-benefits-wrap > li a.read-more {
+#product-benefits .product-benefits-wrap > li a.read-more { 
     color: #164865;
     display: block;
     float: left;
@@ -7261,8 +7261,8 @@ h2.product-section-title {
 
 
 #product-features {
-    color: $color-white;
-    background: $color-charcoal;
+    color: #fff;
+    background: #303232;
     padding: 70px 30px 55px;
 }
 @media screen and (max-width: 767px) {
@@ -7271,7 +7271,7 @@ h2.product-section-title {
     }
 }
 #product-features h2 {
-    color: $color-white;
+    color: #fff;
 }
 #product-features .product-features-wrap ul {
     margin: 0;
@@ -7341,7 +7341,7 @@ h2.product-section-title {
 #tryfree form input[type="tel"],
 #tryfree form input[type="text"],
 #tryfree form .styled-select {
-    background-color: $color-white;
+    background-color: #fff;
     border-color: #d6d6d6;
     margin: 0;
 }
@@ -7356,7 +7356,7 @@ h2.product-section-title {
     left: 0;
     right: 0;
     z-index: 2;
-    background: $color-white;
+    background: #fff;
     -webkit-box-shadow: 0 -2px 18px 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 -2px 18px 1px rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.4s;
@@ -7404,7 +7404,7 @@ h2.product-section-title {
 
 #product-sticky-footer .product-sticky-footer-title {
     background: #d1db2d;
-    color: $color-white;
+    color: #fff;
     padding: 0 30px;
     cursor: pointer;
 }
@@ -7413,7 +7413,7 @@ h2.product-section-title {
     font-size: 24px;
     margin: 0;
     padding: 10px 0;
-    color: $color-white !important;
+    color: #fff !important;
 }
 
 #product-sticky-footer .tab-panel {
@@ -7643,7 +7643,7 @@ h2.product-section-title {
 
 .button.button-blue {
     text-transform: none;
-    color: $color-white;
+    color: #fff;
     padding: 15px 20px;
     text-align: center;
     background-color: #134f71;
@@ -7694,12 +7694,12 @@ h2.product-section-title {
 }
 a[id$="ao_submit_href"] {
     line-height: 1;
-    font-family: $font-family-primary-sans;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     font-size: 1rem;
-    color: $color-charcoal;
+    color: #303232;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
@@ -7722,7 +7722,7 @@ a[id$="ao_submit_href"]:hover{
 #tryfree form input[type="tel"],
 #tryfree form input[type="text"],
 #tryfree form .styled-select {
-    background-color: $color-white;
+    background-color: #fff;
     border-color: #d6d6d6 !important;
     width: 100%;
     max-width: none;
@@ -8008,7 +8008,7 @@ a[id$="ao_submit_href"]:hover{
     -webkit-transform: translate(-50%, -50%) scale(0.9);
         -ms-transform: translate(-50%, -50%) scale(0.9);
             transform: translate(-50%, -50%) scale(0.9);
-    background: $color-white;
+    background: #fff;
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
@@ -8048,7 +8048,7 @@ a[id$="ao_submit_href"]:hover{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 48px;
-    color: $color-charcoal;
+    color: #303232;
     height: 32px;
     width: 32px;
     text-align: center;
@@ -8111,15 +8111,15 @@ a[id$="ao_submit_href"]:hover{
 }
 
 #locations {
-    background: $color-charcoal;
-    color: $color-white;
+    background: #303232;
+    color: #fff;
 }
 #locations h2,
 #locations h3,
 #locations h4,
 #locations h5,
 #locations h6 {
-    color: $color-white;
+    color: #fff;
 }
 #locations > .row {
     padding: 30px 0;
@@ -8226,7 +8226,7 @@ a[id$="ao_submit_href"]:hover{
     padding-bottom: 0;
 }
 #locations .location-contact .contact a {
-    color: $color-white;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -8345,7 +8345,7 @@ a[id$="ao_submit_href"]:hover{
     text-align: center;
     width: 80px;
     margin: 0 0 20px;
-    background: $color-charcoal;
+    background: #303232;
     color: #d1db2d;
     border-radius: 3px;
     padding: 10px;
@@ -8454,8 +8454,8 @@ a[id$="ao_submit_href"]:hover{
     clear: both;
 }
 #highlights .show-more .show-more-button {
-    border: 1px solid $color-charcoal;
-    color: $color-charcoal;
+    border: 1px solid #303232;
+    color: #303232;
     width: 100%;
     max-width: 400px;
     border-radius: 4px;
@@ -8493,7 +8493,7 @@ a[id$="ao_submit_href"]:hover{
     top: 12px;
     bottom: -30px;
     left: -10px;
-    background: $color-white;
+    background: #fff;
     display: block;
     position: absolute;
 }

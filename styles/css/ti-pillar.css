@@ -12,17 +12,17 @@
 }
 
 .pillar-page section.white {
-    background: $color-white;
+    background: #fff;
 }
 .pillar-page section.gray {
     background: #f2f2f4;
 }
 .pillar-page section.blue {
     background: #456483;
-    color: $color-white;
+    color: #fff;
 }
 .pillar-page section.blue * {
-    color: $color-white;
+    color: #fff;
 }
 
 .pillar-page section a {
@@ -241,7 +241,7 @@
     display: flex;
     align-items: center;
     padding: 8px 0;
-    color: $color-charcoal;
+    color: #303232;
     font-size: 20px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -255,7 +255,7 @@
 .pillar-menu ul a:hover,
 .pillar-menu ul a:focus,
 .pillar-menu ul a:active {
-    color: $color-charcoal;
+    color: #303232;
 }
 .pillar-menu li.current a {
     font-weight: bold;
@@ -391,7 +391,7 @@
     background: #ddd;
 }
 .pillar-modal h2 {
-    color: $color-white;
+    color: #fff;
     font-weight: normal;
     font-size: 28px;
     padding: 20px 0 20px;

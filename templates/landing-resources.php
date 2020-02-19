@@ -1,4 +1,4 @@
-<?php if (get_field('show_resources')) : ?>
+<?php if ( get_field( 'show_resources' ) ) : ?>
 
 <div class="resources-section">
 
@@ -6,28 +6,28 @@
 
 		<div class="resources-intro columns-6 column-center">
 
-			<?php echo wp_get_attachment_image(get_field('resources_icon'), 'icon'); ?>
+			<?php echo wp_get_attachment_image( get_field( 'resources_icon' ), 'icon' ); ?>
 
-			<?php the_field('resources_intro'); ?>
+			<?php the_field( 'resources_intro' ); ?>
 
 		</div>
 
 		<div class="resources-wrapper columns-8 column-center">
 
-			<?php $posts = get_field('resources'); ?>
+			<?php $posts = get_field( 'resources' ); ?>
 
-			<?php if ($posts) : ?>
+			<?php if ( $posts ) : ?>
 
 			<ul class="resource-list">
 
 				<?php global $post;
-                foreach ($posts as $post) : setup_postdata($post); ?>
+				foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 
 					<li>
 						<div class="row">
-							<?php if (get_the_post_thumbnail()) : ?>
+							<?php if ( get_the_post_thumbnail() ) : ?>
 
-							<?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'landing-resources'); ?>
+							<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'landing-resources'); ?>
 
 							<style>
 							.content-holder.post-id-<?php echo $post->ID; ?>.has-image:before {
@@ -35,7 +35,7 @@
 							}
 							</style>
 							<div class="image-holder columns-6">
-								<?php the_post_thumbnail('landing-resources'); ?>
+								<?php the_post_thumbnail( 'landing-resources' ); ?>
 							</div>
 							<div class="content-holder columns-6 has-image post-id-<?php echo $post->ID; ?>">
 								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

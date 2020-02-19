@@ -10,11 +10,11 @@ get_header(); ?>
 
 			<div id="content" class="columns-10 column-center site-content" role="main">
 				<div class="sub-title"><h4><?php _e('Latest Support', 'anvil'); ?></h4></div>
-				<?php while (have_posts()) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part('templates/content', 'support'); ?>
+					<?php get_template_part( 'templates/content', 'support' ); ?>
 
-				<?php endwhile; // end of the loop.?>
+				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
 

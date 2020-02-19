@@ -103,9 +103,9 @@
                         "id": ""
                     },
                     "choices": {
-                        "left": "Left",
-                        "right": "Right",
-                        "Center": "Center"
+                        "text-left": "Left",
+                        "text-center": "Center",
+                        "text-right": "Right"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -201,5 +201,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580167211
+    "modified": 1580489872
 }

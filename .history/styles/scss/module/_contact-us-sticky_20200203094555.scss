@@ -1,0 +1,23 @@
+.contact-us-sticky {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-steelblue-dark;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 16000002;
+  clear: both;
+  padding: 5px 0;
+
+  p {
+    font-family: $font-family-primary-sans;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 1.875em;
+    padding: 0;
+  }
+}

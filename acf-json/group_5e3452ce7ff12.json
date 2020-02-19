@@ -1,0 +1,64 @@
+{
+    "key": "group_5e3452ce7ff12",
+    "title": "Single Resource: Intro Text",
+    "fields": [
+        {
+            "key": "field_5e3452e6dabaa",
+            "label": "Intro Text",
+            "name": "intro-text",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "columns-8",
+                "id": ""
+            },
+            "collapsed": "field_5e34534cdabab",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Paragraph",
+            "sub_fields": [
+                {
+                    "key": "field_5e34534cdabab",
+                    "label": "Paragraph",
+                    "name": "intro-text-paragraph",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "columns-8",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/intro-text"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1580747409
+}

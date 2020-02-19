@@ -13,7 +13,7 @@
     padding-bottom: 15px;
 }
 .facetwp-template header h2 {
-    font-family: $font-family-primary-sans;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -319,7 +319,7 @@ h1.entry-title.search-results-mobile-title,
         bottom: 0;
         right: -100vw;
         overflow-y: auto;
-        background: $color-white;
+        background: #fff;
         padding: 15px;
         transition: right 0.4s;
         z-index: 999999;
@@ -447,7 +447,7 @@ h1.entry-title.search-results-mobile-title,
         font-family: 'Roboto', sans-serif;
     }
     #ti-filter-bar .ti-mobile-search .facetwp-btn {
-        background-color: $color-white;
+        background-color: #fff;
         border: none;
         right: auto;
         left: 2px;
@@ -457,7 +457,7 @@ h1.entry-title.search-results-mobile-title,
     }
     #ti-filter-bar .ti-mobile-search .facetwp-search {
         border: none;
-        background-color: $color-white;
+        background-color: #fff;
         height: 48px;
         width: 50px;
         transition: all 0.4s;
@@ -469,7 +469,7 @@ h1.entry-title.search-results-mobile-title,
     #ti-filter-bar .ti-mobile-search.ti-search-active {
         width: 100%;
         margin: 0;
-        border-color: $color-white;
+        border-color: #fff;
         pointer-events: none;
     }
     #ti-filter-bar .ti-mobile-search.ti-search-active * {

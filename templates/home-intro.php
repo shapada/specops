@@ -11,17 +11,17 @@
 
 				<?php
 
-                    $introlink1 = get_field('home_intro_link');
-                    $introtext1 = get_field('home_intro_link_text');
-                    $introlink2 = get_field('home_intro_link_2');
-                    $introtext2 = get_field('home_intro_link_2_text');
+					$introlink1 = get_field('home_intro_link');
+					$introtext1 = get_field('home_intro_link_text');
+					$introlink2 = get_field('home_intro_link_2');
+					$introtext2 = get_field('home_intro_link_2_text');
 
-                ?>
+				?>
 
-				<?php if ($introlink1 && $introtext1) : ?>
+				<?php if ( $introlink1 && $introtext1 ) : ?>
 					<a href="<?php echo $introlink1; ?>" class="button"><?php echo $introtext1; ?></a>
 				<?php endif; ?>
-				<?php if ($introlink2 && $introtext2) : ?>
+				<?php if ( $introlink2 && $introtext2 ) : ?>
 					<a href="<?php echo $introlink2; ?>" class="button"><?php echo $introtext2; ?></a>
 				<?php endif; ?>
 		

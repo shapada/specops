@@ -9,11 +9,11 @@ get_header(); ?>
 
 		<div id="content" class="columns-10 column-center site-content" role="main">
 
-			<?php while (have_posts()) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php the_content(); ?>
 
-			<?php endwhile; // end of the loop.?>
+			<?php endwhile; // end of the loop. ?>
 
 			<div class="formwrap w-www-specopssoft-com p-salesforceform t-salesforcesupportform">
 			<form name="aspnetForm" method="post" action="support" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">

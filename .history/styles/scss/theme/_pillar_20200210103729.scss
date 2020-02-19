@@ -1,0 +1,10 @@
+.pillar-body-text {
+  ul li {
+    font-family: $font-family-primary-sans;
+  }
+}
+@media screen and (max-width: 767px) {
+    .burger-trigger-small {
+        display: block;
+    }
+}

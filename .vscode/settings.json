@@ -3,6 +3,12 @@
 		"styles/scss",
 		"single-resources.php",
 		"blocks/resources",
-		"styles/css/main-style.css"
-	]
+		"styles/css/main-style.css",
+		"styles/scss/main-style.scss",
+		"templates"
+	],
+	"zenMode.hideTabs": false,
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.editor.splitSizing": "split",
+	"workbench.editor.tabSizing": "shrink"
 }

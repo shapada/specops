@@ -1,0 +1,69 @@
+.sidebar-inner {
+    background: none repeat scroll 0 0 #f4f4f4;
+    margin-bottom: -4000px;
+    padding: 40px 0px 4040px 0;
+    position: relative;
+    >ul {
+        position: relative;
+        z-index: 5;
+    }
+    form {
+        position: relative;
+        z-index: 5;
+    }
+    h5 {
+        position: relative;
+        z-index: 5;
+        font-family: $font-family-primary-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        font-size: 1.25rem;
+        padding-bottom: 15px;
+    }
+    &:before {
+        background: none repeat scroll 0 0 #f4f4f4;
+        bottom: 0;
+        content: "";
+        left: -40000px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 25px;
+        position: relative;
+        margin-bottom: 500px;
+        &:after {
+            background: url(../../images/sidebar-bg.png);
+            background-repeat: no-repeat;
+            content: '';
+            height: 479px;
+            width: 100%;
+            max-width: 341px;
+            position: absolute;
+            bottom: -471px;
+        }
+
+        li {
+            padding-bottom: 5px;
+            a {
+                font-family: $font-family-primary-sans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                font-size: 1.25rem;
+                color: palette(brand, darkgrey);
+                &:hover {
+                    color: #d1db2d;
+                }
+            }
+        }
+
+        li.contact-support-button {
+            padding-bottom: 35px;
+        }
+    }
+}

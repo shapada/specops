@@ -1,0 +1,72 @@
+.datasheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.datasheet + .block-heading {
+  margin-top: 2.5em;
+}
+
+.datasheet h3 {
+  margin-bottom: .7em;
+  padding: 0;
+}
+
+.datasheet p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 60%;
+}
+
+.datasheet .datatable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.datasheet .datatable thead {
+  color: #ffffff;
+  background-color: #103f59;
+}
+
+.datasheet .datatable thead th {
+  text-align: center;
+  padding: 8px;
+}
+
+.datasheet .datatable tbody {
+  background-color: #103f59;
+}
+
+.datasheet .datatable tbody tr {
+  padding: 0;
+  margin: 0;
+}
+
+.datasheet .datatable tbody tr td {
+  padding: .5em 0;
+  justify-content: center;
+  border: 1px solid #D5D5D5;
+  text-align: center;
+  align-items: center;
+  min-height: 35px;
+  background-color: #ffffff;
+  line-height: 22px;
+}
+
+.datasheet .datatable tbody tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+.tablesaw-stack td .tablesaw-cell-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid #D5D5D5;
+  padding: 0;
+  min-height: 35px;
+}

@@ -7,8 +7,8 @@
 ?>
 
 <div class="support-redirect">
-  <?php the_field('content'); ?>
+  <?php the_field( 'content' ); ?>
   <div class="support-button-wrapper">
-    <a href="<?php the_field('button_link'); ?>" class="button"><?php the_field('button_label'); ?></a>
+    <a href="<?php the_field( 'button_link' ); ?>" class="button"><?php the_field( 'button_label' ); ?></a>
   </div>
 </div>

@@ -7,10 +7,10 @@
 		</div>
 		<?php $posts = get_field('home_case_study'); ?>
 
-		<?php foreach ($posts as $post): // variable must be called $post (IMPORTANT)?>
+		<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
        		<?php setup_postdata($post); ?>
 		      <div class="columns-5 case-image-col">
-		      	<?php  $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'home-case-study'); ?>
+		      	<?php  $image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'home-case-study' ); ?>
 		      	<div class="case-frame">
 		     	 	<img src="<?php echo $image[0]; ?>" alt="">
 		     	 	<span class="circle-1"></span>

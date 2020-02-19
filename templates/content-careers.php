@@ -40,7 +40,7 @@
         right: 0;
         margin: 0 auto;
         display: block;
-        color: $color-white;
+        color: #fff;
         text-align: center;
     }
     body.page-template-_careers .global-opportunities .image .image-outline {
@@ -60,7 +60,7 @@
         padding: 0;
     }
     body.page-template-_careers .career-intro {
-        background: $color-white !important;
+        background: #fff !important;
     }
     body.page-template-_careers h2 {
         text-align: center;
@@ -111,7 +111,7 @@
         height: 45px;
         text-decoration: none;
         line-height: 45px;
-        color: $color-charcoal;
+        color: #303232;
         border-radius: 5px;
 
     }
@@ -131,7 +131,7 @@
         background: #F4F4F4;
     }
     body.page-template-_careers .perks-container {
-        background: $color-charcoal;
+        background: #303232;
         /*padding-bottom: 80px;*/
         padding: 0 2.5% 80px;
         margin-top: 80px;
@@ -144,7 +144,7 @@
 
     }
     body.page-template-_careers .perks-container h2 {
-        color: $color-white;
+        color: #fff;
         width: 33%;
         display: block;
         margin: 0 auto;
@@ -173,7 +173,7 @@
         vertical-align: top;
     }
     body.page-template-_careers .icon-parent .ti-icon-set p {
-        color: $color-white;
+        color: #fff;
         padding: 12px 15px 0;
         font-size: 16px;
     }
@@ -205,7 +205,7 @@
         background: #134D6D;
         width: 320px;
         height: 45px;
-        color: $color-white;
+        color: #fff;
         line-height: 45px;
         display: block;
         margin: 0 auto;
@@ -220,7 +220,7 @@
         left: 0;
         right: 0;
         width: 60%;
-        background: $color-white;
+        background: #fff;
         z-index: 20;
         margin: 0 auto;
         padding: 80px;
@@ -669,7 +669,7 @@ $videoPlayButton = wp_get_attachment_image_src(11083, ['274', '274'])[0];
                 }
             </script>
             </div>
-            <?php //the_content();?>
+            <?php //the_content(); ?>
 
 		</div>
 	</div>
@@ -728,7 +728,7 @@ $locationImage = wp_get_attachment_image_src(11067, ['10', '15'])[0];
         </div>
     </div>
     <?php $jobLoopCount = 0; $jobArray = []; ?>
-    <?php if ($second_query->have_posts()): while ($second_query->have_posts()): $second_query->the_post();?>
+    <?php if($second_query->have_posts()): while($second_query->have_posts()): $second_query->the_post();?>
         <?php
 
             $qualifications = wp_specialchars_decode($second_query->posts[$jobLoopCount]->post_content);
@@ -759,9 +759,9 @@ $locationImage = wp_get_attachment_image_src(11067, ['10', '15'])[0];
 <!--        <div class="row">-->
 <!---->
 <!--            <div class="columns-8 column-center">-->
-<!--                <h2><a href="--><?php //the_permalink();?><!--">--><?php //the_title();?><!--</a></h2>-->
-<!--                <p>--><?php //echo excerpt(40);?><!--</p>-->
-<!--                <a href="--><?php //the_permalink();?><!--" class="read-more">--><?php //_e('Read More', 'anvil');?><!--</a></h6>-->
+<!--                <h2><a href="--><?php //the_permalink(); ?><!--">--><?php //the_title(); ?><!--</a></h2>-->
+<!--                <p>--><?php //echo excerpt(40); ?><!--</p>-->
+<!--                <a href="--><?php //the_permalink(); ?><!--" class="read-more">--><?php //_e('Read More', 'anvil'); ?><!--</a></h6>-->
 <!--            </div>-->
 <!--        </div>-->
     <?php endwhile; ?>

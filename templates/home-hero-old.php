@@ -1,5 +1,5 @@
-<?php $bg = wp_get_attachment_image_src(get_field('hero_background'), 'full'); ?>
-<?php $image = wp_get_attachment_image_src(get_field('hero_image'), 'full'); ?>
+<?php $bg = wp_get_attachment_image_src( get_field('hero_background') , 'full' ); ?>
+<?php $image = wp_get_attachment_image_src( get_field('hero_image') , 'full' ); ?>
 <div class="homepage-hero" style="background: url(<?php echo $bg[0]; ?>);">
 
 	<div class="row">

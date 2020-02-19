@@ -1,0 +1,75 @@
+.site-footer {
+    background: #383838 !important;
+    padding-top: 40px;
+    background: palette(brand, lightgrey);
+    [class*=columns-] {
+        position: static;
+        width: 100%;
+    }
+    form {
+        input[type=email] {
+            width: 100% !important;
+        }
+        input[type=password] {
+            width: 100% !important;
+        }
+        input[type=tel] {
+            width: 100% !important;
+        }
+        input[type=text] {
+            width: 100% !important;
+        }
+    }
+    .newsletter {
+        h4 {
+            font-family: $font-family-primary-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            font-size: 1.5rem;
+            color: palette(mono, white);
+        }
+        p {
+            font-family: $font-family-primary-sans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            font-size: 1rem;
+            color: palette(mono, white);
+        }
+    }
+}
+
+
+@media screen and (max-width: 1230px) {
+    .site-footer {
+        padding-left: 30px;
+        #gform_4 {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .site-footer {
+        padding-left: 0;
+        .newsletter {
+            margin-top: 30px;
+            h4 {
+                max-width: 430px;
+                margin: 0 auto;
+            }
+            p {
+                max-width: 430px;
+                margin: 0 auto;
+            }
+        }
+
+        #gform_4 {
+            padding: 0 15px;
+            max-width: 430px;
+            margin: 0 auto;
+        }
+    }
+    }

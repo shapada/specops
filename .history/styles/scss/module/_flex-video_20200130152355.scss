@@ -1,0 +1,16 @@
+.flex-video
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+margin-bottom: 16px;
+overflow: hidden;
+
+  button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+  }
+}
+

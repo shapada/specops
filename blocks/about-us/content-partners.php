@@ -9,17 +9,17 @@
 <section id="partners">
   <div class="row">
     <div class="columns-12 column-center">
-      <h2><?php the_field('heading'); ?></h2>
-      <?php if (have_rows('partners')): ?>
+      <h2><?php the_field( 'heading' ); ?></h2>
+      <?php if ( have_rows( 'partners' ) ): ?>
         <ul class="partners-logos">
-          <?php while (have_rows('partners')) : the_row();
+          <?php while ( have_rows( 'partners' ) ) : the_row(); 
 
-            $image = get_sub_field('partner_logo');
+            $image = get_sub_field( 'partner_logo' );
           
           ?>
           <li>            
-            <?php if ($image) : ?>
-              <?php echo wp_get_attachment_image($image['id'], 'medium'); ?>
+            <?php if ( $image ) : ?>
+              <?php echo wp_get_attachment_image( $image['id'], 'medium' ); ?>
             <?php else : ?>
               <div class="image-placeholder"></div>
             <?php endif; ?>
@@ -34,8 +34,8 @@
 <section id="partners-callout">
   <div class="row">
     <div class="columns-12 column-center">
-      <?php the_field('partners_callout') ?>
-      <a class="button" href="<?php the_field('partners_link'); ?>"><?php the_field('partners_button_label'); ?></a>
+      <?php the_field( 'partners_callout' ) ?>
+      <a class="button" href="<?php the_field( 'partners_link' ); ?>"><?php the_field( 'partners_button_label' ); ?></a>
     </div>
   <div>
 </section>
