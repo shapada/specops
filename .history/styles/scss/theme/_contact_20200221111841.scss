@@ -1,0 +1,122 @@
+.contact-us {
+    .gf-contact-form-wrap {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+
+        iframe {
+            width: 100%;
+            border: none;
+            height: 860px;
+        }
+    }
+    .contact-info-wrap {
+        border-top: 1px solidpalette(brand, lightgrey);
+        padding: 50px 0 50px;
+        h3 {
+            font-weight: 700;
+        }
+        
+        .numbers {
+            list-style: none;
+            margin: 0;
+            >li {
+                zoom: 1;
+                width: 100%;
+                &:before {
+                    content: '';
+                    display: block;
+                }
+                &:after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+                span {
+                    float: left;
+                }
+                .label {
+                    width: 27%;
+                    font-weight: 700;
+                }
+                .number {
+                    width: 73%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .contact-us {
+        .formInputBlock {
+            max-width: 250px !important;
+            max-width: 250px !important;
+        }
+        
+        textarea {
+            max-width: 250px !important;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact-us {
+        .contact-info-wrap {
+            .contact-info {
+                display: block;
+                margin: 0 -15px 15px -15px;
+                overflow: auto;
+                >li {
+                    display: block;
+                    float: left;
+                    height: auto;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    width: 100%;
+                    padding-bottom: 30px;
+                    text-align: center;
+                    &:nth-of-type(1n+1) {
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .contact-us {
+        .contact-info-wrap {
+            .grid-container {
+                position: static;
+                width: 100%;
+            }
+            .numbers {
+                >li {
+                    .label {
+                        display: block;
+                        float: none;
+                        width: 100%;
+                    }
+                    .number {
+                        display: block;
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .contact-content {
+        .gf-contact-form-wrap {
+            iframe {
+                height: 790px;
+            }
+        }
+    }
+}

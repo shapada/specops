@@ -1,0 +1,219 @@
+.page-partners {
+    .partners {
+        padding-bottom: 35px;
+        h5 {
+            font-family: $font-family-primary;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            font-size: 1.375rem;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            a {
+                color: palette(brand, blue);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .feature-partners {
+        font-family: $font-family-primary;
+        font-style: normal;
+        padding-bottom: 70px;
+        h3 {
+            padding-bottom: 15px;
+        }
+
+        .partner {
+            padding: 48px 0;
+            border-bottom: 1px solid #979797;
+            &:first-child {
+                padding-top: 0 !important;
+            }
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        a {
+            color: palette(brand, blue);
+            &:visited {
+                color: palette(brand, blue);
+            }
+        }
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        padding-bottom: 0;
+        margin: 60px 0 40px 0;
+        margin: 20px 0 30px;
+    }
+    .card {
+        .card-link-url {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .card-link {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .partner {
+        h3 {
+            a {
+                color: palette(brand, darkgrey);
+            }
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+
+        .partner-logo {
+            text-align: center;
+        }
+
+        .partner-info {
+            float: right;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        h4 {
+            color: palette(brand, blue);
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding-bottom: 15px;
+        }
+
+        h5 {
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            line-height: 28px;
+        }
+
+        img {
+            margin-right: 15px;
+        }
+
+        >.row {
+            display: flex;
+        }
+    }
+    .cards {
+        h3 {
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 28px;
+            padding-bottom: 15px;
+        }
+
+        padding-top: 20px;
+        padding-bottom: 60px;
+        .card {
+            height: 195px;
+            width: 380px;
+            background-color: palette(mono, white);
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 0 20px 20px 0;
+            padding: 30px;
+            margin-right: 20px;
+            width: calc(33.3333% - 20px);
+            height: auto;
+        }
+
+        .read-more {
+            text-transform: uppercase;
+        }
+
+        .row {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 0;
+                margin-right: -20px;
+                position: relative;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .parter {
+        >row {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .page-partners {
+        .partners {
+            .partner {
+                padding-bottom: 35px;
+                [class*=columns-] {
+                    position: static;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .page-partners {
+        .cards {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+    }
+
+    .page-partners {
+        .partner {
+            >.row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .partner-logo {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .feature-partners {
+            .section-title {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+
+
+    .page-partners {
+        .partners {
+            .partner {
+                width: 100% !important;
+            }
+        }
+    }
+}

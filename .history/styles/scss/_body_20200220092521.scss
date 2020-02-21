@@ -1,0 +1,423 @@
+/////////////////////////////////
+//////     BODY STYLES     //////
+/////////////////////////////////
+
+html {
+  font-size: 100%;
+  // height: 100%;
+}
+
+body {
+  color: palette(brand, darkgrey);
+  font-size: 100%;
+  // height: 100%;
+  // line-height: 1.2em;
+  overflow-x: hidden;
+  // position: relative;
+}
+
+::selection {
+  background: $green;
+  color: palette(mono, white);
+}
+
+::-moz-selection {
+  background: $green;
+  color: palette(mono, white);
+}
+
+#main {
+  margin-top: 148px;
+  /* bump #main down the height of our two headers above it */
+}
+
+////////////////////////////////
+//////     BLOCKQUOTE     //////
+////////////////////////////////
+
+blockquote {
+  border: none;
+  padding: 0;
+
+  p {
+    // main block quote styling goes here
+    font-style: italic;
+
+    &:last-of-type {
+      // the block quote source goes here
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+}
+
+
+//////////////////////////
+//////     CODE     //////
+//////////////////////////
+
+pre {
+  background: palette(brand, lightgrey);
+  border: 1px solid #ccc;
+  margin: 0 0 15px;
+  padding: 20px;
+}
+
+
+///////////////////////////////////
+//////        HEADERS       ///////
+///////////////////////////////////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-variant-ligatures: common-ligatures;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  @include aktiv(700);
+  @include font-size(32);
+  color: palette(brand, darkgrey);
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 25px;
+
+  a {
+
+    // color: ;
+    &:hover {
+      // color: ;
+    }
+  }
+}
+
+h2 {
+  @include aktiv(700);
+  @include font-size(28);
+  color: palette(brand, darkgrey);
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 25px;
+
+  a {
+
+    // color: ;
+    &:hover {
+      // color: ;
+    }
+  }
+}
+
+h3 {
+  @include aktiv();
+  @include font-size(24);
+  color: palette(brand, darkgrey);
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 25px;
+
+
+  h4 {
+    @include aktiv();
+    @include font-size(22);
+    color: palette(brand, darkgrey);
+    line-height: 1;
+    margin: 0;
+    padding-bottom: 25px;
+
+    h5 {
+      @include aktiv();
+      @include font-size(20);
+      color: palette(brand, darkgrey);
+      line-height: 1;
+      margin: 0;
+      padding-bottom: 25px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h6 {
+      @include aktiv();
+
+      color: palette(brand, darkgrey);
+      @include font-size(18);
+      //color: ;
+      line-height: 1;
+      margin: 0;
+      padding-bottom: 25px;
+
+      a {
+        // color: ;
+        text-decoration: none;
+
+        &:hover {
+          // color: ;
+        }
+      }
+    }
+
+
+    ////////////////////////////
+    //////     IMAGES     //////
+    ////////////////////////////
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: auto\9;
+      /* ie8 */
+      margin-top: 0;
+
+      &.alignright {
+        float: right;
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+
+      &.alignleft {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+
+      &.aligncenter {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+
+    ///////////////////////////
+    //////     LINKS     //////
+    ///////////////////////////
+
+    a,
+    a:hover {
+      @include ease();
+    }
+
+    // Standard Links //
+    a {
+      color: $partnerblue;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $green;
+        outline: none;
+      }
+    }
+
+    // Button Links //
+    a.button {
+      @include button();
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    // Read More Link //
+    a.read-more {
+      @include aktiv(700);
+      @include font-size(16);
+      color: $green;
+      // display:inline;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    ///////////////////////////
+    //////     LISTS     //////
+    ///////////////////////////
+
+    // Main List Style //
+    ul {
+      list-style: disc;
+      margin: 0 0 0 15px;
+      padding: 0 0 15px;
+
+      li {
+        font-family: Arial, "aktiv-grotesk-std", serif;
+        @include font-size(16);
+        font-weight: 300;
+        line-height: 1.75em;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {}
+      }
+    }
+
+    ol {
+      margin: 0 0 0 24px;
+      padding: 0 0 15px;
+
+      li {
+        font-family: Arial, "aktiv-grotesk-std", serif;
+        @include font-size(16);
+        font-weight: 300;
+        line-height: 1.75em;
+      }
+    }
+
+    .pagination {
+      list-style: none;
+      margin: 15px 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:empty {
+          display: none;
+        }
+      }
+    }
+
+
+    ///////////////////////////////////
+    //////      PARAGRAPHS      ///////
+    ///////////////////////////////////
+
+    p {
+      // @include aktiv();
+      @include font-size(16);
+      font-family: $font-family-primary;
+      font-weight: 300;
+      margin: 0;
+      line-height: 1.75em;
+      padding-bottom: 15px;
+
+      &:empty {
+        display: none;
+      }
+    }
+
+
+
+    ///////////////////////////////////
+    //////     TEXT CLASSES     ///////
+    ///////////////////////////////////
+
+    .text-center {
+      text-align: center;
+    }
+
+
+
+    ///////////////////////////////////////
+    //////           TABS            //////
+    ///////////////////////////////////////
+
+    .tabs {
+      .slider-thumbs {
+        font-size: 0;
+        margin: 0 0 -1px;
+        padding: 0;
+
+        li {
+          @include font-size(20);
+          background: #ebebeb;
+          border-top: 1px solid $font-family-primary;
+          border-left: 1px solid $font-family-primary;
+          cursor: pointer;
+          display: inline;
+          display: inline-block;
+          line-height: 1;
+          padding: 15px 45px;
+          position: relative;
+          z-index: 1;
+
+          &:last-child {
+            border-right: 1px solid $font-family-primary;
+          }
+
+          &.flex-active {
+            background: palette(mono, white);
+            border-bottom: 1px solid palette(mono, white);
+          }
+        }
+      }
+
+      .tab-slider {
+        border: 1px solid $font-family-primary;
+      }
+
+      .slides {
+        >li {
+          @include font-size(18);
+          line-height: 32px;
+          padding: 45px 50px;
+        }
+      }
+    }
+
+    .tab-slider.flexslider {
+      .slides {
+        >li {
+          height: 0;
+          overflow: hidden;
+
+          &.flex-active-slide {
+            height: auto;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width:767px) {
+      .tabs {
+        .slider-thumbs {
+          overflow: auto;
+
+          li {
+            display: block;
+            float: left;
+            padding: 15px 0;
+            text-align: center;
+            width: 33.333%;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width:480px) {
+      .tabs {
+        .slider-thumbs {
+          li {
+            width: 50%;
+
+            &:nth-child(odd) {
+              clear: both;
+            }
+
+            &:nth-child(even) {
+              border-right: 1px solid $font-family-primary;
+            }
+
+            &.flex-active {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+		}
+	}
+}

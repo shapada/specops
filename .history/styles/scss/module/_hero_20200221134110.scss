@@ -1,0 +1,116 @@
+.hero-wrapper {
+    padding-bottom: 50px;
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.hero-content {
+    h2 {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        font-size: 2rem;
+        color: palette(mono, white);
+    }
+    p {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        font-size: 1.125rem;
+        color: palette(mono, white);
+        line-height: 32px;
+    }
+    .button {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        font-size: 0.875rem;
+        background: palette(brand, yellow);
+        text-transform: uppercase;
+        padding: 20px 30px;
+        color: palette(brand, darkgrey);
+        &:hover {
+            background: #adb61f;
+        }
+    }
+    .invisible {
+        background: none;
+        color: palette(mono, white);
+        padding: 18px 28px;
+        border: 2px solid palette(mono, white);
+        &:hover {
+            background: rgba(0, 0, 0,palette(mono, dark);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ti-hero-sub-banner {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .homepage-hero {
+        .hero-content {
+            .button {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1230px) {
+    #main {
+        .homepage-hero {
+            padding: 40px 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .homepage-hero {
+        [class*=columns-] {
+            position: static;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .homepage-hero {
+        padding: 80px 0px;
+        background-position: top !important;
+        [class*=columns-] {
+            position: static;
+            width: 100%;
+        }
+        .hero-wrapper {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        .hero-content {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .homepage-hero {
+        padding: 40px 0px;
+        .hero-content {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

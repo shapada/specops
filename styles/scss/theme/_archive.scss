@@ -5,12 +5,12 @@
     }
     article {
         padding: 20px 0px;
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: 1px solid palette(brand, lightgrey);
         .post-meta {
             text-align: center;
             line-height: 1em;
             padding: 5px 5px 10px;
-            border: 10px solid #747474;
+            border: 10px solid palette(mono, base);
             border-radius: 50%;
             margin-top: 48px;
             max-width: 70px;
@@ -22,14 +22,14 @@
                 font-weight: 700;
                 font-size: 14px;
                 font-size: 0.875rem;
-                color: #d1db2d;
+                color: palette(brand, yellow);
                 span {
                     font-family: $font-family-primary;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 22px;
                     font-size: 1.375rem;
-                    color: #d1db2d;
+                    color: palette(brand, yellow);
                     display: block;
                 }
             }

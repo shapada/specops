@@ -1,0 +1,57 @@
+.cookie-notice-holder {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 16000002;
+    clear: both;
+    background: #2ba6cb;
+    padding: 5px 0;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -1px 5px rgba(palette(mono, base ), 0.2 )
+    .action {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .content {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    p {
+        padding-bottom: 0;
+        color: palette(mono, white);
+    }
+    a {
+        color: palette(mono, white);
+    }
+    .button {
+        transition: 0.5s ease;
+        border: none;
+        color: palette(mono, white);
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        overflow: visible;
+    }
+}
+
+.cookie-notice-holder.is-visible {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .cookie-notice-holder.is-visible {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    }

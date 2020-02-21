@@ -1,0 +1,34 @@
+#main {
+    margin-top: 96px;
+    form {
+        input[type=email] {
+            width: 100% !important;
+        }
+        input[type=password] {
+            width: 100% !important;
+        }
+        input[type=tel] {
+            width: 100% !important;
+        }
+        input[type=text] {
+            width: 100% !important;
+        }
+    }
+    .author-block {
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #main {
+        margin-top: 100px;
+        transition: none;
+    }
+}

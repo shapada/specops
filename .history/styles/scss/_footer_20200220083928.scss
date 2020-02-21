@@ -1,0 +1,239 @@
+////////////////////////////
+//////     FOOTER     //////
+////////////////////////////
+.footer-blocks, .footer-blocks-career{
+
+	.footer-block{
+		text-align: center;
+		padding:60px 0px;
+		img{
+			min-height: 63px;
+		}
+		h3{
+			@include aktiv(700);
+			@include font-size(32);
+			color:palette(mono, white);
+			padding-bottom:15px;
+			padding-top:20px;
+		}
+		p{
+			@include aktiv();
+			@include font-size(18);
+		}
+
+		&.career-block,
+		&.custom-block {
+			position: relative;
+			.link-text {
+				color: $green;
+			}
+			.block-link {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				text-decoration: none;
+			}
+		}
+	}
+
+
+}
+.get-in-touch{
+	background-size:cover;
+	padding:95px 0px;
+
+	.get-in-wrapper{
+		@include rounded(4px);
+		background: palette(mono, white);
+		padding:70px 100px;
+		text-align: center;
+		position: relative;
+		z-index: 10;
+		h3{
+			@include aktiv(700);
+			@include font-size(32);
+		}
+		&:after{
+			content:"";
+			background: rgba(255,255,255,0.2);
+			top:-5px;
+			bottom:-5px;
+			left:-5px;
+			right:-5px;
+			@include rounded(4px);
+			position: absolute;
+			z-index: -1;
+		}
+		p{
+			@include font-size(22);
+			line-height: 1.5em;
+		}
+	}
+}
+.site-info {
+	background: $footerblack!important;
+	padding-top: 35px;
+	text-align: center;
+
+	small {
+		@include aktiv();
+		@include boxmodel;
+		display: block;
+		text-align: center;
+		width: 100%;
+		color: palette(mono, white);
+		a {
+			color:palette(mono, white);
+			text-decoration: none;
+			&:hover {
+				color:$green;
+			}
+		}
+	}
+}
+
+#footer-nav {
+	margin: 0;
+	text-align: left;
+	li {
+		display: block;
+		padding-bottom:15px;
+		a{
+			@include aktiv(700);
+			@include font-size(16);
+			color:palette(mono, white);
+			&:hover{
+				color:$green;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		&:hover{
+			// color:  ;
+		}
+	}
+}
+.site-footer{
+	background: $lightblack!important;
+	padding-top:80px;
+	.newsletter{
+		h4{
+			@include aktiv(700);
+			@include font-size(24);
+			color:palette(mono, white);
+		}
+		p{
+			@include aktiv();
+			@include font-size(16);
+			color:palette(mono, white);
+		}
+	}
+	#gform_4{
+		padding: 0 100px;
+		.validation_error {
+			color: $palette(mono, white);
+		}
+		label{
+			text-transform: none!important;
+			padding-bottom:10px;
+			display: block;
+		}
+		.gform_body{
+			.gfield_label {
+				@include aktiv(700);
+				@include font-size(16);
+				color:palette(mono, white);
+				text-transform: none!important;
+			}
+			input{
+				box-shadow: none;
+				background: $gray !important;
+				height: 40px;
+				color:palette(mono, white);
+				border:none!important;
+				@include rounded(4px);
+			}
+			input[type="email"]{
+				width: 100%;
+				@include rounded(4px);
+			}
+			input[type="submit"]{
+				margin-top:30px;
+				display: block;
+				@include aktiv(700);
+				@include font-size(14);
+				padding:20px 60px;
+				background: $green;
+				color: palette(brand, darkgrey);
+				&:hover{
+					background: darken($green, 10%);
+				}
+			}
+		}
+	}
+	.social-wrapper{
+		text-align:  center;
+		padding: 70px 0px 20px;
+	}
+	.social-menu{
+		display: inline-block;
+		margin: 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			padding:0px 20px;
+			a{
+				@include font-size(24);
+				color:$gray;
+				&:hover{
+					color:$green;
+				}
+			}
+		}
+	}
+}
+
+/*
+ |----------------------------------------------------------------
+ | Cookie Notice
+ |----------------------------------------------------------------
+ */
+.cookie-notice-holder {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 16000002;
+	clear: both;
+	background: $blue;
+	padding: 5px 0;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 -1px 5px rgba(black, .2);
+
+	&.is-visible {
+		display: flex;
+	}
+
+	.content, .action {
+		padding-right: $gutter;
+		padding-left: $gutter
+	}
+
+	p {
+		padding-bottom: 0;
+		color: palette(mono, white);
+	}
+
+	a {
+		color: palette(mono, white);
+	}
+
+	.button {
+		@include button(green);
+	}
+}

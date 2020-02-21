@@ -1,0 +1,565 @@
+/////////////////////////////
+//////     PLUGINS     //////
+/////////////////////////////
+
+// List of plugins
+// 1: 
+// 2: Flexslider
+// 3: Tribe Events [custom/overrides]
+// 4: WooCommerce [custom/overrides]
+
+
+////////////////////////////////
+//////     1:     //////
+////////////////////////////////
+
+
+//////////////////////////////////
+//////     2:FLEXSLIDER     //////
+//////////////////////////////////
+
+ 
+// Browser Resets //
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+	outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	list-style: none;
+	margin: 0; 
+	padding: 0; 
+} 
+
+// FlexSlider Necessary Styles
+//*********************************//
+.flexslider {
+	margin: 0; 
+	padding: 0;
+	.slides > li {
+		display: none; 
+		-webkit-backface-visibility: hidden;
+	} // Hide the slides before the JS is loaded. Avoids image jumping //
+	.slides img {
+		display: block;
+		width: 100%; 
+	}
+}
+
+.flex-pauseplay span {text-transform: capitalize;}
+
+// Clearfix for the .slides element //
+.slides:after {
+	clear: both; 
+	content: ".";
+	display: block; 
+	height: 0;
+	line-height: 0; 
+	visibility: hidden; 
+} 
+
+html[xmlns] .slides {
+	display: block;
+} 
+
+* html .slides {
+	height: 1%;
+}
+
+// No JavaScript Fallback //
+// If you are not using another script, such as Modernizr, make sure you
+// include js that eliminates this class on page load
+.no-js .slides > li:first-child {
+	display: block;
+}
+
+
+// FlexSlider Default Theme
+//*********************************//
+.flexslider {
+	margin: 0 0 60px;
+	position: relative;
+	zoom: 1;
+	.slides {
+		zoom: 1;
+	}
+}
+
+.flex-viewport {
+	@include ease(1s);
+	max-height: 2000px;
+	// -webkit-transition: all 1s ease;
+	// -moz-transition: all 1s ease;
+	// transition: all 1s ease;
+}
+.loading .flex-viewport {
+	max-height: 300px;
+}
+
+.carousel li {
+	margin-right: 5px
+}
+
+// Direction Nav
+.flex-direction-nav {
+	*height: 0;
+	a {
+		@include ease;
+		background: black;
+		background:rgba(0,0,0,.5);
+		cursor: pointer;
+		display: block;
+		height: 85px;
+		margin-top:-42px;
+		position: absolute;
+		top: 50%;
+		text-indent: -9999px;
+		width: 75px;
+		z-index: 10;
+	}
+	.flex-next {
+		background-position: 100% 0;
+		right: 0px;
+		&:after{
+			background-image: url('../../images/slider-next.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			content:'';
+			display: block;
+			position: absolute;
+			top:0px;
+			left:0px;
+			bottom:0px;
+			right:0px;	
+		}
+	}
+	.flex-prev {
+		left: 0px;
+		&:after{
+			background-image: url('../../images/slider-prev.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			content:'';
+			display: block;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+		}
+	}
+}
+
+.flexslider {
+	&:hover {
+		.flex-prev,
+		.flex-next {
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.flex-direction-nav .flex-disabled {
+	cursor: default;
+	filter:alpha(opacity=30); 
+	opacity: .3!important; 
+}
+
+// Control Nav
+.flex-control-nav {
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+	width: 100%;
+	li {
+		*display: inline;
+		display: inline-block;
+		margin: 0 6px;
+		zoom: 1;
+		a {
+			@include rounded(10px);
+			background: palette(mono,base);
+			background: rgba(0,0,0,0.5);
+			cursor: pointer;
+			display: block;
+			height: 5px;
+			text-indent: -9999px;
+			width: 5px;
+			&:hover { 
+				background: palette(mono, white); 
+			}
+			&.flex-active { 
+				background: palette(mono, white); 
+				cursor: default; 
+			}
+		}
+	}
+}
+
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	overflow: hidden;
+	position: static;
+	li {
+		float: left;
+		margin: 0;
+		width: 25%;
+	}
+	img {
+		cursor: pointer;
+		display: block;
+		opacity: .7;
+		width: 100%;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.flex-active {
+		cursor: default;
+		opacity: 1; 
+	}
+}
+
+@media screen and (max-width: 1075px) {
+	.flex-direction-nav .flex-prev {
+		opacity: 1; 
+		left: 0;
+	}
+	.flex-direction-nav .flex-next {
+		opacity: 1; 
+		right: 0;
+	}
+}
+
+
+/* 
+ * Default slideshow styles
+ */ 
+ $slider-height: 450px !default;
+
+.slideshow-wrapper {
+	.slides {
+		position: relative;
+		> li {
+			position: relative; 
+			min-height: $slider-height; 
+		}
+	}
+	.text-container {
+		display: block;
+		padding: 20px;
+		position: absolute;
+		top: 40%;
+		text-align: center;
+		width: 100%;
+		h1, p {
+			color: palette(mono, white);
+		}
+		h1 {
+			@include font-size(72);
+			padding-bottom: 0;
+		}
+		p {
+			@include font-size(32);
+			font-style: italic;
+		}
+	}
+}
+
+
+///////////////////////////////////
+//////    3:TRIBE EVENTS     //////
+///////////////////////////////////
+
+
+///////////////////////////////////
+//////     4:WOOCOMMERCE     //////
+///////////////////////////////////
+// ==================================
+
+// temp
+.woocommerce {
+
+	form {
+		label {
+			display: block;
+		}
+
+		input[type=text],
+		input[type=number],
+		input[type=password],
+		input[type=email] {
+			border: 1px solid #cecece;
+		}
+
+		.form-row-first,
+		.form-row-last {
+			float: left;
+			overflow: visible;
+			width: 50%;
+		}
+
+		.form-row-first {
+			padding-right: $gutter;
+		}
+
+		.form-row-last {
+			padding-left: $gutter;
+		}
+
+	}
+}
+
+
+
+// messages boxes 
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 1em 1em 1em 3.5em;
+	position: relative;
+	width: auto;
+
+	li {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.woocommerce-message {
+	border: #8fae1b solid 1px;
+}
+
+.woocommerce-info {
+	border: #1e85be solid 1px;
+}
+
+.woocommerce-error {
+	border: #b81c23 solid 1px;
+}
+
+
+
+// cart/checkout table
+.shop_table {
+	@include rounded(5px);
+	border: 1px solid palette(brand, darkgrey);
+	border-collapse: separate;
+	margin: 0 -1px 24px 0;
+	text-align: left;
+	width: 100%;
+
+	td, th {
+		vertical-align: middle;
+	}
+
+	th {
+		font-weight: bold;
+		padding: 9px 12px;
+	}
+
+	td {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 6px 12px;
+	}
+
+	.remove {
+		@include rounded(100%);
+		color: red;
+		display: block;
+		font-size: 1.5em;
+		font-weight: bold;
+		height: 1em;
+		line-height: 1;
+		text-align: center;
+		text-decoration: none;
+		width: 1em;
+	}
+
+	.variation {
+		margin: 0.25em 0;
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		dt, dd {
+			@include inline-block;
+			float: left;
+			margin-bottom: 1em;
+		}
+
+		dt {
+			clear: left;
+			font-weight: bold;
+			margin: 0 4px 0 0;
+			padding: 0 0 0.25em;
+		}
+
+		dd {
+			padding: 0 0 0.25em;
+		}
+	}
+
+	.actions {
+		text-align: right;
+	}
+
+	.coupon {
+		text-align: left;
+		float: left;
+	}
+}
+
+// cart total
+.cart-collaterals {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.cart_totals {
+	float: right;
+	text-align: right;
+	width: 48%;
+
+	table {
+		border-collapse: separate;
+		border-radius: 5px;
+		margin: 0 0 6px;
+		padding: 0;
+
+		th {
+			padding: 6px 12px 0 0;
+			width: 25%;
+		}
+
+		td {
+			padding: 6px 0;
+		}
+	}
+}
+
+// shipping table
+.shipping_calculator {    
+	clear: right;
+	float: right;
+	width: 48%;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.shipping-calculator-button {
+		&:after {
+			content: "↯";
+			margin-left: 7px;
+		}
+	}
+}
+
+
+// checkout
+[id='customer_details'] {
+
+	input[type=text],
+	input[type=number],
+	textarea {
+		width: 100%;
+	}
+
+
+}
+
+
+
+// payment method
+[id='payment'] {
+	background: #f7f6f7;
+
+	[type='radio'] + label {
+		display: inline;
+	}
+
+	.payment_methods {
+		padding: 1em;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.payment_box {
+		padding: 1em 2%;
+		margin: 1em 0;
+		position: relative;
+		background:  #ebe9eb;
+	}
+
+	.payment_method_paypal img {
+		max-height: 50px;
+		vertical-align: middle;
+	}
+
+	.about_paypal {
+		float: right;
+		font-size: 0.83em;
+	}
+}
+
+
+
+
+// order review (table also have class order_detail, don't wanna mess with it)
+ul.order_details {
+	list-style-type: none;
+	margin: 0 0 25px;
+	padding: 0 0 15px;
+
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	li {
+		border-right: 1px dashed #dfdbdf;
+		float: left;
+		margin-right: 2em;
+		padding-right: 2em;
+		text-transform: uppercase;
+
+		&:last-of-type {
+			border: none;
+		}
+	}
+
+	strong {
+		display: block;
+		text-transform: none;
+	}
+
+}
+
+// woo login
+[id='customer_login'] {
+	input[type='text'],
+	input[type='email'],
+	input[type='password'] {
+		width: 100%;
+	}
+}

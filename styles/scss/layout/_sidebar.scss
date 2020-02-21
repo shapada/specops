@@ -1,5 +1,5 @@
 .sidebar-inner {
-    background: none repeat scroll 0 0 #f4f4f4;
+    background: none repeat scroll 0 0 palette(brand, lightgrey);
     margin-bottom: -4000px;
     padding: 40px 0px 4040px 0;
     position: relative;
@@ -22,7 +22,7 @@
         padding-bottom: 15px;
     }
     &:before {
-        background: none repeat scroll 0 0 #f4f4f4;
+        background: none repeat scroll 0 0 palette(brand, lightgrey);
         bottom: 0;
         content: "";
         left: -40000px;
@@ -57,7 +57,7 @@
                 font-size: 1.25rem;
                 color: palette(brand, darkgrey);
                 &:hover {
-                    color: #d1db2d;
+                    color: palette(brand, yellow);
                 }
             }
         }

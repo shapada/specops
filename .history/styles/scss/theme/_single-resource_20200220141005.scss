@@ -1,0 +1,168 @@
+.resource-inline {
+    .resource-image-overlay:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      margin: auto;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' version='1.1' viewBox='0 0 68 48' width='100%25'%3E%3Cpath class='ytp-large-play-button-bg' d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='%23d1db2d'%3E%3C/path%3E%3Cpath d='M 45,24 27,14 27,34' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 137px 97px;
+      background-position: center;
+      opacity: 0.7;
+  }
+}
+
+.single-resources {
+
+    iframe {
+        width: 100%;
+    }
+
+    .flex-video {
+        image
+    }
+
+    #main {
+        padding-top: 6em;
+        margin-top: 0;
+    }
+
+  #content > :first-child {
+    padding-top: 0;
+  }
+
+  #cpt-search > .row {
+    padding-top: 45px;
+  }
+
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 80px;
+    }
+
+
+    h2 {
+        color: palette(brand, darkgrey);
+    }
+    h6 {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        font-size: 0.875rem;
+        margin-top: 0;
+        padding: 0;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    #content > p:last-of-type {
+      margin-bottom: 3em;
+    }
+
+    .pdf-wrapper {
+        padding-top: 1em;
+        .button {
+            padding: 15px 30px;
+            color: palette(brand, darkgrey);
+        }
+    }
+    .back-nav-wrapper {
+        margin-top: 35px;
+        padding: 15px 25px;
+        background: palette(brand, lightgrey);
+        margin-bottom: 25px;
+        .social-sharing {
+            display: inline-block;
+            padding-top: 10px;
+            .share-label {
+                display: inline-block;
+                font-weight: bold;
+                font-size: 14px;
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                margin-right: 15px;
+                padding-bottom: 0;
+            }
+            ul {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            li {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            li+li {
+                margin-left: 15px;
+            }
+            a {
+                display: block;
+                font-size: 22px;
+                font-size: 1.375rem;
+                line-height: 28px;
+                color: palette(brand, blue);
+                &:hover {
+                    color: palette(mono, base);
+                }
+            }
+        }
+        .back-to {
+            float: right;
+            color: palette(brand, blue);
+            font-weight: bold;
+            padding-top: 15px;
+            text-decoration: none;
+        }
+    }
+    .resource-topic {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: palette( brand, yellow );
+    }
+    .entry-date {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+    }
+    .related-articles {
+        background-color: palette(brand, blue);
+        padding: 60px 0;
+        &:hover {
+            a {
+                color: palette(brand, blue);
+            }
+        }
+        h2 {
+            color: palette(mono, white);
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                display: flex;
+                a {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
