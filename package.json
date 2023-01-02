@@ -31,8 +31,8 @@
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.0",
     "sass": "^1.23.7",
-    "webpack": "^4.41.5",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "normalize": "^0.3.1"
